@@ -50,14 +50,13 @@
   - title: "No Header but Image"
     url: "/design/no-header-but-image/"
 
-- title: Documentation
-  url: "/documentation/"
+- title: Hydrography90m
+  url: "/data/hydrography90m/"
   side: left
-  dropdown:
-  - title: "Changelog"
-    url: "/changelog/"
-  - title: "Roadmap"
-    url: "/roadmap/"
+
+- title: Geomorpho90m
+  url: "/data/geomorpho90m/"
+  side: left
 
 - title: Blog
   url: "/blog/"
