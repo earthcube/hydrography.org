@@ -37,7 +37,7 @@ bla bla for r.watershed
 
 
 ## r.stream.order derived 
-hydrographyJDx2   {#formats}
+hydrographyJDx3   {#formats}
 
 bla bla for r.watershed 
 
