@@ -5,3 +5,6 @@ browser open http://localhost:4000/
 bundle exec jekyll build
 browser open file:///home/selv/SE_docs/hydrography.org/_site/index.html 
 
+git add --all 
+git commit -m "large table"
+git push 
