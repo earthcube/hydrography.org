@@ -5,6 +5,7 @@ teaser: "This page support the download of the layers .... publication ...."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
+FlowImage: /data/hydrography90m/flow_accumulation_icon.png
 ---
 
 [comment]: page base on documentation.md
@@ -26,7 +27,9 @@ header:
 
 bla bla for r.watershed
 
-[Flow Accumulation](hydrography.org/image/data/hydrography90m/flow_accumulation_icon.png)
+![Flow Accumulation](https://gitlab.com/selvaje74/hydrography.org/-/blob/main/images/data/hydrography90m/flow_accumulation.png)
+![flow accumulation]({{page.FlowImage}})
+
 
 ### accumulation_tiles20d: 
 ### basin_tiles20d: 
