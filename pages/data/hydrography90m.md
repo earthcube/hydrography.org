@@ -26,6 +26,8 @@ header:
 
 bla bla for r.watershed
 
+[Flow Accumulation](hydrography.org/image/data/hydrography90m/flow_accumulation_icon.png)
+
 ### accumulation_tiles20d: 
 ### basin_tiles20d: 
 ### depression_tiles20d: 
