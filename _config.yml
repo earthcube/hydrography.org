@@ -102,13 +102,14 @@ compress_html:
 #   /_____/\___/_/  \__,_/\__,_/_/\__/
 #
 # Default Settings
-
+#JDH added path info and "image: true"
 defaults:
   -
     scope:
-      path: '' 				# an empty string here means all files in the project
+      path: 'images/data' 				# an empty string here means all files in the project
       type: 'pages'
     values:
+      image: true
       show_meta: false 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
