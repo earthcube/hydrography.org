@@ -27,11 +27,11 @@ FlowImage: data/hydrography90m/flow_accumulation_icon.png
 
 
 
-![Flow Accumulation](/images/data/hydrography90m/flow_accumulation_icon.png)
+![Flow Accumulation](https://gitlab.com/selvaje74/hydrography.org/-/blob/main/images/data/hydrography90m/flow_accumulation.png)
 <br>
 ![flow accumulation]({{ page.FlowImage | relative_url }}) 
 <br>
-(Icon adding endeavor!)
+test
 
 ### accumulation_tiles20d: 
 ### basin_tiles20d: 
