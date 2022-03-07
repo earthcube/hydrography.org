@@ -102,7 +102,6 @@ compress_html:
 #   /_____/\___/_/  \__,_/\__,_/_/\__/
 #
 # Default Settings
-#JDH added path info and "image: true"
 defaults:
   -
     scope:
