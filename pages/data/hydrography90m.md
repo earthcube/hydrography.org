@@ -5,7 +5,7 @@ teaser: "This page support the download of the layers .... publication ...."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
-FlowImage: /assets/img/flow_accumulation_icon.png
+FlowImage: /assets/img/drainage-basin-icon.png
 ---
 
 [comment]: page base on documentation.md
