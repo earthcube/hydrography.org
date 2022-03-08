@@ -24,10 +24,17 @@ header:
 
 ## r.watershed derived   
 
-### Flow Accumulation <br>
+### Flow Accumulation 
+<br>
+accumulation_tiles20d:
+<br>
 <img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Flow Accumulation" width="200"/>
-
-### accumulation_tiles20d:
+<br>
+### Drainage Basin 
+<br> 
+basin_tiles20d: 
+<br>
+<img src="/hydrography.org/images/data/hydrography90m/drainage-basin.png" alt="Flow Accumulation" width="200"/>
 
 ### basin_tiles20d: 
 

@@ -13,8 +13,7 @@ convert -density 650 -quality 75 -crop 1150x750+3400+250  Fig6_plot_main_hydrog.
 
 
 Drainage basin:
-convert -density 650 -trim -quality 700 -crop 640x625+1500+1150 Fig6_plot_main_hydrog.pdf  hydrography90m/drainage_basin_icon.png
-
+convert -density 650 -quality 75 -crop 1000x750+1275+1120 Fig6_plot_main_hydrog.pdf  hydrography90m/drainage-basin.png
 
 ------------------------------------------------------------------------------------------
 
