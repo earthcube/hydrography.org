@@ -5,8 +5,6 @@ teaser: "This page support the download of the layers .... publication ...."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
-FlowImage: /images/data/hydrography90m/flow-accumulation-icon.png
-BasinImage: /images/data/hydrography90m/drainage-basin-icon.png
 ---
 
 [comment]: page base on documentation.md
@@ -26,18 +24,13 @@ BasinImage: /images/data/hydrography90m/drainage-basin-icon.png
 
 ## r.watershed derived   
 
-
-Flow here
-<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation-icon.png" alt="flow accumulation" width="200"/>
+### Flow Accumulation <br>
+<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Flow Accumulation" width="200"/>
 
 ### accumulation_tiles20d:
-<br>
-![flow accumulation]({{ page.FlowImage | relative_url }}) 
-<br>
+
 ### basin_tiles20d: 
-<br>
-![Drainage Basin]({{page.BasinImage | relative_url _}})
-<br>
+
 ### depression_tiles20d: 
 ### direction_tiles20d: 
 ### outlet_tiles20d: 
