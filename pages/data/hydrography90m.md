@@ -39,7 +39,9 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<td></td>
+		<td><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">
+		Geo IGB Berlin</a>
+		</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -65,7 +67,9 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<td></td>
+		<td><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">
+		Geo IGB Berlin</a>
+		</td>
 	</tr>
 	<tr>
 		<td></td>
