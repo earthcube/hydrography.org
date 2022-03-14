@@ -16,15 +16,3 @@ Drainage basin:
 convert -density 650 -quality 75 -crop 1000x750+1275+1120 Fig6_plot_main_hydrog.pdf  hydrography90m/drainage-basin.png
 
 ------------------------------------------------------------------------------------------
-
-<tr>
-    	<td rowspan="2">
-    		### Drainage Basin 
-			<br> 
-			basin_tiles20d: 
-			<br>
-			<img src="/hydrography.org/images/data/hydrography90m/drainage-basin.png" alt="Flow Accumulation" width="300"/>
-		</td>
-		<td>Link 1</td>
-		<td>Link 2 </td>
-	</tr>

@@ -28,20 +28,17 @@ header:
 
 <table style="width:100%">
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Flow Accumulation</th>
+		<th colspan="2" style="font-size: 30px; width: 20%;">Flow Accumulation</th>
 	</tr>
 	<tr>
 		<td rowspan="4">
-			<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Flow Accumulation" width="530"/>
+			<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Flow Accumulation" width="300"/>
 		</td>
-		<td><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d" target="_blank">
-		r.watershed  accumulation_tiles20d  Flow accumulation (raster) km2 </a>
-		</td>
+		<td><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d" target="_blank"> Flow accumulation (raster)</a></td>
 	</tr>
 	<tr>
 		<td><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">
-		Geo IGB Berlin</a>
-		</td>
+		Geo IGB Berlin</a></td>
 	</tr>
 	<tr>
 		<td></td>
@@ -49,7 +46,6 @@ header:
 	<tr>
 		<td></td>
 	</tr>
-	
 	<tr>
 		<th colspan="2" style="font-size: 30px;">Drainage Basin</th>
 	</tr>
@@ -57,26 +53,22 @@ header:
 		<td rowspan="4">
 			<img src="/hydrography.org/images/data/hydrography90m/drainage-basin.png" alt="Drainage Basin" width="280"/>
 		</td>
-		<td><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">
-		r.watershed : basin_tiles20d : Drainage basin (raster) : IDs from 1 to 1,676,628 : basin_*.tif</a>
-		</td>
+		<td><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank"> Drainage basin (raster)</a></td>
 	</tr> 
 	<tr>
 		<td><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">
-		r.watershed : basin_tiles20d : Drainage basin (vector) : IDs from 1 to 1,676,628 : basin_*.gpkg</a>
-		</td>
+		Drainage Basin (vector)</a></td>
 	</tr>
 	<tr>
 		<td><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">
-		Geo IGB Berlin</a>
-		</td>
+		Geo IGB Berlin</a></td>
 	</tr>
 	<tr>
 		<td></td>
 	</tr>
 </table>
 
-
+Windows Ubuntu Test JDH
 ## r.watershed derived   
 
 ### depression_tiles20d: 
