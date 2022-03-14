@@ -68,7 +68,7 @@ header:
 	</tr>
 </table>
 
-Windows Ubuntu Test JDH
+
 ## r.watershed derived   
 
 ### depression_tiles20d: 
