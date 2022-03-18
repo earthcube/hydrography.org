@@ -26,12 +26,19 @@ header:
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+
+
+
+
 <table style="width:100%">
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Flow Direction</th>
+		<th colspan="2" style="font-size: 40px; text-align: center;">r.watershed</th>
 	</tr>
 	<tr>
-		<td rowspan="1">
+		<th colspan="2" style="font-size: 18px;">Flow Direction</th>
+	</tr>
+	<tr>
+		<td rowspan="1" width="50%">
 			<img src="/hydrography.org/images/data/hydrography90m/flow-direction.png" alt="Flow Direction" width="280"/>
 		</td>
 		<td>
@@ -42,7 +49,7 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Drainage Basin</th>
+		<th colspan="2" style="font-size: 18px;">Drainage Basin</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -57,7 +64,7 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 30px; width: 20%;">Flow Accumulation</th>
+		<th colspan="2" style="font-size: 18px;">Flow Accumulation</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -71,10 +78,10 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Outlets</th>
+		<th colspan="2" style="font-size: 18px;">Outlets</th>
 	</tr>
 	<tr>
-		<td rowspan="1" width="50%">
+		<td rowspan="1">
 			<img src="/hydrography.org/images/data/hydrography90m/str-seg-outlet.png" alt="Outlets" width="280"/>
 		</td>
 		<td>
@@ -90,7 +97,7 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Stream Segment</th>
+		<th colspan="2" style="font-size: 18px;">Stream Segment</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -104,7 +111,7 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Sub-catchment</th>
+		<th colspan="2" style="font-size: 18px;">Sub-catchment</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -119,7 +126,7 @@ header:
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 30px;">Depression</th>
+		<th colspan="2" style="font-size: 18px;">Depression</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
