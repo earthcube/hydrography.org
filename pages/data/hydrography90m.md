@@ -43,6 +43,7 @@ header:
 		</td>
 		<td>
 			<ul>
+				<li>[Flow Direction][1]</li>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdirection_tiles20d" target="_blank"> Flow Direction (raster)</a></li>
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">Raster layer visualization</a></li>
 			</ul>
@@ -140,6 +141,7 @@ header:
 		</td>
 	</tr>
 </table>
+[1]: https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdirection_tiles20d
 
 
 
@@ -155,7 +157,11 @@ header:
 
 ## r.watershed derived   
 ## r.stream.order derived 
-test add image icon  {#formats}
+
+
+test add image icon  
+
+{#formats}
 
 bla bla for r.watershed 
 
@@ -167,3 +173,47 @@ Download link
 
 Download link
 
+[//]: <> (Testing markdown table)
+[//]: <> (HTML is suggested for more control over image size and table properties)
+[//]: <> (However, this can potentially be made to work and is more readable)
+
+
+<style>
+	table { border: 1px solid black; width: 100%; }
+	td, th {border: 1px solid black;width: 50%;}
+</style>
+
+ ## r.watershed
+
+|  **Flow Direction** | |
+|---|----------|
+| <img src="/hydrography.org/images/data/hydrography90m/flow-direction.png" alt="Flow Direction" width="280"/> | *[Flow Direction raster][1]<br> *[Raster Layer Visualization][2] |
+|**Drainage Basin**|
+| <img src="/hydrography.org/images/data/hydrography90m/drainage-basin.png" alt="Drainage Basin" width="280"/> |[Drainage Basin (raster)][3]<br>[Drainage Basin (vector)][4] <br>[Raster Layer Visualization][5] |
+|<ul><li>item 1</li><li>item2</li></ul>| 7  |
+|  11 |  12 |
+
+
+
+[//]: <> (Links for flow Direction)
+[2]: https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True
+
+[//]: <> (Links for drainage basin)
+[3]: https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d
+[4]: https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d
+[5]: https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True
+
+
+<th colspan="2" style="font-size: 18px;">Flow Direction</th>
+	</tr>
+	<tr>
+		<td rowspan="1" width="50%">
+			<img src="/hydrography.org/images/data/hydrography90m/flow-direction.png" alt="Flow Direction" width="280"/>
+		</td>
+		<td>
+			<ul>
+				<li>[Flow Direction][1]</li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdirection_tiles20d" target="_blank"> Flow Direction (raster)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">Raster layer visualization</a></li>
+			</ul>
+		</td>
