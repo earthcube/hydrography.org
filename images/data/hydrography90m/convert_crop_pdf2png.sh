@@ -26,7 +26,15 @@ convert -density 650 -quality 75 -crop 1000x750+1000+1120 Fig6_plot_main_hydrog.
 
 ------------------------------------------------------------------------------------------
 
-Sub-catchment:
- convert -density 650 -quality 75 -crop 1020x750+3425+1120 Fig6_plot_main_hydrog.pdf hydrography90m/sub-catchment.png
+Slope Curv Max:
+convert -density 650 -quality 75 -crop 1140x1000+100+100 Fig11_plot_stream_slope.pdf hydrography90m/slope-curv-max-dw-cel.png
 
+Slope Curv Min:
+convert -density 650 -quality 75 -crop 1055x1000+1280+100 Fig11_plot_stream_slope.pdf hydrography90m/slope-curv-min-dw-cel.png
 
+Slope Elevation:
+convert -density 650 -quality 75 -crop 1045x1000+2355+100 Fig11_plot_stream_slope.pdf hydrography90m/slope-elv-dw-cel.png
+
+Slope Gradient:
+convert -density 650 -quality 75 -crop 1100x1000+3400+100 Fig11_plot_stream_slope.pdf hydrography90m/slope-grad-dw-cel.png
+############################## W x H + X + Y

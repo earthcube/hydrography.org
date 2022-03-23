@@ -1,15 +1,15 @@
 ---
 layout: page-fullwidth
+classes: wide
 title: "hydropgraphy90m layers"
 teaser: "This page support the download of the layers .... publication ...."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
-classes: wide
 ---
 
 <style>
-	table, th, td {border: 1px solid black; background-color: white;}
+	table, th, td {border: 0px solid black; background-color: white;}
 </style>
 
 [comment]: page base on documentation.md
@@ -27,7 +27,11 @@ classes: wide
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
+
+
 [//]: <> (Directory for: r.watershed)
+
+## r.watershed derived
 
 <table style="width:100%">
 	<tr>
@@ -137,32 +141,33 @@ classes: wide
 </table>
 
 [//]: <> (Directory for: r.stream.slope)
+# r.stream.slope
 
 <table style="width:100%">
 	<tr>
 		<th colspan="4" style="font-size: 40px; text-align: center;">r.stream.slope</th>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Max Curvature</th>
-		<th colspan="2" style="font-size: 18px;">Min Curvature</th>
+		<th colspan="2" style="font-size: 18px; width: 40%;">Max Curvature</th>
+		<th colspan="2" style="font-size: 18px; width: 40%;">Min Curvature</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Maximum curvature between highest upstream cell, focal cell and downstream cell" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/slope-curv-max-dw-cel.png" alt="Maximum curvature between highest upstream cell, focal cell and downstream cell" width="400"/>
 		</td>
 		<td>
 			Maximum curvature between highest upstream cell, focal cell and downstream cell<br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d" target="_blank"> Max Curvature (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d" target="_blank"> slope_curv_max_dw_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Maximum curvature between highest upstream cell, focal cell and downstream cell" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/slope-curv-min-dw-cel.png" alt="Minimum Slope Curvature" width="400"/>
 		</td>
 		<td>Minimum curvature between lowest upstream cell, focal cell and downstream cell.<br><br>
 		<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d" target="_blank"> Max Curvature (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d" target="_blank"> slope_curv_min_dw_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
@@ -173,30 +178,81 @@ classes: wide
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Maximum curvature between highest upstream cell, focal cell and downstream cell" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/slope-elv-dw-cel.png" alt="Elevation difference between focal cell and downstream cell" width="400"/>
 		</td>
 		<td>
 			Elevation difference between focal cell and downstream cell<br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d" target="_blank"> Slope Elevation (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d" target="_blank"> slope_elv_dw_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/flow-accumulation.png" alt="Maximum curvature between highest upstream cell, focal cell and downstream cell" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/slope-grad-dw-cel.png" alt="Focal cell gradient" width="400"/>
 		</td>
 		<td>Focal cell gradient.<br><br>
 		<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d" target="_blank"> Max Curvature (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d" target="_blank"> slope_grad_dw_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
 </table>
 
-## r.watershed derived   
-## r.stream.order derived 
+[//]: <> (Directory for r.stream.distance)
+# r.stream.distance
 
+<table style="width:100%">
+	<tr>
+		<th colspan="4" style="font-size: 40px; text-align: center;">r.stream.distance</th>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Shortest upstream distance between focal grid cell and the nearest sub-catchment drainage divide</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="Shortest upstream distance" width="400"/>
+		</td>
+		<td>Shortest upstream distance between focal grid cell and the nearest sub-catchment drainage divide<br><br>
+		<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d" target="_blank"> stream_dist_up_near_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Longest upstream distance between focal grid cell and the nearest sub-catchment drainage divide</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="Longest upstream distance" width="400"/>
+		</td>
+		<td>Longest upstream distance between focal grid cell and the nearest sub-catchment drainage divide<br><br>
+		<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Distance between focal grid cell and its nearest downstream stream grid cell</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="Longest upstream distance" width="400"/>
+		</td>
+		<td>Distance between focal grid cell and its nearest downstream stream grid cell<br><br>
+		<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+
+## r.stream.order derived 
+## Focal cell gradient
 bla bla for r.watershed 
 
 ### Straller
