@@ -2,14 +2,14 @@
 layout: page-fullwidth
 classes: wide
 title: "hydropgraphy90m layers"
-teaser: "This page support the download of the layers .... publication ...."
+teaser: "This page supports the download of raster (*.tif) and vector (*.gpkg) layers developed from Amatulli et al. (2022) Hydrography90m: A new high-resolution global hydrographic dataset.  This work is part of the Global Freshwater Biodiversity, Biogeography and Conservation project (https://glowabio.org) funded in part by the Federal Ministry of Education and Research (BMBF grant agreement 555 number 033W034A) and the Leibniz Competition to S.D. (J45/2018)"
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
 ---
 
 <style>
-	table, th, td {border: 1px solid black; background-color: white;}
+	table, th, td {border: 0px solid black; background-color: white;}
 </style>
 
 [comment]: page base on documentation.md
@@ -30,7 +30,7 @@ header:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [//]: <> (Directory for: r.watershed)
-## r.watershed derived
+## r.watershed
 <p>Base and network layers of Hydrography90m: flow accumulation, flow direction, drainage basins, outlets, stream segments, subcatchments,
 regional units and depression; Map reference corresponding to Figure 6 for raster visualisation and Figure 5 for vector visualisation;
 Unit; Commands for computation and output file names. The asterisk stands for the regular tile ID for downloading the data, available
@@ -436,129 +436,199 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Segment downstream elevation difference between focal cell and the node/outlet</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_elv_dw_seg_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d" target="_blank">channel_elv_dw_seg_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Segment upstream elevation difference between focal cell and the init/node</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_elv_up_seg_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d" target="_blank">channel_elv_up_seg_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Upstream elevation difference between focal cell and the next cell</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_elv_up_cel_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d" target="_blank">channel_elv_up_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Downstream elevation difference between focal cell and the next cell</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_elv_dw_cel_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d" target="_blank">channel_elv_dw_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Segment downstream distance between focal cell and the node/outlet</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_dist_dw_seg_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d" target="_blank">channel_dist_dw_seg_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Segment upstream distance between focal cell and the init/node</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_dist_up_seg_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d" target="_blank">channel_dist_up_seg_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
 	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
+		<th colspan="2" style="font-size: 18px;">Upstream distance between focal cell and next cell</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="channel_dist_up_cel_*.tif" width="400"/>
 		</td>
 		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
-		</td>
-	</tr>
-
-	<tr>
-		<th colspan="2" style="font-size: 18px;"></th>
-	</tr>
-	<tr>
-		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
-		</td>
-		<td>
-		<ul>
-				<li><a href="" target="_blank">  (raster)</a></li>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d" target="_blank">channel_dist_up_cel_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
 </table>
 
-## r.stream.order derived 
+------------------------------------------------------------------
+
+[//]: <> (Directory for: r.stream.order)
+
+# r.stream.order
+<p>Stream order raster and vector files computed with the r.stream.order GRASS GIS module, the map reference corresponding to
+Figure 14, the specific GRASS GIS command and the layer output name.</p>
+<table style="width:100%">
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Strahler’s stream order</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="stream_strahler_*.tif" width="400"/>
+		</td>
+		<td>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d" target="_blank">stream_strahler_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Shreve’s stream magnitude</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="stream_shreve_*.tif" width="400"/>
+		</td>
+		<td>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d" target="_blank">stream_shreve_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Horton’s stream order</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="stream_horton_*.tif" width="400"/>
+		</td>
+		<td>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d" target="_blank">stream_horton_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Hack’s stream order</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="stream_hack_*.tif" width="400"/>
+		</td>
+		<td>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d" target="_blank">stream_hack_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Topological dimension of streams</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="stream_topo_*.tif" width="400"/>
+		</td>
+		<td>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d" target="_blank">stream_topo_*.tif (raster)</a></li>
+				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">All stream segments and nodes attributes</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/under-constr.png" alt="" width="400"/>
+		</td>
+		<td>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">stream_vect_*.gpkg (vector)</a></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
 ## Focal cell gradient
 bla bla for r.watershed 
 
