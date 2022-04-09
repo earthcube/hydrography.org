@@ -31,14 +31,9 @@ header:
 
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Grid map
-
---------------------------------------------------------------------------------------------
 [//]: <> (Directory for: r.watershed)
-# r.watershed
+## r.watershed
 <p>Base and network layers of Hydrography90m: flow accumulation, flow direction, drainage basins, outlets, stream segments, subcatchments,
 regional units and depression; Map reference corresponding to Figure 6 for raster visualisation and Figure 5 for vector visualisation;
 Unit; Commands for computation and output file names. The asterisk stands for the regular tile ID for downloading the data, available
@@ -561,7 +556,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d" target="_blank">order_strahler_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d" target="_blank">stream_strahler_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
@@ -575,7 +570,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d" target="_blank">order_shreve_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d" target="_blank">stream_shreve_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
@@ -589,7 +584,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d" target="_blank">order_horton_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d" target="_blank">stream_horton_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
@@ -603,7 +598,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d" target="_blank">order_hack_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d" target="_blank">stream_hack_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
@@ -617,7 +612,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d" target="_blank">order_topo_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d" target="_blank">stream_topo_*.tif (raster)</a></li>
 				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
 			</ul>
 		</td>
@@ -631,7 +626,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_*.gpkg (vector)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">stream_vect_*.gpkg (vector)</a></li>
 			</ul>
 		</td>
 	</tr>
