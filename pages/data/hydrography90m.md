@@ -9,7 +9,13 @@ header:
 ---
 
 <style>
-	table, th, td {border: 0px solid black; background-color: white;}
+	table, th, td {border: 1px solid black; background-color: white;}
+	
+	.tiles {
+		border: 2px red;
+		background-image: 
+			url("/hydrography.org/images/data/water-occurrence-map.png");
+	}
 
 	.tileDownloadBoundsTitle {
 		padding-bottom: 5px;
@@ -25,15 +31,13 @@ header:
 		left:0;
 		right:0;
 	}
-
-
-
-
-
 </style>
 
 [//]: <> (Extracting data files)
 [//]: <> (jquery library call is associated with the apperance of red box upon click)
+[//]: <> (https://www.w3schools.com/jquery/jquery_get_started.asp)
+[//]: <> (https://jquery.com/download/)
+[//]: <> (<script src="data-visualization-tools/timemachine/js/jquery/jquery.min.js" type="text/javascript"></script>)
 
 <script src="data-visualization-tools/timemachine/js/jquery/jquery.min.js" type="text/javascript"></script>
 <script>
@@ -89,7 +93,21 @@ header:
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Grid map table trial
 
+<table class=".tiles">
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+----------------------------------------------------------------------------------------------
 # Grid map
 
 <div class="mapTileDownloadContainer">
