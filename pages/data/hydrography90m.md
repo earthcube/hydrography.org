@@ -41,23 +41,37 @@ header:
 
 <script src="data-visualization-tools/timemachine/js/jquery/jquery.min.js" type="text/javascript"></script>
 <script>
-	var BASE_URL = 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2F';
+	var BASE_URL = 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4';
 	var FILES = ['r.stream.channel', 'r.stream.distance', 'r.stream.order', 'r.stream.slope', 'r.watershed'];
-	//var FILES = ['r.stream.channel', 'r.stream.distance', 'r.stream.order', 'r.stream.slope', 'r.watershed'];
+	var CHANNEL_FILE = ['channel_curv_cel', 'channel_dist_dw_seg', 'channel_dist_up_cel', 'channel_dist_up_seg', 'channel_elv_dw_cel', 'channel_elv_dw_seg', 'channel_elv_up_cel', 'channel_elv_up_seg', 'channel_grad_dw_seg', 'channel_grad_up_cel', 'channel_grad_up_seg']
+	var DIST_FILE = ['outlet_diff_dw_basin', 'outlet_diff_dw_scratch', 'outlet_dist_dw_basin', 'outlet_dist_dw_scratch', 'stream_diff_dw_near', 'stream_diff_up_farth', 'stream_diff_up_near', 'stream_dist_dw_near', 'stream_dist_proximity', 'stream_dist_up_farth', 'stream_dist_up_near']
+	var ORDER_FILE = ['order_hack', 'order_horton', 'order_shreve', 'order_strahler', 'order_topo', 'order_vect']
+	var SLOPE_FILE = ['slope_curv_max_dw_cel', 'slope_curve_min_dw_cel', 'slope_elv_dw_cel', 'slope_grad_dw_cel']
+	var WTRSHD_FILE = ['accumulation', 'basin', 'depression', 'direction', 'outlet', 'regional', 'segment', 'sub_catchment']
+
+[//]: <> (Pseudo code for presenting data files)
+
+[//]: <> ( for file-index in FILES list : )
+[//]: <> ( variable URL = BASE_URL + FILES(file-index) + '%2F' + SUB_FILE(file_index) + '_tiles20d' + '&files=', SUB_FILE[file_index],'_h', lat, 'v', long,.tif.join(''))
+[//]: <> ( if FILES = 'r.stream.channel')
+[//]: <> 	(SUB_FILE = CHANNEL_FILE)
+[//]: <> ( if FILES = 'r.stream.distance')
+[//]: <> 	(SUB_FILE = DIST_FILE)
+[//]: <> ( if FILES = 'r.stream.order')
+[//]: <> 	(SUB_FILE = ORDER_FILE)
+[//]: <> ( if FILES = 'r.stream.slope')
+[//]: <> 	(SUB_FILE = SLOPE_FILE)
+[//]: <> ( else SUB_FILE = WTRSHD_FILE)
+[//]: <> (print FILES ":" SUB_FILE ":" URL)
 
 	function set_paths(x, y) {
 		var lat = Math.abs(y) + ((y < 0) ? 'S' : 'N');
 		var lon = Math.abs(x) + ((x < 0) ? 'W' : 'E');
 		var lines = ['<p>', '<div class="tileDownloadBoundsTitle">Granule with top-left corner at ' + lon + ', ' + lat + ':</div>'];
 		for (var i = 0 ; i < FILES.length; ++i) {
-			var url = [BASE_URL, FILES[i], '_', lon, '_', lat,'v1_3_2020.tif'].join('');
+			var url = [BASE_URL, FILES[i], '%2F', SUB_FILE[i], '_tiles20d','&files=', SUB_FILE[i],'_h', lat, 'v', long,.tif.join('');
 			var dataset_name = FILES[i].split("/")[0];
-			if (dataset_name == "seasonality") {
-			dataset_name = "Seasonality 2020";
-			}
-			if (dataset_name == "extent") {
-			dataset_name = "Maximum extent";
-			}
+			
 			lines.push('<div class="url"><b>' + dataset_name.charAt(0).toUpperCase() + dataset_name.slice(1) + ": " + '</b><a href="' + url + '">' + url + '</a></div>');
 		}
 		lines.push('</p>');
@@ -95,7 +109,25 @@ header:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Grid map table trial
 
-<table class=".tiles">
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
 	<tr>
 		<td></td>
 		<td></td>
@@ -111,7 +143,7 @@ header:
 # Grid map
 
 <div class="mapTileDownloadContainer">
-	<div class="mapTileDownloadBaseLayer"><img width="685" height="267" src="/hydrography.org/images/data/water-occurrence-map.png" /></div>
+	<div class="mapTileDownloadBaseLayer"><img width="685" height="267" src="/hydrography.org/images/data/basins_noTiles.png" /></div>
 	<div class="tile" style="left:0px;top:0px" title="70-80N, 170-180W" onclick="set_paths(-180,80)"></div>
 	<div class="tile" style="left:19px;top:0px" title="70-80N, 160-170W" onclick="set_paths(-170,80)"></div>
 	<div class="tile" style="left:38px;top:0px" title="70-80N, 150-160W" onclick="set_paths(-160,80)"></div>
@@ -631,7 +663,7 @@ regional units and depression; Map reference corresponding to Figure 6 for raste
 Unit; Commands for computation and output file names. The asterisk stands for the regular tile ID for downloading the data, available
 in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4</p>
 
-<table style="width:100%">
+<table style="width:100% background-image= none">
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Flow Accumulation</th>
 	</tr>
