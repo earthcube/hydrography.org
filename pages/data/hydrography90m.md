@@ -49,33 +49,30 @@ header:
 	var SLOPE_FILE = ['slope_curv_max_dw_cel', 'slope_curve_min_dw_cel', 'slope_elv_dw_cel', 'slope_grad_dw_cel']
 	var WTRSHD_FILE = ['accumulation', 'basin', 'depression', 'direction', 'outlet', 'regional', 'segment', 'sub_catchment']
 
-[//]: <> (Pseudo code for presenting data files)
-
-[//]: <> ( for file-index in FILES list : )
-[//]: <> ( variable URL = BASE_URL + FILES(file-index) + '%2F' + SUB_FILE(file_index) + '_tiles20d' + '&files=', SUB_FILE[file_index],'_h', lat, 'v', long,.tif.join(''))
-[//]: <> ( if FILES = 'r.stream.channel')
-[//]: <> 	(SUB_FILE = CHANNEL_FILE)
-[//]: <> ( if FILES = 'r.stream.distance')
-[//]: <> 	(SUB_FILE = DIST_FILE)
-[//]: <> ( if FILES = 'r.stream.order')
-[//]: <> 	(SUB_FILE = ORDER_FILE)
-[//]: <> ( if FILES = 'r.stream.slope')
-[//]: <> 	(SUB_FILE = SLOPE_FILE)
-[//]: <> ( else SUB_FILE = WTRSHD_FILE)
-[//]: <> (print FILES ":" SUB_FILE ":" URL)
-
 	function set_paths(x, y) {
 		var lat = Math.abs(y) + ((y < 0) ? 'S' : 'N');
 		var lon = Math.abs(x) + ((x < 0) ? 'W' : 'E');
-		var lines = ['<p>', '<div class="tileDownloadBoundsTitle">Granule with top-left corner at ' + lon + ', ' + lat + ':</div>'];
+		var lines = ['<p>', '<div class="tileDownloadBoundsTitle"> Granule with top-left corner at ' + lon + ', ' + lat + ':</div>'];
 		for (var i = 0 ; i < FILES.length; ++i) {
-			var url = [BASE_URL, FILES[i], '%2F', SUB_FILE[i], '_tiles20d','&files=', SUB_FILE[i],'_h', lat, 'v', long,.tif.join('');
-			var dataset_name = FILES[i].split("/")[0];
-			
-			lines.push('<div class="url"><b>' + dataset_name.charAt(0).toUpperCase() + dataset_name.slice(1) + ": " + '</b><a href="' + url + '">' + url + '</a></div>');
+			for (var j = 0 ; j < SUB_FILES.length; ++j) {
+				if (FILES = 'r.stream.channel') {
+					SUB_FILE = CHANNEL_FILE
+				} else if (FILES = 'r.stream.distance') {
+					SUB_FILE = DIST_FILE
+				} else if (FILES = 'r.stream.order') {
+					SUB_FILE = ORDER_FILE
+				} else if (FILES = 'r.stream.slope') {
+					SUB_FILE = SLOPE_FILE
+				} else {SUB_FILE = WTRSHD_FILE}
+
+				var url = [BASE_URL, FILES[i], '%2F', SUB_FILE[j], '_tiles20d','&files=', SUB_FILE[i],'_h', lat, 'v', long,.tif.join('');
+				var dataset_name = FILES[i].split("/")[0];
+				
+				lines.push('<div class="url"><b>' + dataset_name.charAt(0).toUpperCase() + dataset_name.slice(1) + ": " + '</b><a href="' + url + '">' + url + '</a></div>');
+			}
 		}
-		lines.push('</p>');
-		document.getElementById("tilepaths").innerHTML = lines.join('');
+	lines.push('</p>');
+	document.getElementById("tilepaths").innerHTML = lines.join('');
 	};
 	$(function() {
 		$(".tile").on("click", function() {
@@ -91,8 +88,6 @@ header:
 [//]: <> (https://stackoverflow.com/questions/17394820/understanding-div-classes-in-foundation-4)
 [//]: <> (https://get.foundation/sites/docs-v5/components/grid.html)
 
-
-
 <div class="row">
 <div class="medium-4 medium-push-8 columns" markdown="1">
 <div class="panel radius" markdown="1">
@@ -102,7 +97,6 @@ header:
 {:toc}
 </div>
 </div><!-- /.medium-4.columns -->
-
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
@@ -143,7 +137,7 @@ header:
 # Grid map
 
 <div class="mapTileDownloadContainer">
-	<div class="mapTileDownloadBaseLayer"><img width="685" height="267" src="/hydrography.org/images/data/basins_noTiles.png" /></div>
+	<div class="mapTileDownloadBaseLayer"><img width="650" height="267" src="/hydrography.org/images/data/basins_noTiles.png" /></div>
 	<div class="tile" style="left:0px;top:0px" title="70-80N, 170-180W" onclick="set_paths(-180,80)"></div>
 	<div class="tile" style="left:19px;top:0px" title="70-80N, 160-170W" onclick="set_paths(-170,80)"></div>
 	<div class="tile" style="left:38px;top:0px" title="70-80N, 150-160W" onclick="set_paths(-160,80)"></div>
@@ -650,11 +644,7 @@ header:
 	<div class="tile" style="left:665px;top:247px" title="50-60S, 170-180E" onclick="set_paths(170,-50)"></div>
 </div>
 <div id="tilepaths"></div>
-
-
-
-
-
+----------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 [//]: <> (Directory for: r.watershed)
 # r.watershed
