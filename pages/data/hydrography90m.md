@@ -10,12 +10,6 @@ header:
 
 <style>
 	table, th, td {border: 1px solid black; background-color: white;}
-	
-	.tiles {
-		border: 2px red;
-		background-image: 
-			url("/hydrography.org/images/data/water-occurrence-map.png");
-	}
 
 	.tileDownloadBoundsTitle {
 		padding-bottom: 5px;
@@ -31,6 +25,52 @@ header:
 		left:0;
 		right:0;
 	}
+.tile {
+  width:18px;
+  height:18px;
+  border:1px solid #606060;
+  display:block;
+  position:absolute;
+  background-color: rgba(128,128,128,0.01);
+}
+
+.tile:hover {
+  border:1px solid red;
+  z-index:2;
+  background-color: rgba(128,128,128,0.01);
+}
+
+.tile.selected {
+  border:1px solid red;
+  opacity: 0.6;
+  z-index:2;
+  background-color: red;
+}
+
+#tilepaths a {
+  font-family: monospace;
+  font-size: 10px;
+}
+
+#tilepaths a:link {
+  text-decoration: none;
+}
+
+#tilepaths a:visited {
+  text-decoration: none;
+}
+
+#tilepaths a:hover {
+  text-decoration: underline;
+}
+
+#tilepaths a:active {
+  text-decoration: underline;
+}
+
+code {
+  font-weight: bold;
+}
 </style>
 
 [//]: <> (Extracting data files)
@@ -90,7 +130,7 @@ header:
 [//]: <> (https://get.foundation/sites/docs-v5/components/grid.html)
 
 <div class="row">
-<div class="medium-4 medium-push-8 columns" markdown="1">
+<div class="medium-4 medium-push-9 columns" markdown="1">
 <div class="panel radius" markdown="1">
 **Table of Contents**
 {: #toc }
@@ -101,44 +141,11 @@ header:
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Grid map table trial
-
-<table>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
 ----------------------------------------------------------------------------------------------
 # Grid map
 
 <div class="mapTileDownloadContainer">
-	<div class="mapTileDownloadBaseLayer"><img width="650" height="267" src="../../images/data/basins_noTiles.png" /></div>
+	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../../images/data/basins_noTiles.png" /></div>
 	<div class="tile" style="left:0px;top:0px" title="70-80N, 170-180W" onclick="set_paths(-180,80)"></div>
 	<div class="tile" style="left:19px;top:0px" title="70-80N, 160-170W" onclick="set_paths(-170,80)"></div>
 	<div class="tile" style="left:38px;top:0px" title="70-80N, 150-160W" onclick="set_paths(-160,80)"></div>
