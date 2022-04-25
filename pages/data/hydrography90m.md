@@ -9,7 +9,7 @@ header:
 ---
 
 <style>
-	table, th, td {border: 1px solid black; background-color: white;}
+	table, th, td {border: 0px solid black; background-color: white;}
 
 	.tileDownloadBoundsTitle {
 		padding-bottom: 5px;
@@ -35,7 +35,7 @@ header:
 }
 
 .tile:hover {
-  border:1px solid red;
+  border:2px solid red;
   z-index:2;
   background-color: rgba(128,128,128,0.01);
 }
@@ -73,12 +73,6 @@ code {
 }
 </style>
 
-[//]: <> (Extracting data files)
-[//]: <> (jquery library call is associated with the apperance of red box upon click)
-[//]: <> (https://www.w3schools.com/jquery/jquery_get_started.asp)
-[//]: <> (https://jquery.com/download/)
-[//]: <> (<script src="data-visualization-tools/timemachine/js/jquery/jquery.min.js" type="text/javascript"></script>)
-
 <script src="../../pages/data/jquery-3.6.0.js" type="text/javascript"></script>
 <script>
 	var BASE_URL = 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4';
@@ -96,7 +90,7 @@ code {
 		var lines = ['<p>', '<div class="tileDownloadBoundsTitle"> Granule with top-left corner at ' + lon + ', ' + lat + ':</div>'];
 		for (var i = 0 ; i < FILES.length; ++i) {
 			for (var j = 0 ; j < SUB_FILES.length; ++j) {
-				if (FILES = 'r.stream.channel') {
+				if (FILES[i]= 'r.stream.channel') {
 					SUB_FILE = CHANNEL_FILE
 				} else if (FILES = 'r.stream.distance') {
 					SUB_FILE = DIST_FILE
