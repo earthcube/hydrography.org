@@ -27,12 +27,13 @@ convert -density 650 -quality 75 -crop 1000x750+1000+1120 Fig6_plot_main_hydrog.
 ------------------------------------------------------------------------------------------
 
 slope-curv-max-dw-cel:
-convert -density 650 -quality 75 -crop 1075x920+205+100 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-curv-max-dw-cel.png
+convert -density 650 -quality 75 -crop 1075x760+205+250 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-curv-max-dw-cel.png
+
 slope-curv-min-dw-cel:
-convert -density 650 -quality 75 -crop 1055x1000+1280+100 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-curv-min-dw-cel.png
+convert -density 650 -quality 75 -crop 1055x760+1280+250 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-curv-min-dw-cel.png
 
 slope-elv-dw-cel:
-convert -density 650 -quality 75 -crop 1045x1000+2355+100 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-elv-dw-cel.png
+convert -density 650 -quality 75 -crop 1045x760+2355+250 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-elv-dw-cel.png
 
 slope-grad-dw-cel:
 convert -density 650 -quality 75 -crop 1100x1000+3400+100 Fig11_plot_stream_slope.pdf hydrography90m/Fig11/slope-grad-dw-cel.png
@@ -40,19 +41,21 @@ convert -density 650 -quality 75 -crop 1100x1000+3400+100 Fig11_plot_stream_slop
 ------------------------------------------------------------------------------------------
 
 stream_dist_up_near:
-convert -density 650 -quality 75 -crop 1040x920+1280+100 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-up-near.png
+convert -density 650 -quality 75 -crop 1040x760+1280+250 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-up-near.png
 
 stream_dist_up_farth:
-convert -density 650 -quality 75 -crop 1060x920+2341+100 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-up-farth.png
+convert -density 650 -quality 75 -crop 1060x760+2341+250 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-up-farth.png
 
 stream_dist_dw_near:
-convert -density 650 -quality 75 -crop 1060x920+3430+100 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-dw-near.png
+convert -density 650 -quality 75 -crop 1060x760+3430+250 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-dw-near.png
 
 outlet_dist_dw_basin:
-convert -density 650 -quality 75 -crop 1173x850+100+1030 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/outlet-dist-dw-basin.png
+convert -density 650 -quality 75 -crop 1083x720+200+1180 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/outlet-dist-dw-basin.png
 
 outlet-dist-dw-scratch:
-convert -density 650 -quality 75 -crop 1053x850+1280+1030 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/outlet-dist-dw-scratch.png
+convert -density 650 -quality 75 -crop  1053x765+1280+1115 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/outlet-dist-dw-scratch.png
+
+############################## W x H + X + Y
 
 stream-dist-proximity:
 convert -density 650 -quality 75 -crop 1053x850+2341+1030 Fig12_plot_stream_distance.pdf hydrography90m/Fig12/stream-dist-proximity.png
