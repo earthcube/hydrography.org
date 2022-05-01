@@ -2,28 +2,28 @@
 Pepe example:
 convert -density 600    -trim   -quality 500   -crop 640x620+0+0    */Fig11_plot_stream_slope.pdf  test.png
 ------------------------------------------------------------------------------------------
-JDH: 
-#pwd /Users/jay/Desktop/Website/hydrography.org/images/data
+JDH: # ICONS SHOULD BE ~0.25 - 0.30 MP
+#pwd /Users/jay/Desktop/Website/hydrography.org/images/data/Fig(#)
 # -crop   W x H + X + Y
 # X + Y = top left corner
 
-#r.watershed images: Fig6
+r.watershed images: Fig6
 
 Flow accumulation:
-convert -density 650 -quality 75 -crop 1150x750+3400+250  Fig6_plot_main_hydrog.pdf  hydrography90m/flow-accumulation.png
+convert -density 450 -quality 75 -crop 605x535+2370+170  Fig6_plot_main_hydrog.pdf  flow-accumulation.png
 
 Stream Segment and Outlet:
-convert -density 650 -quality 75 -crop 1020x750+2300+1120 Fig6_plot_main_hydrog.pdf hydrography90m/str-seg-outlet.png
+convert -density 450 -quality 75 -crop 600x530+1630+770 Fig6_plot_main_hydrog.pdf hydrography90m/Fig6/str-seg-outlet.png
 
 Sub-catchment:
-convert -density 650 -quality 75 -crop 1020x750+3425+1120 Fig6_plot_main_hydrog.pdf hydrography90m/sub-catchment.png
+convert -density 450 -quality 75 -crop 605x530+2370+770  Fig6_plot_main_hydrog.pdf  sub-catchment.png
 
 Drainage basin:
-convert -density 650 -quality 75 -crop 1000x750+1275+1120 Fig6_plot_main_hydrog.pdf  hydrography90m/drainage-basin.png
+ convert -density 450 -quality 75 -crop 605x530+890+770  Fig6_plot_main_hydrog.pdf  drainage-basin.png
 
-Flow Direction:
-convert -density 650 -quality 75 -crop 1000x750+1000+1120 Fig6_plot_main_hydrog.pdf  hydrography90m/flow-direction.png
-
+Flow Direction: #Resized to 0.25MP using GUI
+convert -density 1000 -quality 100   -crop 1350x1180+310+1710 Fig6_plot_main_hydrog.pdf  hydrography90m/Fig6/flow-direction.pn
+g
 ------------------------------------------------------------------------------------------
 
 slope-curv-max-dw-cel:

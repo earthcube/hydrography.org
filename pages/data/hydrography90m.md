@@ -290,11 +290,11 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 
 <table style="width:100% background-image= none">
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Flow Accumulation</th>
+		<th colspan="2" style="font-size: 25px;">Flow Accumulation</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="280px" />
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -304,7 +304,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Drainage Basin</th>
+		<th colspan="2" style="font-size: 25px;">Drainage Basin</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -319,11 +319,11 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Flow Direction</th>
+		<th colspan="2" style="font-size: 25px;">Flow Direction</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-direction.png" alt="direction_*.tif" width="280"/>
+			<embed src="/hydrography.org/images/data/hydrography90m/Fig6/flow-direction.png" alt="direction_*.tif" width="280px"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -333,7 +333,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Outlets</th>
+		<th colspan="2" style="font-size: 25px;">Outlets</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -348,7 +348,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Stream Segment</th>
+		<th colspan="2" style="font-size: 25px;">Stream Segment</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -362,7 +362,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Sub-catchment</th>
+		<th colspan="2" style="font-size: 25px;">Sub-catchment</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -377,7 +377,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Depression</th>
+		<th colspan="2" style="font-size: 25px;">Depression</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
