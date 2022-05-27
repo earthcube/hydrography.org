@@ -294,7 +294,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="300" />
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="320" />
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -308,7 +308,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -323,7 +323,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<embed src="/hydrography.org/images/data/hydrography90m/Fig6/flow-direction.png" alt="direction_*.tif" width="300"/>
+			<embed src="/hydrography.org/images/data/hydrography90m/Fig6/flow-direction.png" alt="direction_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -337,7 +337,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlets" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlets" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -352,7 +352,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream Segment" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream Segment" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -366,7 +366,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/sub-catchment.png" alt="Sub-catchment" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/sub-catchment.png" alt="Sub-catchment" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -381,7 +381,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -406,7 +406,7 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-curv-max-dw-cel.png" alt="slope_curv_max_dw_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-curv-max-dw-cel.png" alt="slope_curv_max_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -420,7 +420,7 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-curv-min-dw-cel.png" alt="slope_curv_min_dw_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-curv-min-dw-cel.png" alt="slope_curv_min_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -434,7 +434,7 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-elv-dw-cel.png" alt="slope_elv_dw_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-elv-dw-cel.png" alt="slope_elv_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -448,7 +448,7 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-grad-dw-cel.png" alt="slope_grad_dw_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-grad-dw-cel.png" alt="slope_grad_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -474,7 +474,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="Shortest upstream distance" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="Shortest upstream distance" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -488,7 +488,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-farth.png" alt="Longest upstream distance" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-farth.png" alt="Longest upstream distance" width="330"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -502,7 +502,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-dw-near.png" alt="stream_dist_dw_near_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-dw-near.png" alt="stream_dist_dw_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -516,7 +516,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-basin.png" alt="outlet_dist_dw_basin_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-basin.png" alt="outlet_dist_dw_basin_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -530,7 +530,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-scratch.png" alt="outlet_dist_dw_scatch_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-scratch.png" alt="outlet_dist_dw_scatch_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -544,7 +544,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-proximity.png" alt="stream_dist_proximity_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-proximity.png" alt="stream_dist_proximity_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -558,7 +558,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="stream_diff_up_near_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="stream_diff_up_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -572,7 +572,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-up-farth.png" alt="stream_diff_up_farth_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-up-farth.png" alt="stream_diff_up_farth_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -586,7 +586,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-dw-near.png" alt="stream_diff_dw_near_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-dw-near.png" alt="stream_diff_dw_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -600,7 +600,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-basin.png" alt="outlet_diff_dw_basin_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-basin.png" alt="outlet_diff_dw_basin_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -614,7 +614,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-scratch.png" alt="outlet_diff_dw_scatch_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-scratch.png" alt="outlet_diff_dw_scatch_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -637,7 +637,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-dw-seg.png" alt="channel_grad_dw_seg_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-dw-seg.png" alt="channel_grad_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -651,7 +651,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-seg.png" alt="channel_grad_up_seg_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-seg.png" alt="channel_grad_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -665,7 +665,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-cel.png" alt="channel_grad_up_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-cel.png" alt="channel_grad_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -679,7 +679,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-curv-cel.png" alt="channel_curv_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-curv-cel.png" alt="channel_curv_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -693,7 +693,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-seg.png" alt="channel_elv_dw_seg_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-seg.png" alt="channel_elv_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -707,7 +707,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-seg.png" alt="channel_elv_up_seg_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-seg.png" alt="channel_elv_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -721,7 +721,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-cel.png" alt="channel_elv_up_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-cel.png" alt="channel_elv_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -735,7 +735,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-cel.png" alt="channel_elv_dw_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-cel.png" alt="channel_elv_dw_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -749,7 +749,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-dw-seg.png" alt="channel_dist_dw_seg_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-dw-seg.png" alt="channel_dist_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -763,7 +763,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-seg.png" alt="channel_dist_up_seg_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-seg.png" alt="channel_dist_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -777,7 +777,7 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-cel.png" alt="channel_dist_up_cel_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-cel.png" alt="channel_dist_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -801,7 +801,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-strahler.png" alt="stream_strahler_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-strahler.png" alt="stream_strahler_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -815,7 +815,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-shreve.png" alt="stream_shreve_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-shreve.png" alt="stream_shreve_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -829,7 +829,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-horton.png" alt="stream_horton_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-horton.png" alt="stream_horton_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -843,7 +843,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-hack.png" alt="stream_hack_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-hack.png" alt="stream_hack_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -857,7 +857,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-topo.png" alt="stream_topo_*.tif" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-topo.png" alt="stream_topo_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -871,7 +871,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/vect.png" alt="" width="300"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig14/vect.png" alt="" width="410"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>

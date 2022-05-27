@@ -89,16 +89,16 @@
 # convert -density 595 -quality 75 -crop   985x705+190+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-curv-cel.png 
 
 # # channel-elev-dw-seg:
-# convert -density 595 -quality 75 -crop   985x705+1168+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elev-dw-seg.png  
+# convert -density 595 -quality 75 -crop   985x705+1168+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elv-dw-seg.png  
 
-# # channel-elev-up-seg:
-# convert -density 595 -quality 75 -crop   985x705+2150+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elev-up-seg.png
+# # channel-elv-up-seg:
+# convert -density 595 -quality 75 -crop   985x705+2150+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elv-up-seg.png
 
-# # channel-elev-up-cel:
-# convert -density 595 -quality 75 -crop   985x705+3130+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elev-up-cel.png
+# # channel-elv-up-cel:
+# convert -density 595 -quality 75 -crop   985x705+3130+1020 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elv-up-cel.png
 
-# # channel-elev-dw-cel:
-# convert -density 595 -quality 75 -crop   985x705+190+1820  Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elev-dw-cel.png
+# # channel-elv-dw-cel:
+# convert -density 595 -quality 75 -crop   985x705+190+1820  Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-elv-dw-cel.png
 
 # # channel-dist-dw-seg:
 # convert -density 595 -quality 75 -crop   985x705+1168+1820 Fig13/Fig13_plot_stream_channel.pdf Fig13/channel-dist-dw-seg.png
