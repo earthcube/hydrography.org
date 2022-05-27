@@ -2,7 +2,7 @@
 layout: page-fullwidth
 classes: wide
 title: "hydropgraphy90m layers"
-teaser: "This page supports the download of raster (*.tif) and vector (*.gpkg) layers developed from Amatulli et al. (2022) Hydrography90m: A new high-resolution global hydrographic dataset.  This work is part of the Global Freshwater Biodiversity, Biogeography and Conservation project (https://glowabio.org) funded in part by the Federal Ministry of Education and Research (BMBF grant agreement 555 number 033W034A) and the Leibniz Competition to S.D. (J45/2018)"
+teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download links, or use the script [here](/link/to/code_page). Please see the paper by [Amatulli et al. (2022)](link/to/essd) for further details."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
@@ -299,7 +299,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d" target="_blank"> accumulation_*.tif (raster)</a></li>
-				<li><a href="">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_accumulation_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -314,7 +314,8 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank"> basin_*.tif (raster)</a></li>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.gpkg (vector)</a></li>
-				<li><a href="https://geo.igb-berlin.de/layers/:geonode:hydrography90m_v1_basin_cog" target="blank">Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+
 			</ul>
 		</td>
 	</tr>
@@ -328,7 +329,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdirection_tiles20d" target="_blank"> direction_*.tif (raster)</a></li>
-				<li><a href="https://geo.igb-berlin.de/layers/:geonode:hydrography90m_v1_direction_cog" target="blank">Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_direction_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -343,7 +344,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.tif (raster)</a></li>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank">outlet_*.gpkg (vector)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -357,7 +358,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsegment_tiles20d" target="_blank"> segment_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_segment_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -372,7 +373,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsub_catchment_tiles20d" target="_blank">sub_catchment_*.tif (raster)</a></li>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsub_catchment_tiles20d" target="_blank">sub_catchment_*.gpkg (vector)</a></li>
-				<li><a href="https://geo.igb-berlin.de/layers/:geonode:hydrography90m_v1_sub_catchment_cog" target="blank">Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_sub_catchment_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -381,12 +382,11 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="320"/>
+
 		</td>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> Depression (raster)</a></li>
-				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_order_strahler_cog&view=True" target="blank">Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -410,8 +410,9 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d" target="_blank"> slope_curv_max_dw_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d" target="_blank"> slope_curv_max_dw_cel_*.tif (raster)</a></li>
+			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_slope_curv_max_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+
 			</ul>
 		</td>
 	</tr>
@@ -424,8 +425,8 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d" target="_blank"> slope_curv_min_dw_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d" target="_blank"> slope_curv_min_dw_cel_*.tif (raster)</a></li>
+			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_slope_curv_min_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -438,8 +439,8 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d" target="_blank"> slope_elv_dw_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d" target="_blank"> slope_elv_dw_cel_*.tif (raster)</a></li>
+			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_slope_elv_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -452,8 +453,8 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d" target="_blank"> slope_grad_dw_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d" target="_blank"> slope_grad_dw_cel_*.tif (raster)</a></li>
+			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_slope_grad_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -477,10 +478,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="Shortest upstream distance" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d" target="_blank"> stream_dist_up_near_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d" target="_blank"> stream_dist_up_near_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_up_near_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -491,10 +492,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-farth.png" alt="Longest upstream distance" width="330"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_dw_near_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -505,10 +506,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-dw-near.png" alt="stream_dist_dw_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
+        	<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_up_farth_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -519,10 +520,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-basin.png" alt="outlet_dist_dw_basin_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d" target="_blank"> outlet_dist_dw_basin_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d" target="_blank"> outlet_dist_dw_basin_*.tif (raster)</a></li>
+                <li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_dw_basin_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -533,10 +534,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-scratch.png" alt="outlet_dist_dw_scatch_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d" target="_blank"> outlet_dist_dw_scatch_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d" target="_blank"> outlet_dist_dw_scatch_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_dw_scatch_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -561,10 +562,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="stream_diff_up_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d" target="_blank"> stream_diff_up_near_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d" target="_blank"> stream_diff_up_near_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_dw_scatch_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -575,10 +576,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-up-farth.png" alt="stream_diff_up_farth_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d" target="_blank"> stream_diff_up_farth_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d" target="_blank"> stream_diff_up_farth_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_diff_up_farth_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -589,10 +590,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-dw-near.png" alt="stream_diff_dw_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d" target="_blank"> stream_diff_dw_near_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d" target="_blank"> stream_diff_dw_near_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_diff_dw_near_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -603,10 +604,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-basin.png" alt="outlet_diff_dw_basin_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d" target="_blank"> outlet_diff_dw_basin_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d" target="_blank"> outlet_diff_dw_basin_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_diff_dw_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -617,10 +618,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-scratch.png" alt="outlet_diff_dw_scatch_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d" target="_blank"> outlet_diff_dw_scatch_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d" target="_blank"> outlet_diff_dw_scatch_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_diff_dw_scatch_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 </table>
@@ -640,10 +641,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-dw-seg.png" alt="channel_grad_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d" target="_blank"> channel_grad_dw_seg_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d" target="_blank"> channel_grad_dw_seg_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_grad_dw_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -654,10 +655,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-seg.png" alt="channel_grad_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d" target="_blank"> channel_grad_up_seg_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d" target="_blank"> channel_grad_up_seg_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_grad_up_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -668,10 +669,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-cel.png" alt="channel_grad_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d" target="_blank">channel_grad_up_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d" target="_blank">channel_grad_up_cel_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_grad_up_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -682,10 +683,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-curv-cel.png" alt="channel_curv_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d" target="_blank">channel_curv_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d" target="_blank">channel_curv_cel_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_curv_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -696,10 +697,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-seg.png" alt="channel_elv_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d" target="_blank">channel_elv_dw_seg_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d" target="_blank">channel_elv_dw_seg_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_elv_dw_seg_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -710,10 +711,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-seg.png" alt="channel_elv_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d" target="_blank">channel_elv_up_seg_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d" target="_blank">channel_elv_up_seg_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_elv_up_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -724,10 +725,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-cel.png" alt="channel_elv_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d" target="_blank">channel_elv_up_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d" target="_blank">channel_elv_up_cel_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_elv_up_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -738,10 +739,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-cel.png" alt="channel_elv_dw_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d" target="_blank">channel_elv_dw_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d" target="_blank">channel_elv_dw_cel_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_elv_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -752,10 +753,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-dw-seg.png" alt="channel_dist_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d" target="_blank">channel_dist_dw_seg_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d" target="_blank">channel_dist_dw_seg_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_dist_dw_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -766,10 +767,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-seg.png" alt="channel_dist_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d" target="_blank">channel_dist_up_seg_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d" target="_blank">channel_dist_up_seg_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_dist_up_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -780,10 +781,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-cel.png" alt="channel_dist_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d" target="_blank">channel_dist_up_cel_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d" target="_blank">channel_dist_up_cel_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_dist_up_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 </table>
