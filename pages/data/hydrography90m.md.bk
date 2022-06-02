@@ -1,19 +1,12 @@
 ---
 layout: page-fullwidth
 classes: wide
-title: "Hydropgraphy90m layers"
-teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details."
+title: "hydropgraphy90m layers"
+teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download links, or use the script [here](/link/to/code_page). Please see the paper by [Amatulli et al. (2022)](link/to/essd) for further details."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
 ---
----
-Below is an overview of all the current layers of the Hydrography90m dataset. Scroll the mouse on the tiled map to get the tile ID or use the script [here](/link/to/code_page) to dowloand the full data archive.
-  
-For each computed layer is reported:
-* a figure sample
-* the layer file name with an asterisk which stands for the tile ID. The layer file name is an hyperlink that bring to the sub-directory [download page](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4)
-* the visualization [webgis link](https://geo.igb-berlin.de/maps/351/view)
 
 <style>
 	table, th, td {border: 0px solid black; background-color: white;}
@@ -156,7 +149,7 @@ code {
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ----------------------------------------------------------------------------------------------
-# Tiled map
+# Grid map
 
 <div class="mapTileDownloadContainer">
 	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../../images/data/basins_noTiles.png" /></div>
@@ -284,55 +277,20 @@ code {
 	<div class="tile" style="left:614px;top:236px;width:33px;height:42px" title="h34v12" onclick="set_paths(34,02)"></div>
 </div>
 
+
 <div id="tilepaths"></div> 
 ----------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------
-
-# Input layers
-Input layers to derive the Hydrography90m: MERIT HYDRO DEM, depression.
-The [MERIT HYDRO DEM](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR024873) can be directly download from the official [MERIT HYDRO webpage](http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/)
-The depression layer is stored at [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
-
-<table style="width:100% background-image= none">
-	<tr>
-		<th colspan="2" style="font-size: 25px;">Elevation</th>
-	</tr>
-	<tr>
-		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/elevation.png" alt="elv_*.tif" width="320" />
-		</td>
-		<td><br><br><br><br>
-			<ul>
-				<li><a href="http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/" target="_blank"> elv_*.tif (raster)</a></li>
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<th colspan="2" style="font-size: 25px;">Depression</th>
-	</tr>
-	<tr>
-		<td rowspan="1">
-
-		</td>
-		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
-			</ul>
-		</td>
-	</tr>
-
-</table>
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------------------
 [//]: <> (Directory for: r.watershed)
-# Base layers
-Base layers of Hydrography90m: flow accumulation, flow direction. These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
+# r.watershed
+<p>Base and network layers of Hydrography90m: flow accumulation, flow direction, drainage basins, outlets, stream segments, subcatchments,
+regional units and depression; Map reference corresponding to Figure 6 for raster visualisation and Figure 5 for vector visualisation;
+Unit; Commands for computation and output file names. The asterisk stands for the regular tile ID for downloading the data, available
+in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4</p>
 
 <table style="width:100% background-image= none">
 	<tr>
-		<th colspan="2" style="font-size: 25px;">Flow accumulation</th>
+		<th colspan="2" style="font-size: 25px;">Flow Accumulation</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -345,9 +303,24 @@ Base layers of Hydrography90m: flow accumulation, flow direction. These files ar
 			</ul>
 		</td>
 	</tr>
-	
 	<tr>
-		<th colspan="2" style="font-size: 25px;">Flow direction</th>
+		<th colspan="2" style="font-size: 25px;">Drainage Basin</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="320"/>
+		</td>
+		<td><br><br><br><br>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank"> basin_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.gpkg (vector)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 25px;">Flow Direction</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -360,39 +333,27 @@ Base layers of Hydrography90m: flow accumulation, flow direction. These files ar
 			</ul>
 		</td>
 	</tr>
-
-</table>
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-[//]: <> (Directory for: r.watershed)
-# Network layers
-Network layers of Hydrography90m: drainage basins, stream segments, subcatchments, outlets.
-These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
-
-<table style="width:100% background-image= none">
 	<tr>
-		<th colspan="2" style="font-size: 25px;">Drainage basin</th>
+		<th colspan="2" style="font-size: 25px;">Outlets</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage basin" width="320"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlets" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.tif (raster)</a></li>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.gpkg (vector)</a></li>
-				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank">outlet_*.gpkg (vector)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-
-        <tr>
-		<th colspan="2" style="font-size: 25px;">Stream segment</th>
+	<tr>
+		<th colspan="2" style="font-size: 25px;">Stream Segment</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream segment" width="320"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream Segment" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -401,7 +362,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 			</ul>
 		</td>
 	</tr>
-      	<tr>
+	<tr>
 		<th colspan="2" style="font-size: 25px;">Sub-catchment</th>
 	</tr>
 	<tr>
@@ -416,26 +377,22 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 			</ul>
 		</td>
 	</tr>
-
-        <tr>
-		<th colspan="2" style="font-size: 25px;">Outlet</th>
+	<tr>
+		<th colspan="2" style="font-size: 25px;">Depression</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlet" width="320"/>
+
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.tif (raster)</a></li>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.gpkg (vector)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> Depression (raster)</a></li>
 			</ul>
 		</td>
 	</tr>
-
 </table>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 [//]: <> (Directory for: r.stream.slope)
 # r.stream.slope
