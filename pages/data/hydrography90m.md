@@ -121,7 +121,7 @@ code {
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif">
 				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif</a><br>
 		</p></div>`;
-		$("#dynamic_links").html(new_html);
+		$("#dynamic_links").html($new_html);
 		};
 	
 	$(function() {
@@ -282,8 +282,8 @@ code {
 
 
 <div id="tilepaths"></div> 
-<div id="dynamic_links">
-</div>
+<div id="dynamic_links"></div>
+
 ----------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 [//]: <> (Directory for: r.watershed)
