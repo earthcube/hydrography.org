@@ -25,7 +25,7 @@ author: Giuseppe Amatulli
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https:/hydrography.org'
+url: 'https://hydrography.org'
 baseurl: 'https://selvaje74.gitlab.io'
 
 # This is for the editing function in _/includes/improve_content
