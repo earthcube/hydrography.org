@@ -25,7 +25,8 @@ author: Giuseppe Amatulli
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-baseurl: 'https://hydrography.org'
+# url: '/hydrography.org'
+url: '/'
 # baseurl: 'https://selvaje74.gitlab.io'
 
 # This is for the editing function in _/includes/improve_content
@@ -38,7 +39,9 @@ improve_content: https://gitlab.com/selvaje74/hydrography/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://selvaje74.gitlab.io/hydrography.org/images/'
+urlimg: '/images/'
+
+# urlimg: 'https://selvaje74.gitlab.io/hydrography.org/images/'
 
 
 # Logo size is 600x80 pixels
