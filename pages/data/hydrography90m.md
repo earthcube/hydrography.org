@@ -1,11 +1,21 @@
 ---
 layout: page-fullwidth
 classes: wide
-title: "hydropgraphy90m layers"
-teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download links, or use the script [here](/link/to/code_page). Please see the paper by [Amatulli et al. (2022)](link/to/essd) for further details."
+title: "Hydropgraphy90m layers"
+teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
+---
+---
+
+Below is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download link or use the script [here](/link/to/code_page) to dowloand the full data archive.
+
+For each computed layer is reported:
+* a figure sample
+* the layer file name with an asterisk which stands for the tile ID. The layer file name is an hyperlink that bring to the sub-directory [download page](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4)
+* the visualization [webgis link](https://geo.igb-berlin.de/maps/351/view)
+
 ---
 
 <style>
