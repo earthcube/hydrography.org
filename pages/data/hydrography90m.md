@@ -1,19 +1,12 @@
 ---
 layout: page-fullwidth
 classes: wide
-title: "Hydropgraphy90m layers"
-teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details."
+title: "hydropgraphy90m layers"
+teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download links, or use the script [here](/link/to/code_page). Please see the paper by [Amatulli et al. (2022)](link/to/essd) for further details."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
 ---
----
-Below is an overview of all the current layers of the Hydrography90m dataset. Scroll the mouse on the tiled map to get the tile ID or use the script [here](/link/to/code_page) to dowloand the full data archive.
-  
-For each computed layer is reported:
-* a figure sample
-* the layer file name with an asterisk which stands for the tile ID. The layer file name is an hyperlink that bring to the sub-directory [download page](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4)
-* the visualization [webgis link](https://geo.igb-berlin.de/maps/351/view)
 
 <style>
 	table, th, td {border: 0px solid black; background-color: white;}
@@ -101,34 +94,37 @@ code {
 	var SLOPE_FILE = ['slope_curv_max_dw_cel', 'slope_curve_min_dw_cel', 'slope_elv_dw_cel', 'slope_grad_dw_cel'];
 	var WTRSHD_FILE = ['accumulation', 'basin', 'depression', 'direction', 'outlet', 'regional', 'segment', 'sub_catchment'];
 	var SUB_FILE = [CHANNEL_FILE, DIST_FILE, ORDER_FILE, SLOPE_FILE, WTRSHD_FILE]
-
+</script>
+<script>	
 	function set_paths(h,v) {
+		h = String("00" + h).slice(-2);
+		v = String("00" + v).slice(-2);
+		new_html = 
+		`<div><p>
+			<h2>r.watershed</h2><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation__h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation__h${h}v${v}.tif</a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif</a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif</a><br>
+			<br>
+			<h2>r.stream.slope</h2><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h${h}v${v}.tif</a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h${h}v${v}.tif</a><br>
+			<br>
+			<h2>r.stream.order</h2><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h${h}v${v}.tif</a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif</a><br>
+		</p></div>`;
+		$("#dynamic_links").html(new_html);
+		};
 
-		var HZ_TILE_CODE = h
-		var VT_TILE_CODE = v
 
-		<p><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2F"/>Flow Accumulation</a></p>
-		
-		var lines = ['<p>', '<div class="tileDownloadBoundsTitle"> RTS Label: "'h'+ h + 'v' + v ":</div>'];
-		
-		r.watershed/basin_tiles20d/basin.tif
-		
-		
-
-
-		for (var i = 0 ; i < FILES.length; ++i) {
-			for (var j = 0 ; j < SUB_FILES.length; ++j) {
-					for (var k = 0 ; k < SUB_FILE[j].length[j]; ++k){
-						var url = [BASE_URL, FILES[i], '%2F', SUB_FILE[j], '_tiles20d','&files=', SUB_FILE[i],'_h', lat, 'v', long,.tif.join('');
-						var dataset_name = FILES[i].split("/")[0];
-					
-						lines.push('<div class="url"><b>' + dataset_name.charAt(0).toUpperCase() + dataset_name.slice(1) + ": " + '</b><a href="' + url + '">' + url + '</a></div>');
-					}
-			}
-		}
-	lines.push('</p>');
-	document.getElementById("tilepaths").innerHTML = lines.join('');
-	};
 	$(function() {
 		$(".tile").on("click", function() {
 			$(".tile").removeClass("selected");
@@ -156,10 +152,11 @@ code {
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
 ----------------------------------------------------------------------------------------------
-# Tiled map
+# Grid map
 
 <div class="mapTileDownloadContainer">
 	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../../images/data/basins_noTiles.png" /></div>
+	<!-- Row 0 -->
 	<div class="tile" style="left:36px;top:32px" title="h00v00" onclick="set_paths(00,00)"></div>
 	<div class="tile" style="left:70px;top:32px;width:35px" title="h02v00" onclick="set_paths(02,00)"></div>
 	<div class="tile" style="left:104px;top:32px" title="h04v00" onclick="set_paths(04,00)"></div>
@@ -178,7 +175,7 @@ code {
 	<div class="tile" style="left:546px;top:32px" title="h30v00" onclick="set_paths(30,00)"></div>
 	<div class="tile" style="left:580px;top:32px" title="h32v00" onclick="set_paths(32,00)"></div>
 	<div class="tile" style="left:614px;top:32px;width:49px" title="h34v00" onclick="set_paths(34,00)"></div>
-
+	<!-- Row 1 -->
 	<div class="tile" style="left:36px;top:66px" title="h00v02" onclick="set_paths(00,02)"></div>
 	<div class="tile" style="left:70px;top:66px;width:35px" title="h02v02" onclick="set_paths(02,02)"></div>
 	<div class="tile" style="left:104px;top:66px" title="h04v02" onclick="set_paths(04,02)"></div>
@@ -197,7 +194,7 @@ code {
 	<div class="tile" style="left:546px;top:66px" title="h30v02" onclick="set_paths(30,02)"></div>
 	<div class="tile" style="left:580px;top:66px" title="h32v02" onclick="set_paths(32,02)"></div>
 	<div class="tile" style="left:614px;top:66px;width:49px" title="h34v02" onclick="set_paths(34,02)"></div>
-
+	<!-- Row 2 -->
 	<div class="tile" style="left:36px;top:100px" title="h00v04" onclick="set_paths(00,04)"></div>
 	<div class="tile" style="left:104px;top:100px" title="h04v04" onclick="set_paths(04,04)"></div>
 	<div class="tile" style="left:138px;top:100px" title="h06v04" onclick="set_paths(06,04)"></div>
@@ -214,7 +211,7 @@ code {
 	<div class="tile" style="left:512px;top:100px" title="h28v04" onclick="set_paths(28,04)"></div>
 	<div class="tile" style="left:546px;top:100px" title="h30v04E" onclick="set_paths(30,04)"></div>
 	<div class="tile" style="left:580px;top:100px" title="h32v04" onclick="set_paths(32,04)"></div>
-	
+	<!-- Row 3 -->
 	<div class="tile" style="left:36px;top:134px" title="h00v06" onclick="set_paths(00,06)"></div>
 	<div class="tile" style="left:70px;top:134px;width:35px" title="h02v06" onclick="set_paths(02,06)"></div>
 	<div class="tile" style="left:138px;top:134px" title="h06v06" onclick="set_paths(06,06)"></div>
@@ -232,7 +229,7 @@ code {
 	<div class="tile" style="left:546px;top:134px" title="h30v06" onclick="set_paths(30,06)"></div>
 	<div class="tile" style="left:580px;top:134px" title="h32v06" onclick="set_paths(32,06)"></div>
 	<div class="tile" style="left:614px;top:134px;width:33px" title="h34v06" onclick="set_paths(34,06)"></div>
-
+	<!-- Row 4 -->
 	<div class="tile" style="left:36px;top:168px" title="h00v08" onclick="set_paths(00,08)"></div>
 	<div class="tile" style="left:70px;top:168px;width:35px" title="h02v08" onclick="set_paths(02,08)"></div>
 	<div class="tile" style="left:104px;top:168px" title="h04v08" onclick="set_paths(04,08)"></div>
@@ -250,7 +247,7 @@ code {
 	<div class="tile" style="left:546px;top:168px" title="h30v08" onclick="set_paths(30,08)"></div>
 	<div class="tile" style="left:580px;top:168px" title="h32v08" onclick="set_paths(32,08)"></div>
 	<div class="tile" style="left:614px;top:168px;width:33px" title="h34v08" onclick="set_paths(34,08)"></div>
-
+	<!-- Row 5 -->
 	<div class="tile" style="left:36px;top:202px" title="h00v10" onclick="set_paths(00,10)"></div>
 	<div class="tile" style="left:70px;top:202px;width:35px" title="h02v10" onclick="set_paths(02,10)"></div>
 	<div class="tile" style="left:104px;top:202px" title="h04v10" onclick="set_paths(04,10)"></div>
@@ -268,7 +265,7 @@ code {
 	<div class="tile" style="left:546px;top:202px" title="h30v10" onclick="set_paths(30,10)"></div>
 	<div class="tile" style="left:580px;top:202px" title="h32v10" onclick="set_paths(32,10)"></div>
 	<div class="tile" style="left:614px;top:202px;width:33px" title="h34v10" onclick="set_paths(34,10)"></div>
-
+	<!-- Row 6 -->
 	<div class="tile" style="left:36px;top:236px;height:42px" title="h00v12" onclick="set_paths(00,12)"></div>
 	<div class="tile" style="left:206px;top:236px;height:42px" title="h10v12" onclick="set_paths(10,12)"></div>
 	<div class="tile" style="left:240px;top:236px;height:42px" title="h12v12" onclick="set_paths(12,12)"></div>	
@@ -284,7 +281,11 @@ code {
 	<div class="tile" style="left:614px;top:236px;width:33px;height:42px" title="h34v12" onclick="set_paths(34,02)"></div>
 </div>
 
+
 <div id="tilepaths"></div> 
+<div id="dynamic_links">
+</div>
+
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
 
@@ -313,11 +314,11 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 	</tr>
 	<tr>
 		<td rowspan="1">
-
+                            <th>Depression areas not present in the study area.</th>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
+			      <li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -328,7 +329,8 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 
 [//]: <> (Directory for: r.watershed)
 # Base layers
-Base layers of Hydrography90m: flow accumulation, flow direction. These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
+Base layers of Hydrography90m: flow accumulation, flow direction maps computed with the *r.watershed* GRASS GIS module. 
+These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
 
 <table style="width:100% background-image= none">
 	<tr>
@@ -367,7 +369,7 @@ Base layers of Hydrography90m: flow accumulation, flow direction. These files ar
 
 [//]: <> (Directory for: r.watershed)
 # Network layers
-Network layers of Hydrography90m: drainage basins, stream segments, subcatchments, outlets.
+Network layers of Hydrography90m: drainage basins, stream segments, subcatchments, outlets maps computed with the *r.stream.extract* GRASS GIS module. 
 These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
 
 <table style="width:100% background-image= none">
@@ -438,10 +440,10 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 
 
 [//]: <> (Directory for: r.stream.slope)
-# r.stream.slope
+# Stream slope layers
 
-<p>Curvature, gradient (elevation difference divided by distance), and elevation difference raster maps computed with the r.stream.slope
-GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS command; and output layer name.</p>
+Stream slope of Hydrography90m: curvature, gradient (elevation difference divided by distance), and elevation difference raster maps computed with the *r.stream.slope* GRASS GIS module. 
+These files are stored in the [r.stream.slope](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope) archive folder.
 
 <table style="width:100%">
 	<tr>
@@ -507,10 +509,10 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 
 [//]: <> (Directory for r.stream.distance)
 
-# r.stream.distance
+# Stream distance layers
+Stream/outlet distance of Hydrography90m: stream/outlet distance and elevation difference raster maps computed with the *r.stream.distance* GRASS GIS module. 
+These files are stored in the [r.stream.distance](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance) archive folder.
 
-<p>    Stream/outlet distance and elevation difference raster maps computed with the r.stream.distance GRASS GIS module; map reference
-corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 
 <table style="width:100%">
 	<tr>
@@ -591,10 +593,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-proximity.png" alt="stream_dist_proximity_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d" target="_blank"> stream_dist_proximity_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d" target="_blank"> stream_dist_proximity_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_proximity_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -671,9 +673,12 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 
 ------------------------------------------------------------------
 
-[//]: <> (Directory for: r.stream.slope)
+[//]: <> (Directory for: r.stream.channel)
 
-# r.stream.channel
+# Stream segment properties layers
+Stream segment properties of Hydrography90m: curvature, gradient (elevation difference divided by distance), and elevation change
+raster maps computed with the *r.stream.channel* GRASS GIS module. 
+These files are stored in the [r.stream.channel](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel) archive folder.
 
 <table style="width:100%">
 	<tr>
@@ -836,9 +841,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 
 [//]: <> (Directory for: r.stream.order)
 
-# r.stream.order
-<p>Stream order raster and vector files computed with the r.stream.order GRASS GIS module, the map reference corresponding to
-Figure 14, the specific GRASS GIS command and the layer output name.</p>
+# Stream order layers
+Stream order of Hydrography90m: stream order raster and vector files computed with the *r.stream.order* GRASS GIS module.
+These files are stored in the [r.stream.order](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order) archive folder.
+
 <table style="width:100%">
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Strahler’s stream order</th>
@@ -850,7 +856,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d" target="_blank">order_strahler_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_strahler_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -864,7 +870,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d" target="_blank">order_shreve_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_shreve_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -878,7 +884,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d" target="_blank">order_horton_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_horton_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -892,7 +898,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d" target="_blank">order_hack_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_hack_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -906,7 +912,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d" target="_blank">order_topo_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_topo_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -919,7 +925,8 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_*.gpkg (vector)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_point_*.gpkg (vector)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_segment_*.gpkg (vector)</a></li>
 			</ul>
 		</td>
 	</tr>
