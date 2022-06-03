@@ -26,7 +26,10 @@ author: phlow
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
 # url: 'https://selvaje74.gitlab.io'
-baseurl: '/hydrography.org'
+# baseurl: '/hydrography.org'
+
+baseurl: 'https://selvaje74.gitlab.io'
+url: 'https://hydrography.org'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
