@@ -1,15 +1,25 @@
 ---
 layout: page-fullwidth
 classes: wide
-title: "hydropgraphy90m layers"
-teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download links, or use the script [here](/link/to/code_page). Please see the paper by [Amatulli et al. (2022)](link/to/essd) for further details."
+title: "Hydropgraphy90m layers"
+teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details."
 permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
 ---
+---
+
+Below is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download link or use the script [here](/link/to/code_page) to dowloand the full data archive.
+
+For each computed layer is reported:
+* a figure sample
+* the layer file name with an asterisk which stands for the tile ID. The layer file name is an hyperlink that bring to the sub-directory [download page](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4)
+* the visualization [webgis link](https://geo.igb-berlin.de/maps/351/view)
+
+---
 
 <style>
-	table, th, td {border: 0px solid black; background-color: white;}
+	table, th, td {border: 1px solid black; background-color: white;}
 
 	.tileDownloadBoundsTitle {
 		padding-bottom: 5px;
@@ -72,29 +82,10 @@ code {
   font-weight: bold;
 }
 
-		#	if (FILES[i]= 'r.stream.channel') {
-			#		SUB_FILE = CHANNEL_FILE
-			#	} else if (FILES = 'r.stream.distance') {
-			#		SUB_FILE = DIST_FILE
-			#	} else if (FILES = 'r.stream.order') {
-			#		SUB_FILE = ORDER_FILE
-			#	} else if (FILES = 'r.stream.slope') {
-			#		SUB_FILE = SLOPE_FILE
-			#	} else {SUB_FILE = WTRSHD_FILE}
-
 </style>
 
 <script src="../../pages/data/jquery-3.6.0.js" type="text/javascript"></script>
-<script>
-	var BASE_URL = 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4';
-	var FILES = ['r.stream.channel', 'r.stream.distance', 'r.stream.order', 'r.stream.slope', 'r.watershed'];
-	var CHANNEL_FILE = ['channel_curv_cel', 'channel_dist_dw_seg', 'channel_dist_up_cel', 'channel_dist_up_seg', 'channel_elv_dw_cel', 'channel_elv_dw_seg', 'channel_elv_up_cel', 'channel_elv_up_seg', 'channel_grad_dw_seg', 'channel_grad_up_cel', 'channel_grad_up_seg'];
-	var DIST_FILE = ['outlet_diff_dw_basin', 'outlet_diff_dw_scratch', 'outlet_dist_dw_basin', 'outlet_dist_dw_scratch', 'stream_diff_dw_near', 'stream_diff_up_farth', 'stream_diff_up_near', 'stream_dist_dw_near', 'stream_dist_proximity', 'stream_dist_up_farth', 'stream_dist_up_near'];
-	var ORDER_FILE = ['order_hack', 'order_horton', 'order_shreve', 'order_strahler', 'order_topo', 'order_vect'];
-	var SLOPE_FILE = ['slope_curv_max_dw_cel', 'slope_curve_min_dw_cel', 'slope_elv_dw_cel', 'slope_grad_dw_cel'];
-	var WTRSHD_FILE = ['accumulation', 'basin', 'depression', 'direction', 'outlet', 'regional', 'segment', 'sub_catchment'];
-	var SUB_FILE = [CHANNEL_FILE, DIST_FILE, ORDER_FILE, SLOPE_FILE, WTRSHD_FILE]
-</script>
+
 <script>	
 	function set_paths(h,v) {
 		h = String("00" + h).slice(-2);
@@ -286,21 +277,58 @@ code {
 <div id="dynamic_links">
 </div>
 ----------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-[//]: <> (Directory for: r.watershed)
-# r.watershed
-<p>Base and network layers of Hydrography90m: flow accumulation, flow direction, drainage basins, outlets, stream segments, subcatchments,
-regional units and depression; Map reference corresponding to Figure 6 for raster visualisation and Figure 5 for vector visualisation;
-Unit; Commands for computation and output file names. The asterisk stands for the regular tile ID for downloading the data, available
-in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4</p>
+
+# Input layers
+Input layers to derive the Hydrography90m: MERIT HYDRO DEM, depression.
+The [MERIT HYDRO DEM](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR024873) can be directly download from the official [MERIT HYDRO webpage](http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/)
+The depression layer is stored at [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
 
 <table style="width:100% background-image= none">
 	<tr>
-		<th colspan="2" style="font-size: 25px;">Flow Accumulation</th>
+		<th colspan="2" style="font-size: 25px;">Elevation</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/elevation.png" alt="elv_*.tif" width="320" />
+		</td>
+		<td><br><br><br><br>
+			<ul>
+				<li><a href="http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/" target="_blank"> elv_*.tif (raster)</a></li>
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<th colspan="2" style="font-size: 25px;">Depression</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+                            <th>Depression areas not present in the study area.</th>
+		</td>
+		<td><br><br><br><br>
+			<ul>
+			      <li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
+			</ul>
+		</td>
+	</tr>
+
+</table>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[//]: <> (Directory for: r.watershed)
+# Base layers
+Base layers of Hydrography90m: flow accumulation, flow direction maps computed with the *r.watershed* GRASS GIS module. 
+These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
+
+<table style="width:100% background-image= none">
+	<tr>
+		<th colspan="2" style="font-size: 25px;">Flow accumulation</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
 			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="320" />
+				
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -310,23 +338,10 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 25px;">Drainage Basin</th>
+		<td colspan="2"><li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation__h20v06.tif/a></li></td>
 	</tr>
 	<tr>
-		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage Basin" width="320"/>
-		</td>
-		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank"> basin_*.tif (raster)</a></li>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.gpkg (vector)</a></li>
-				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
-
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<th colspan="2" style="font-size: 25px;">Flow Direction</th>
+		<th colspan="2" style="font-size: 25px;">Flow direction</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -339,27 +354,39 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 			</ul>
 		</td>
 	</tr>
+
+</table>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[//]: <> (Directory for: r.watershed)
+# Network layers
+Network layers of Hydrography90m: drainage basins, stream segments, subcatchments, outlets maps computed with the *r.stream.extract* GRASS GIS module. 
+These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
+
+<table style="width:100% background-image= none">
 	<tr>
-		<th colspan="2" style="font-size: 25px;">Outlets</th>
+		<th colspan="2" style="font-size: 25px;">Drainage basin</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlets" width="320"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage basin" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.tif (raster)</a></li>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank">outlet_*.gpkg (vector)</a></li>
-				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d" target="_blank">basin_*.gpkg (vector)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
-	<tr>
-		<th colspan="2" style="font-size: 25px;">Stream Segment</th>
+
+        <tr>
+		<th colspan="2" style="font-size: 25px;">Stream segment</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream Segment" width="320"/>
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream segment" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -368,7 +395,7 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 			</ul>
 		</td>
 	</tr>
-	<tr>
+      	<tr>
 		<th colspan="2" style="font-size: 25px;">Sub-catchment</th>
 	</tr>
 	<tr>
@@ -383,28 +410,32 @@ in 20<sup>o</sup>x 20<sup>o</sup> tiles at https://public.igb-berlin.de/index.ph
 			</ul>
 		</td>
 	</tr>
-	<tr>
-		<th colspan="2" style="font-size: 25px;">Depression</th>
+
+        <tr>
+		<th colspan="2" style="font-size: 25px;">Outlet</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
-
+			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlet" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> Depression (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.gpkg (vector)</a></li>
 			</ul>
 		</td>
 	</tr>
+
 </table>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[//]: <> (Directory for: r.stream.slope)
-# r.stream.slope
 
-<p>Curvature, gradient (elevation difference divided by distance), and elevation difference raster maps computed with the r.stream.slope
-GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS command; and output layer name.</p>
+[//]: <> (Directory for: r.stream.slope)
+# Stream slope layers
+
+Stream slope of Hydrography90m: curvature, gradient (elevation difference divided by distance), and elevation difference raster maps computed with the *r.stream.slope* GRASS GIS module. 
+These files are stored in the [r.stream.slope](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope) archive folder.
 
 <table style="width:100%">
 	<tr>
@@ -470,10 +501,10 @@ GRASS GIS module; map reference corresponding to Figure 11; specific GRASS GIS c
 
 [//]: <> (Directory for r.stream.distance)
 
-# r.stream.distance
+# Stream distance layers
+Stream/outlet distance of Hydrography90m: stream/outlet distance and elevation difference raster maps computed with the *r.stream.distance* GRASS GIS module. 
+These files are stored in the [r.stream.distance](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance) archive folder.
 
-<p>    Stream/outlet distance and elevation difference raster maps computed with the r.stream.distance GRASS GIS module; map reference
-corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 
 <table style="width:100%">
 	<tr>
@@ -554,10 +585,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-proximity.png" alt="stream_dist_proximity_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
-			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d" target="_blank"> stream_dist_proximity_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
-			</ul>
+		<ul>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d" target="_blank"> stream_dist_proximity_*.tif (raster)</a></li>
+		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_proximity_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+		</ul>
 		</td>
 	</tr>
 	<tr>
@@ -634,9 +665,12 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 
 ------------------------------------------------------------------
 
-[//]: <> (Directory for: r.stream.slope)
+[//]: <> (Directory for: r.stream.channel)
 
-# r.stream.channel
+# Stream segment properties layers
+Stream segment properties of Hydrography90m: curvature, gradient (elevation difference divided by distance), and elevation change
+raster maps computed with the *r.stream.channel* GRASS GIS module. 
+These files are stored in the [r.stream.channel](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel) archive folder.
 
 <table style="width:100%">
 	<tr>
@@ -799,9 +833,10 @@ corresponding to Figure 12; unit; GRASS GIS command; and output layer name.</p>
 
 [//]: <> (Directory for: r.stream.order)
 
-# r.stream.order
-<p>Stream order raster and vector files computed with the r.stream.order GRASS GIS module, the map reference corresponding to
-Figure 14, the specific GRASS GIS command and the layer output name.</p>
+# Stream order layers
+Stream order of Hydrography90m: stream order raster and vector files computed with the *r.stream.order* GRASS GIS module.
+These files are stored in the [r.stream.order](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order) archive folder.
+
 <table style="width:100%">
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Strahler’s stream order</th>
@@ -813,7 +848,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d" target="_blank">order_strahler_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_strahler_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -827,7 +862,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d" target="_blank">order_shreve_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_shreve_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -841,7 +876,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d" target="_blank">order_horton_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_horton_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -855,7 +890,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d" target="_blank">order_hack_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_hack_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -869,7 +904,7 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		<td><br><br><br><br>
 			<ul>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d" target="_blank">order_topo_*.tif (raster)</a></li>
-				<li><a href="" target="blank">**NEED** Raster layer visualization</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_topo_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
@@ -882,21 +917,10 @@ Figure 14, the specific GRASS GIS command and the layer output name.</p>
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_*.gpkg (vector)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_point_*.gpkg (vector)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_segment_*.gpkg (vector)</a></li>
 			</ul>
 		</td>
 	</tr>
 </table>
 
-## Focal cell gradient
-bla bla for r.watershed 
-
-### Straller
-
-Download link
-
-### Henke
-
-Download link
-
-</div>

@@ -9,6 +9,10 @@
 
 # r.watershed images: Fig6
 
+# # DEM:  
+## convert -density 600 -quality 75   -crop 975x710+1180+225  Fig6/Fig6_plot_main_hydrog.pdf  Fig6/elevation.png
+exit 
+
 # # Flow accumulation:  
 # convert -density 600 -quality 75   -crop 970x710+3160+225  Fig6/Fig6_plot_main_hydrog.pdf  Fig6/flow-accumulation.png
 
@@ -23,7 +27,6 @@
 
 # # Sub-catchment:
 # convert -density 600 -quality 75  -crop 970x705+3160+1030  Fig6/Fig6_plot_main_hydrog.pdf    Fig6/sub-catchment.png
-
 
 # #########################################
 
