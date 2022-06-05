@@ -94,15 +94,82 @@ code {
 		
 		flow_accumulation_link = 
 		`<div>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif">accumulation_h${h}v${v}.tif</a><br>
-			</div>`;
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif</a><br>
+		</div>`;
 		$("#dynamic_accumulation").html(flow_accumulation_link);
 		
+		
 		flow_direction_link =
-		`<div><p>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif">direction_h${h}v${v}.tif</a><br>
-			</p></div>`;
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif</a><br>
+		</div>`;
 		$("#dynamic_direction").html(flow_direction_link);
+
+
+		drainage_basin_link =
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_basin").html(drainage_basin_link)
+
+
+
+		drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
+
+				drainage_basin_link =
+		`<div>
+			<a href=""></a><br>
+		</div>`;
+		$("#dynamic").html(drainage_basin_link)
 
 
 
@@ -135,7 +202,7 @@ code {
 
 <div class="medium-8 medium-pull-4 columns" markdown="1">
 
-----------------------------------------------------------------------------------------------
+
 # Grid map
 
 <div class="mapTileDownloadContainer">
@@ -288,15 +355,12 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 			</ul>
 		</td>
 	</tr>
-	
 	<tr>
 		<th colspan="2" style="font-size: 25px;">Depression</th>
 	</tr>
 	<tr>
-		<td rowspan="1">
-                            <th>Depression areas not present in the study area.</th>
-		</td>
-		<td><br><br><br><br>
+		<th>Depression areas not present in the study area.</th>
+		<td><br><br>
 			<ul>
 			      <li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
 			</ul>
@@ -324,14 +388,13 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><div id="dynamic_accumulation"></div></li>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d" target="_blank"> accumulation_*.tif (raster)</a></li>
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_accumulation_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2"></td>
+		<td colspan="2"><div id="dynamic_accumulation"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 25px;">Flow direction</th>
@@ -346,10 +409,9 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_direction_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
-	<tr>
-		<td colspan="2"><div id="dynamic_direction"></div></td>
 	</tr>
-
+	<tr>	
+		<td colspan="2"><div id="dynamic_direction"></div></td>
 	</tr>
 
 </table>
@@ -377,8 +439,12 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 			</ul>
 		</td>
 	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_basin"></div></td>
+	</tr>
 
-        <tr>
+
+    <tr>
 		<th colspan="2" style="font-size: 25px;">Stream segment</th>
 	</tr>
 	<tr>
