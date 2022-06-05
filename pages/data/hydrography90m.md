@@ -115,13 +115,13 @@ code {
 		</div>`;
 		$("#dynamic_basin").html(drainage_basin_link)
 
-
-
-		drainage_basin_link =
+		stream_segment_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsegment_tiles20d&files=segment_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsegment_tiles20d&files=segment_h${h}v${v}.tif
+				</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_stream_seg").html(stream_segment_link)
 
 				drainage_basin_link =
 		`<div>
