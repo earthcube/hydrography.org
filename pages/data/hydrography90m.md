@@ -88,32 +88,25 @@ code {
 
 <script>	
 	function set_paths(h,v) {
+		//Left pad zeroes to h & v changing "7" to "07">
 		h = String("00" + h).slice(-2);
 		v = String("00" + v).slice(-2);
-		new_html = 
+		
+		flow_accumulation_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif">accumulation_h${h}v${v}.tif</a><br>
+			</div>`;
+		$("#dynamic_accumulation").html(flow_accumulation_link);
+		
+		flow_direction_link =
 		`<div><p>
-			<h2>r.watershed</h2><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation__h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation__h${h}v${v}.tif</a><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif</a><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif</a><br>
-			<br>
-			<h2>r.stream.slope</h2><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h${h}v${v}.tif</a><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h${h}v${v}.tif</a><br>
-			<br>
-			<h2>r.stream.order</h2><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h${h}v${v}.tif</a><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif</a><br>
-		</p></div>`;
-		$("#dynamic_links").html(new_html);
-		};
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif">direction_h${h}v${v}.tif</a><br>
+			</p></div>`;
+		$("#dynamic_direction").html(flow_direction_link);
+
+
+
+	};
 
 
 	$(function() {
@@ -273,9 +266,7 @@ code {
 </div>
 
 
-<div id="tilepaths"></div> 
-<div id="dynamic_links">
-</div>
+<div id="tilepaths"></div>
 ----------------------------------------------------------------------------------------------
 
 # Input layers
@@ -320,6 +311,8 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 # Base layers
 Base layers of Hydrography90m: flow accumulation, flow direction maps computed with the *r.watershed* GRASS GIS module. 
 These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
+<br>
+
 
 <table style="width:100% background-image= none">
 	<tr>
@@ -328,17 +321,17 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	<tr>
 		<td rowspan="1">
 			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="320" />
-				
 		</td>
 		<td><br><br><br><br>
 			<ul>
+				<li><div id="dynamic_accumulation"></div></li>
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d" target="_blank"> accumulation_*.tif (raster)</a></li>
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_accumulation_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2"><li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation__h20v06.tif/a></li></td>
+		<td colspan="2"></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 25px;">Flow direction</th>
@@ -353,6 +346,10 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_direction_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
+	<tr>
+		<td colspan="2"><div id="dynamic_direction"></div></td>
+	</tr>
+
 	</tr>
 
 </table>
