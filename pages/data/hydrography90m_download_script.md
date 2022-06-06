@@ -1,0 +1,9 @@
+---
+layout: page-fullwidth
+classes: wide
+title: "Hydropgraphy90m layers download script"
+teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details."
+permalink: "/data/hydrography90m_download_script"
+---
+---
+
