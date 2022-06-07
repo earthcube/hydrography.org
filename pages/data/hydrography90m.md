@@ -174,13 +174,194 @@ code {
 
 		stream_dist_up_farth_link =
 		`<div>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h${h}v${v}.tif</a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d&files=stream_dist_up_farth_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d&files=stream_dist_up_farth_h${h}v${v}.tif</a><br>
 		</div>`;
 		$("#dynamic_stream_dist_up_farth_link").html(stream_dist_up_farth_link);
 
+		stream_dist_dw_near_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d&files=stream_dist_dw_near_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d&files=stream_dist_dw_near_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_stream_dist_dw_near_link).html(stream_dist_dw_near_link);
 
+		outlet_dist_dw_basin_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d&files=outlet_dist_dw_basin_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d&files=outlet_dist_dw_basin_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_outlet_dist_dw_basin_link).html(outlet_dist_dw_basin_link);
 
+		outlet_dist_dw_scatch_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d&files=outlet_dist_dw_scatch_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d&files=outlet_dist_dw_scatch_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_outlet_dist_dw_scatch_link).html(outlet_dist_dw_scatch_link);
+
+		stream_dist_proximity_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d&files=stream_dist_proximity_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d&files=stream_dist_proximity_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_stream_dist_proximity_link).html(stream_dist_proximity_link);
+
+		stream_diff_up_near_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d&files=stream_diff_up_near_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d&files=stream_diff_up_near_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_stream_diff_up_near_link).html(stream_diff_up_near_link);
+
+		stream_diff_up_farth_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_stream_diff_up_farth_link).html(stream_diff_up_farth_link);
+
+		stream_diff_dw_near_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d&files=stream_diff_dw_near_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d&files=stream_diff_dw_near_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_stream_diff_dw_near_link).html(stream_diff_dw_near_link);
+
+		outlet_diff_dw_basin_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d&files=outlet_diff_dw_basin_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d&files=outlet_diff_dw_basin_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_outlet_diff_dw_basin_link).html(outlet_diff_dw_basin_link);
+
+		outlet_diff_dw_scatch_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d&files=outlet_diff_dw_scatch_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d&files=outlet_diff_dw_scatch_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_outlet_diff_dw_scatch_link).html(outlet_diff_dw_scatch_link);
+
+		channel_grad_dw_seg_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d&files=channel_grad_dw_seg_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d&files=channel_grad_dw_seg_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_grad_dw_seg_link).html(channel_grad_dw_seg_link);
+
+		channel_grad_up_seg_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d&files=channel_grad_up_seg_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d&files=channel_grad_up_seg_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_grad_up_seg).html(channel_grad_up_seg);
+
+		channel_grad_up_cel_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d&files=channel_grad_up_cel_h00v00.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d&files=channel_grad_up_cel_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_grad_up_cel_link).html(channel_grad_up_cel_link);
+
+		channel_curv_cel_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d&files=channel_curv_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d&files=channel_curv_cel_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_curv_cel_link).html(channel_curv_cel_link);
+
+		channel_elv_dw_seg_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d&files=channel_elv_dw_seg_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d&files=channel_elv_dw_seg_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_elv_dw_seg_link).html(channel_elv_dw_seg_link);
+
+		channel_elv_up_seg_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d&files=channel_elv_up_seg_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d&files=channel_elv_up_seg_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_elv_up_seg_link).html(channel_elv_up_seg_link);
+
+		channel_elv_up_cel_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d&files=channel_elv_up_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d&files=channel_elv_up_cel_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_elv_up_cel_link).html(channel_elv_up_cel_link);
+
+		channel_elv_dw_cel_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d&files=channel_elv_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d&files=channel_elv_dw_cel_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_elv_dw_cel_link).html(channel_elv_dw_cel_link);
+
+		channel_dist_dw_seg_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d&files=channel_dist_dw_seg_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d&files=channel_dist_dw_seg_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_dist_dw_seg_link).html(channel_dist_dw_seg_link);
+
+		channel_dist_up_seg_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d&files=channel_dist_up_seg_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d&files=channel_dist_up_seg_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_dist_up_seg_link).html(channel_dist_up_seg_link);
+
+		channel_dist_up_cel_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d&files=channel_dist_up_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d&files=channel_dist_up_cel_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_channel_dist_up_cel_link).html(channel_dist_up_cel_link);
+
+		order_strahler_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_strahler_tiles20d&files=order_strahler_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_strahler_tiles20d&files=order_strahler_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_order_strahler_link).html(order_strahler_link);
+
+		order_shreve_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_shreve_tiles20d&files=order_shreve_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_shreve_tiles20d&files=order_shreve_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_order_shreve_link).html(order_shreve_link);
+
+		order_horton_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_order_horton_link).html(order_horton_link);
+
+		order_hack_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_order_hack_link).html(order_hack_link);
+
+		order_topo_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_topo_tiles20d&files=order_topo_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_topo_tiles20d&files=order_topo_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_order_topo_link).html(order_topo_link);
+
+		order_vect_point_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg</a><br><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg</a><br>
+		</div>`;
+		$("#dynamic_order_vect_point_link).html(order_vect_point_link);
 
 	};
 
@@ -616,8 +797,8 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 		<td><br><br><br><br>
 		<ul>
-		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
-		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_dw_near_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
+			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_dw_near_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
 	</tr>
@@ -633,16 +814,16 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 		<td><br><br><br><br>
 		<ul>
-		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
         	<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_up_farth_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
 	</tr>
 	<tr>	
-		<td colspan="2"><div id="********"></div></td>
+		<td colspan="2"><div id="dynamic_stream_dist_dw_near_link"></div></td>
 	</tr>
 	<tr>
-		<th colspan="2" style="font-size: 18px;">Distance between focal grid cell and the outlet grid cell in the network</th>
+		<th colspan="2" style="font-size: 18px;">****Distance between focal grid cell and the outlet grid cell in the network</th>
 	</tr>
 	<tr>
 		<td rowspan="1">
@@ -654,6 +835,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
                 <li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_dw_basin_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_outlet_dist_dw_basin_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Distance between focal grid cell and the downstream stream node grid cell</th>
@@ -670,6 +854,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_outlet_dist_dw_scatch_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Euclidean distance between focal grid cell and the stream network</th>
 	</tr>
 	<tr>
@@ -682,6 +869,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_dist_proximity_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_stream_dist_proximity_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Elevation difference of the shortest path from focal grid cell to the sub-catchment drainage divide</th>
@@ -698,6 +888,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_stream_diff_up_near_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Elevation difference of the longest path from focal grid cell to the sub-catchment drainage divide</th>
 	</tr>
 	<tr>
@@ -710,6 +903,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_diff_up_farth_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_stream_diff_up_farth_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Elevation difference between focal grid cell and its nearest downstream stream pixel</th>
@@ -726,6 +922,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_stream_diff_dw_near_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Elevation difference between focal grid cell and the outlet grid cell in the network</th>
 	</tr>
 	<tr>
@@ -734,10 +933,13 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 		<td><br><br><br><br>
 		<ul>
-		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d" target="_blank"> outlet_diff_dw_basin_*.tif (raster)</a></li>
-		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_diff_dw_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d" target="_blank"> outlet_diff_dw_basin_*.tif (raster)</a></li>
+			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_diff_dw_basin_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_outlet_diff_dw_basin_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Elevation difference between focal grid cell and the downstream stream node grid cell</th>
@@ -752,6 +954,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_outlet_diff_dw_scatch_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_outlet_diff_dw_scatch_link"></div></td>
 	</tr>
 </table>
 
@@ -779,6 +984,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		</ul>
 		</td>
 	</tr>
+	 <tr>
+		<td colspan="2"><div id="dynamic_channel_grad_dw_seg_link"></div></td>
+	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Segment upstream mean gradient between focal cell and the init/node</th>
 	</tr>
@@ -792,6 +1000,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_grad_up_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_channel_grad_up_seg"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Upstream gradient between focal cell and the next cell</th>
@@ -808,6 +1019,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_channel_grad_up_cel_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Cell stream course curvature of the focal cell</th>
 	</tr>
 	<tr>
@@ -820,6 +1034,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_curv_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_channel_curv_cel"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Segment downstream elevation difference between focal cell and the node/outlet</th>
@@ -836,6 +1053,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_channel_elv_dw_seg"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Segment upstream elevation difference between focal cell and the init/node</th>
 	</tr>
 	<tr>
@@ -848,6 +1068,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_elv_up_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_channel_elv_up_seg_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Upstream elevation difference between focal cell and the next cell</th>
@@ -864,6 +1087,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_channel_elv_up_cel_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Downstream elevation difference between focal cell and the next cell</th>
 	</tr>
 	<tr>
@@ -876,6 +1102,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_elv_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_channel_elv_dw_cel_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Segment downstream distance between focal cell and the node/outlet</th>
@@ -892,6 +1121,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_channel_dist_dw_seg_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Segment upstream distance between focal cell and the init/node</th>
 	</tr>
 	<tr>
@@ -904,6 +1136,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_dist_up_seg_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+    <tr>
+		<td colspan="2"><div id="dynamic_channel_dist_up_seg_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Upstream distance between focal cell and next cell</th>
@@ -918,6 +1153,9 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_channel_dist_up_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+    <tr>
+		<td colspan="2"><div id="dynamic_channel_dist_up_cel_link"></div></td>
 	</tr>
 </table>
 
@@ -945,6 +1183,9 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_order_strahler_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Shreve’s stream magnitude</th>
 	</tr>
 	<tr>
@@ -957,6 +1198,9 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_shreve_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_order_shreve_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Horton’s stream order</th>
@@ -973,6 +1217,9 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_order_horton_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">Hack’s stream order</th>
 	</tr>
 	<tr>
@@ -985,6 +1232,9 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_hack_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
+	</tr>
+	    <tr>
+		<td colspan="2"><div id="dynamic_order_hack_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Topological dimension of streams</th>
@@ -1001,6 +1251,9 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 		</td>
 	</tr>
 	<tr>
+		<td colspan="2"><div id="dynamic_order_topo_link"></div></td>
+	</tr>
+	<tr>
 		<th colspan="2" style="font-size: 18px;">All stream segments and nodes attributes</th>
 	</tr>
 	<tr>
@@ -1013,6 +1266,9 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d" target="_blank">order_vect_segment_*.gpkg (vector)</a></li>
 			</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_order_vect_point_link"></div></td>
 	</tr>
 </table>
 
