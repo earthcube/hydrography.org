@@ -88,7 +88,6 @@ code {
 
 <script>	
 	function set_paths(h,v) {
-		//Left pad zeroes to h & v changing "7" to "07">
 		h = String("00" + h).slice(-2);
 		v = String("00" + v).slice(-2);
 		
@@ -99,7 +98,6 @@ code {
 		</div>`;
 		$("#dynamic_accumulation").html(flow_accumulation_link);
 		
-		
 		flow_direction_link =
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h${h}v${v}.tif">
@@ -107,11 +105,12 @@ code {
 		</div>`;
 		$("#dynamic_direction").html(flow_direction_link);
 
-
 		drainage_basin_link =
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif</a><br>
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.tif</a><br><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.gpkg">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h${h}v${v}.gpkg</a><br>
 		</div>`;
 		$("#dynamic_basin").html(drainage_basin_link)
 
@@ -123,53 +122,66 @@ code {
 		</div>`;
 		$("#dynamic_stream_seg").html(stream_segment_link)
 
-				drainage_basin_link =
+		sub_catch_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_h${h}v${v}.tif">https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_h${h}v${v}.tif</a><br><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_h${h}v${v}.gpkg">https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_h${h}v${v}.gpkg</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_sub_catch").html(sub_catch_link)
+	
+		outlet_link =
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h${h}v${v}.tif</a><br><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h${h}v${v}.gpkg">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h${h}v${v}.gpkg</a><br>
+		</div>`;
+		$("#dynamic_outlet").html(outlet_link)
 
-				drainage_basin_link =
+		slope_curv_max_dw_cel_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h${h}v${v}.tif</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_slope_curv_max_dw_cel").html(slope_curv_max_dw_cel_link)
 
-				drainage_basin_link =
+		slope_curv_min_dw_cel_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d&files=slope_curv_min_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d&files=slope_curv_min_dw_cel_h${h}v${v}.tif</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_slope_curv_min_dw_cel_link").html(slope_curv_min_dw_cel_link)
 
-				drainage_basin_link =
+		slope_elv_dw_cel_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h${h}v${v}.tif</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_slope_elv_dw_cel_link").html(slope_elv_dw_cel_link)
 
-				drainage_basin_link =
+		slope_grad_dw_cel_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d&files=slope_grad_dw_cel_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d&files=slope_grad_dw_cel_h${h}v${v}.tif</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_slope_grad_dw_cel_link").html(slope_grad_dw_cel_link)
 
-				drainage_basin_link =
+		stream_dist_up_near_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d&files=stream_dist_up_near_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d&files=stream_dist_up_near_h${h}v${v}.tif</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_stream_dist_up_near_link").html(stream_dist_up_near_link)
 
-				drainage_basin_link =
+	stream_dist_up_farth_link =
 		`<div>
-			<a href=""></a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h${h}v${v}.tif</a><br>
 		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+		$("#dynamic_stream_dist_up_farth_link").html(stream_dist_up_farth_link)
 
-				drainage_basin_link =
-		`<div>
-			<a href=""></a><br>
-		</div>`;
-		$("#dynamic").html(drainage_basin_link)
+
+
 
 
 
@@ -372,7 +384,7 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [//]: <> (Directory for: r.watershed)
-# Base layers TEST 1223
+# Base layers
 Base layers of Hydrography90m: flow accumulation, flow direction maps computed with the *r.watershed* GRASS GIS module. 
 These files are stored in the [r.watershed](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed) archive folder directory.
 <br>
@@ -442,8 +454,6 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	<tr>	
 		<td colspan="2"><div id="dynamic_basin"></div></td>
 	</tr>
-
-
     <tr>
 		<th colspan="2" style="font-size: 25px;">Stream segment</th>
 	</tr>
@@ -458,7 +468,10 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 			</ul>
 		</td>
 	</tr>
-      	<tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_stream_seg"></div></td>
+	</tr>
+    <tr>
 		<th colspan="2" style="font-size: 25px;">Sub-catchment</th>
 	</tr>
 	<tr>
@@ -473,8 +486,10 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 			</ul>
 		</td>
 	</tr>
-
-        <tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_sub_catch"></div></td>
+	</tr>
+    <tr>
 		<th colspan="2" style="font-size: 25px;">Outlet</th>
 	</tr>
 	<tr>
@@ -487,6 +502,9 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d" target="_blank"> outlet_*.gpkg (vector)</a></li>
 			</ul>
 		</td>
+	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_outlet"></div></td>
 	</tr>
 
 </table>
@@ -512,9 +530,11 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 			<ul>
 			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d" target="_blank"> slope_curv_max_dw_cel_*.tif (raster)</a></li>
 			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_slope_curv_max_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
-
 			</ul>
 		</td>
+	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_slope_curv_max_dw_cel"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Minimum curvature between lowest upstream cell, focal cell and downstream cell.</th>
@@ -530,6 +550,9 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 			</ul>
 		</td>
 	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_slope_curv_min_dw_cel_link"></div></td>
+	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Elevation difference between focal cell and downstream cell</th>
 	</tr>
@@ -544,6 +567,9 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 			</ul>
 		</td>
 	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_slope_elv_dw_cel_link"></div></td>
+	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Focal cell gradient</th>
 	</tr>
@@ -557,6 +583,9 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 			<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_slope_grad_dw_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
+	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_slope_grad_dw_cel_link"></div></td>
 	</tr>
 </table>
 
@@ -584,6 +613,9 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</ul>
 		</td>
 	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_stream_dist_up_near_link"></div></td>
+	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Longest upstream distance between focal grid cell and the nearest sub-catchment drainage divide</th>
 	</tr>
@@ -593,10 +625,13 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 		<td><br><br><br><br>
 		<ul>
-		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d" target="_blank"> stream_dist_up_farth_*.tif (raster)</a></li>
 		<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_dw_near_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>	
+		<td colspan="2"><div id="dynamic_stream_dist_up_farth_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Distance between focal grid cell and its nearest downstream stream grid cell</th>
@@ -607,10 +642,13 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 		<td><br><br><br><br>
 		<ul>
-		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
+		<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
         	<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_up_farth_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
+	</tr>
+	<tr>	
+		<td colspan="2"><div id="********"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Distance between focal grid cell and the outlet grid cell in the network</th>
