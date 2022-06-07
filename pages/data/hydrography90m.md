@@ -7,7 +7,6 @@ permalink: "/data/hydrography90m"
 header:
    image_fullwidth: "data/dem_streamOrder1.jpg"
 ---
----
 
 Below is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download link or use the script [here](/link/to/code_page) to dowloand the full data archive.
 
@@ -180,13 +179,7 @@ code {
 		</div>`;
 		$("#dynamic_stream_dist_up_farth_link").html(stream_dist_up_farth_link)
 
-
-
-
-
-
 	};
-
 
 	$(function() {
 		$(".tile").on("click", function() {
@@ -196,11 +189,6 @@ code {
 	});
 </script>
 
-
-[comment]: page base on documentation.md
-[//]: <> (for div grid layout SEE:)
-[//]: <> (https://stackoverflow.com/questions/17394820/understanding-div-classes-in-foundation-4)
-[//]: <> (https://get.foundation/sites/docs-v5/components/grid.html)
 
 <div class="row">
 <div class="medium-4 medium-push-9 columns" markdown="1">
