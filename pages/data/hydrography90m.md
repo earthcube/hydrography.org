@@ -1274,3 +1274,66 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 </table>
 
+------------------------------------------------------------------
+
+[//]: <> (Directory for: flow.index)
+
+# Flow index layers
+Flow index of Hydrography90m:  flow index computed using flow accumulation and terrain slope.
+These files are stored in the [flow.index](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index) archive folder.
+
+<table style="width:100%">
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Stream power index</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/Fig15/spi.png" alt="spi_*.tif" width="325"/>
+		</td>
+		<td><br><br><br><br>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2spi_tiles20d" target="_blank">spi_*.tif (raster)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_spi_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_basin_link"></div></td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Stream transportation index (sti)</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/Fig15/sti.png" alt="sti_*.tif" width="325"/>
+		</td>
+		<td><br><br><br><br>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fsti_tiles20d" target="_blank">sti_*.tif (raster)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_sti_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_basin_link"></div></td>
+	</tr>
+	<tr>
+		<th colspan="2" style="font-size: 18px;">Compound topographic index</th>
+	</tr>
+	<tr>
+		<td rowspan="1">
+			<img src="/hydrography.org/images/data/hydrography90m/Fig15/cti.png" alt="cti_*.tif" width="325"/>
+		</td>
+		<td><br><br><br><br>
+			<ul>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fcti_tiles20d" target="_blank">cti_*.tif (raster)</a></li>
+				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_cti_cog&view=True" target="_blank" > Raster layer visualization</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_basin_link"></div></td>
+	</tr>
+
+</table>
+

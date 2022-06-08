@@ -9,8 +9,11 @@ Here a bash scripiting procedure to download tiled raster and vector files of th
 
 ---
 ##  Tile list 
+Donwload the tile list files.
 
     wget https://gitlab.com/selvaje74/hydrography.org/-/raw/main/pages/data/hydrography90m_download_script/tiles20d_list.txt
+
+Use the tiles20d_list.txt file to download the full list of raster and vector files. Change the *$(cat   ../tiles20d_list.txt)* to a tile label (e.g. h30v12) in case you want download only one tile.
 
 ---
 
@@ -37,7 +40,6 @@ for tile in $(cat   ../tiles20d_list.txt) ; do
 wget --no-check-certificate -O ${dir}/${filename}_${tile}.gpkg   https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2F${dir}\&files=${filename}_${tile}.gpkg
 done
 done
-
 ```
 
 ---
