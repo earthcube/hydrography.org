@@ -17,8 +17,8 @@ For each computed layer is reported:
 
 ---
 
-Click below on the tiled map to get the download link or use the script [here](https://hydrography.org/hydrography90m/hydrography90m_download_script) to dowloand the full data archive.  
-In case of downloading multiple tiles and you want merge them use the script [here](https://hydrography.org/hydrography90m/hydrography90m_mergetile_script.md) 
+Click below on the tiled map to get the download link or use the script [here](/hydrography.org/hydrography90m/hydrography90m_download_script) to dowloand the full data archive.  
+In case of downloading multiple tiles and you want merge them use the script [here](hydrography.org/hydrography90m/hydrography90m_mergetile_script) 
 
 <style>
 	table, th, td {border: 0px solid black; background-color: white;}
