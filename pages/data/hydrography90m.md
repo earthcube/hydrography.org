@@ -376,21 +376,21 @@ outlet_dist_dw_basin_link =
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fspi_tiles20d&files=spi_h${h}v${v}.tif">
 				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fspi_tiles20d&files=spi_h${h}v${v}.tif</a><br>
-		</div>`
+		</div>`;
 		$("#dynamic_spi_link").html(spi_link);
 
 		sti_link = 
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_h${h}v${v}.tif">
 				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_h${h}v${v}.tif</a><br>
-		</div>`
+		</div>`;
 		$("#dynamic_sti_link").html(sti_link);
 
 		cti_link = 
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_h${h}v${v}.tif">
 				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_h${h}v${v}.tif</a><br>
-		</div>`
+		</div>`;
 		$("#dynamic_cti_link").html(cti_link);
 
 
@@ -550,7 +550,7 @@ outlet_dist_dw_basin_link =
 
 <div id="tilepaths"></div>
 
-<div id="dynamic_tile_code"></div>
+ <div id="dynamic_tile_code"></div>
 
 
 ----------------------------------------------------------------------------------------------
