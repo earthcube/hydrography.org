@@ -51,11 +51,7 @@
     url: "/design/no-header-but-image/"
 
 - title: Hydrography90m
-  url: "/data/hydrography90m/"
-  side: left
-
-- title: Geomorpho90m
-  url: "/data/geomorpho90m/"
+  url: "/hydrography90m/hydrography90m/"
   side: left
 
 - title: Blog
