@@ -18,7 +18,7 @@ For each computed layer is reported:
 ---
 
 <style>
-	table, th, td {border: 1px solid black; background-color: white;}
+	table, th, td {border: 0px solid black; background-color: white;}
 
 	.tileDownloadBoundsTitle {
 		padding-bottom: 5px;
@@ -90,6 +90,14 @@ code {
 		h = String("00" + h).slice(-2);
 		v = String("00" + v).slice(-2);
 		
+		tile_code = 
+		`<div>
+			<p><br><b>
+			&nbsp&nbsp&nbsp&nbsp&nbsp
+			Tile code: h${h}v${v}</b></p>
+		</div>`;
+		$("#dynamic_tile_code").html(tile_code);
+
 		flow_accumulation_link = 
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif">
@@ -364,6 +372,27 @@ outlet_dist_dw_basin_link =
 		</div>`;
 		$("#dynamic_order_vect_point_link").html(order_vect_point_link);
 
+		spi_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fspi_tiles20d&files=spi_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fspi_tiles20d&files=spi_h${h}v${v}.tif</a><br>
+		</div>`
+		$("#dynamic_spi_link").html(spi_link);
+
+		sti_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_h${h}v${v}.tif</a><br>
+		</div>`
+		$("#dynamic_sti_link").html(sti_link);
+
+		cti_link = 
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_h${h}v${v}.tif</a><br>
+		</div>`
+		$("#dynamic_cti_link").html(cti_link);
+
 
 	};
 
@@ -520,6 +549,10 @@ outlet_dist_dw_basin_link =
 
 
 <div id="tilepaths"></div>
+
+<div id="dynamic_tile_code"></div>
+
+
 ----------------------------------------------------------------------------------------------
 
 # Input layers
@@ -816,7 +849,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 		</td>
 		<td><br><br><br><br>
 		<ul>
-			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
+			<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d" target="_blank"> stream_dist_dw_near_*.tif (raster)</a></li>
         	<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_stream_dist_up_farth_cel_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 		</ul>
 		</td>
@@ -1292,13 +1325,13 @@ These files are stored in the [flow.index](https://public.igb-berlin.de/index.ph
 		</td>
 		<td><br><br><br><br>
 			<ul>
-				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2spi_tiles20d" target="_blank">spi_*.tif (raster)</a></li>
+				<li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fspi_tiles20d" target="_blank">spi_*.tif (raster)</a></li>
 				<li><a href="https://geo.igb-berlin.de/maps/new?layer=geonode:hydrography90m_v1_spi_cog&view=True" target="_blank" > Raster layer visualization</a></li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2"><div id="dynamic_basin_link"></div></td>
+		<td colspan="2"><div id="dynamic_spi_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Stream transportation index (sti)</th>
@@ -1315,7 +1348,7 @@ These files are stored in the [flow.index](https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2"><div id="dynamic_basin_link"></div></td>
+		<td colspan="2"><div id="dynamic_sti_link"></div></td>
 	</tr>
 	<tr>
 		<th colspan="2" style="font-size: 18px;">Compound topographic index</th>
@@ -1332,7 +1365,7 @@ These files are stored in the [flow.index](https://public.igb-berlin.de/index.ph
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2"><div id="dynamic_basin_link"></div></td>
+		<td colspan="2"><div id="dynamic_cti_link"></div></td>
 	</tr>
 
 </table>
