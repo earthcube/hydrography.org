@@ -51,8 +51,17 @@
 #     url: "/design/no-header-but-image/"
 
 - title: Hydrography90m
-  url: "/hydrography90m/hydrography90m/"
+  url: "/hydrography90m/hydrography90m_layers/"
   side: left
+
+- title: Batch download
+  url: "/hydrography90m/hydrography90m_download_script/"
+  side: left
+
+- title: Helper scripts
+  url: "/hydrography90m/hydrography90m_mergetile_script/"
+  side: left
+
 
 # - title: Blog
 #   url: "/blog/"

@@ -18,6 +18,10 @@ Here a bash scripiting procedure to merge tiled raster and vector files of the H
 
 ##  Merge tiled raster files 
 
-   ogrmerge.py -single  -progress -skipfailures -overwrite_ds  -f GPKG  -o basin.gpkg  basin_h16v02.gpkg  basin_h16v03.gpkg
-   rm -f basin_dissolved.gpkg  
-   ogr2ogr  -dialect sqlite -sql "SELECT geom,"ID"  FROM merged  GROUP BY "ID" "   basin_dissolved.gpkg  basin.gpkg
+    ogrmerge.py -single  -progress -skipfailures -overwrite_ds  -f GPKG  -o basin.gpkg  basin_h16v02.gpkg  basin_h16v03.gpkg
+    rm -f basin_dissolved.gpkg  
+    ogr2ogr  -dialect sqlite -sql "SELECT geom,"ID"  FROM merged  GROUP BY "ID" " basin_dissolved.gpkg basin.gpkg
+
+---
+
+####  We will gradually add more functions for merging, masking etc. the layers in bash, Python and R.

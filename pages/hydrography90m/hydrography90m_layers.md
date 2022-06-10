@@ -2,13 +2,13 @@
 layout: page-fullwidth
 classes: wide
 title: "Hydropgraphy90m layers"
-teaser: "Here is an overview of all the current layers of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details."
-permalink: "/data/hydrography90m"
+permalink: "/hydrography90m/hydrography90m_layers"
 header:
-   image_fullwidth: "data/dem_streamOrder1.jpg"
+   image_fullwidth: "hydrography90m/dem_streamOrder1.jpg"
 ---
 
-Below is an overview of all the current layers of the Hydrography90m dataset. Click below on the tiled map to get the download link or use the script [here](/link/to/code_page) to dowloand the full data archive.
+Here is an overview of all the current layers of the Hydrography90m dataset.
+Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details.  
 
 For each computed layer is reported:
 * a figure sample
@@ -16,6 +16,9 @@ For each computed layer is reported:
 * the visualization [webgis link](https://geo.igb-berlin.de/maps/351/view)
 
 ---
+
+Click below on the tiled map to get the download link or use the script [here](/hydrography.org/hydrography90m/hydrography90m_download_script) to dowloand the full data archive.  
+In case of downloading multiple tiles and you want merge them use the script [here](hydrography.org/hydrography90m/hydrography90m_mergetile_script) 
 
 <style>
 	table, th, td {border: 0px solid black; background-color: white;}
@@ -83,7 +86,7 @@ code {
 
 </style>
 
-<script src="../../pages/data/jquery-3.6.0.js" type="text/javascript"></script>
+<script src="../../pages/hydrography90m/jquery-3.6.0.js" type="text/javascript"></script>
 
 <script>	
 	function set_paths(h,v) {
@@ -97,6 +100,13 @@ code {
 			Tile code: h${h}v${v}</b></p>
 		</div>`;
 		$("#dynamic_tile_code").html(tile_code);
+
+		depression_link =
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_depression_link").html(depression_link);
 
 		flow_accumulation_link = 
 		`<div>
@@ -421,7 +431,7 @@ outlet_dist_dw_basin_link =
 # Grid map
 
 <div class="mapTileDownloadContainer">
-	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../../images/data/basins_noTiles.png" /></div>
+	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../../images/hydrography90m/basins_noTiles.png" /></div>
 	<!-- Row 0 -->
 	<div class="tile" style="left:36px;top:32px" title="h00v00" onclick="set_paths(00,00)"></div>
 	<div class="tile" style="left:70px;top:32px;width:35px" title="h02v00" onclick="set_paths(02,00)"></div>
@@ -566,7 +576,7 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/elevation.png" alt="elv_*.tif" width="320" />
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig6/elevation.png" alt="elv_*.tif" width="320" />
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -584,6 +594,9 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 			      <li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
 			</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_depression_link"></div></td>
 	</tr>
 
 </table>
@@ -603,7 +616,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="320" />
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig6/flow-accumulation.png" alt="accumulation_*.tif" width="320" />
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -620,7 +633,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<embed src="/hydrography.org/images/data/hydrography90m/Fig6/flow-direction.png" alt="direction_*.tif" width="320"/>
+			<embed src="/hydrography.org/images/hydrography90m/layer_images/Fig6/flow-direction.png" alt="direction_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -648,7 +661,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/drainage-basin.png" alt="Drainage basin" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig6/drainage-basin.png" alt="Drainage basin" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -666,7 +679,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Stream segment" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig6/str-seg-outlet.png" alt="Stream segment" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -683,7 +696,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/sub-catchment.png" alt="Sub-catchment" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig6/sub-catchment.png" alt="Sub-catchment" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -701,7 +714,7 @@ These files are stored in the [r.watershed](https://public.igb-berlin.de/index.p
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig6/str-seg-outlet.png" alt="Outlet" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig6/str-seg-outlet.png" alt="Outlet" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -731,7 +744,7 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-curv-max-dw-cel.png" alt="slope_curv_max_dw_cel_*.tif" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig11/slope-curv-max-dw-cel.png" alt="slope_curv_max_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -748,7 +761,7 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-curv-min-dw-cel.png" alt="slope_curv_min_dw_cel_*.tif" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig11/slope-curv-min-dw-cel.png" alt="slope_curv_min_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -765,7 +778,7 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-elv-dw-cel.png" alt="slope_elv_dw_cel_*.tif" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig11/slope-elv-dw-cel.png" alt="slope_elv_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -782,7 +795,7 @@ These files are stored in the [r.stream.slope](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig11/slope-grad-dw-cel.png" alt="slope_grad_dw_cel_*.tif" width="320"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig11/slope-grad-dw-cel.png" alt="slope_grad_dw_cel_*.tif" width="320"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -811,7 +824,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="Shortest upstream distance" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-dist-up-near.png" alt="Shortest upstream distance" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -828,7 +841,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-farth.png" alt="Longest upstream distance" width="330"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-dist-up-farth.png" alt="Longest upstream distance" width="330"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -845,7 +858,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-dw-near.png" alt="stream_dist_dw_near_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-dist-dw-near.png" alt="stream_dist_dw_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -862,7 +875,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-basin.png" alt="outlet_dist_dw_basin_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/outlet-dist-dw-basin.png" alt="outlet_dist_dw_basin_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -879,7 +892,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-dist-dw-scratch.png" alt="outlet_dist_dw_scatch_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/outlet-dist-dw-scratch.png" alt="outlet_dist_dw_scatch_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -896,7 +909,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-proximity.png" alt="stream_dist_proximity_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-dist-proximity.png" alt="stream_dist_proximity_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -913,7 +926,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-dist-up-near.png" alt="stream_diff_up_near_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-dist-up-near.png" alt="stream_diff_up_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -930,7 +943,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-up-farth.png" alt="stream_diff_up_farth_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-diff-up-farth.png" alt="stream_diff_up_farth_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -947,7 +960,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/stream-diff-dw-near.png" alt="stream_diff_dw_near_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/stream-diff-dw-near.png" alt="stream_diff_dw_near_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -964,7 +977,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-basin.png" alt="outlet_diff_dw_basin_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/outlet-diff-dw-basin.png" alt="outlet_diff_dw_basin_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -981,7 +994,7 @@ These files are stored in the [r.stream.distance](https://public.igb-berlin.de/i
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig12/outlet-diff-dw-scratch.png" alt="outlet_diff_dw_scatch_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig12/outlet-diff-dw-scratch.png" alt="outlet_diff_dw_scatch_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1010,7 +1023,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-dw-seg.png" alt="channel_grad_dw_seg_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-grad-dw-seg.png" alt="channel_grad_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1027,7 +1040,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-seg.png" alt="channel_grad_up_seg_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-grad-up-seg.png" alt="channel_grad_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1044,7 +1057,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-grad-up-cel.png" alt="channel_grad_up_cel_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-grad-up-cel.png" alt="channel_grad_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1061,7 +1074,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-curv-cel.png" alt="channel_curv_cel_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-curv-cel.png" alt="channel_curv_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1078,7 +1091,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-seg.png" alt="channel_elv_dw_seg_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-elv-dw-seg.png" alt="channel_elv_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1095,7 +1108,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-seg.png" alt="channel_elv_up_seg_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-elv-up-seg.png" alt="channel_elv_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1112,7 +1125,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-up-cel.png" alt="channel_elv_up_cel_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-elv-up-cel.png" alt="channel_elv_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1129,7 +1142,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-elv-dw-cel.png" alt="channel_elv_dw_cel_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-elv-dw-cel.png" alt="channel_elv_dw_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1146,7 +1159,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-dw-seg.png" alt="channel_dist_dw_seg_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-dist-dw-seg.png" alt="channel_dist_dw_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1163,7 +1176,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-seg.png" alt="channel_dist_up_seg_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-dist-up-seg.png" alt="channel_dist_up_seg_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1180,7 +1193,7 @@ These files are stored in the [r.stream.channel](https://public.igb-berlin.de/in
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig13/channel-dist-up-cel.png" alt="channel_dist_up_cel_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig13/channel-dist-up-cel.png" alt="channel_dist_up_cel_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 		<ul>
@@ -1208,7 +1221,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-strahler.png" alt="stream_strahler_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig14/stream-strahler.png" alt="stream_strahler_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1225,7 +1238,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-shreve.png" alt="stream_shreve_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig14/stream-shreve.png" alt="stream_shreve_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1242,7 +1255,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-horton.png" alt="stream_horton_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig14/stream-horton.png" alt="stream_horton_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1259,7 +1272,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-hack.png" alt="stream_hack_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig14/stream-hack.png" alt="stream_hack_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1276,7 +1289,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/stream-topo.png" alt="stream_topo_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig14/stream-topo.png" alt="stream_topo_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1293,7 +1306,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig14/vect.png" alt="" width="410"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig14/vect.png" alt="" width="410"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1321,7 +1334,7 @@ These files are stored in the [flow.index](https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig15/spi.png" alt="spi_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig15/spi.png" alt="spi_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1338,7 +1351,7 @@ These files are stored in the [flow.index](https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig15/sti.png" alt="sti_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig15/sti.png" alt="sti_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
@@ -1355,7 +1368,7 @@ These files are stored in the [flow.index](https://public.igb-berlin.de/index.ph
 	</tr>
 	<tr>
 		<td rowspan="1">
-			<img src="/hydrography.org/images/data/hydrography90m/Fig15/cti.png" alt="cti_*.tif" width="325"/>
+			<img src="/hydrography.org/images/hydrography90m/layer_images/Fig15/cti.png" alt="cti_*.tif" width="325"/>
 		</td>
 		<td><br><br><br><br>
 			<ul>
