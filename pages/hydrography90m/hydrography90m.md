@@ -101,6 +101,13 @@ code {
 		</div>`;
 		$("#dynamic_tile_code").html(tile_code);
 
+		depression_link =
+		`<div>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h${h}v${v}.tif">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h${h}v${v}.tif</a><br>
+		</div>`;
+		$("#dynamic_depression_link").html(depression_link);
+
 		flow_accumulation_link = 
 		`<div>
 			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif">
@@ -587,6 +594,9 @@ The depression layer is stored at [r.watershed](https://public.igb-berlin.de/ind
 			      <li><a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d" target="_blank"> depression_*.tif (raster)</a></li>
 			</ul>
 		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><div id="dynamic_depression_link"></div></td>
 	</tr>
 
 </table>
