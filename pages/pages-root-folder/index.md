@@ -49,9 +49,10 @@ permalink: /index.html
 # homepage: true
 ---
 
-# <div id="videoModal" class="reveal-modal large" data-reveal="">
-#   <div class="flex-video widescreen vimeo" style="display: block;">
-#     <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-#   </div>
-#   <a class="close-reveal-modal">&#215;</a>
-# </div>
+
+### Hydrography.org focuses on disseminating global, high-resolution layers of the Earth’s stream channels along with a suite of topographical and topological information. 
+
+### All data can be downloaded and we provide scripts to facilitate the usage of the data.
+### This page is yet under construction and we will shortly provide a comprehensive overview of the full dataset and its features.
+
+
