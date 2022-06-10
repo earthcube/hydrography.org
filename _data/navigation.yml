@@ -62,6 +62,10 @@
   url: "/hydrography90m/hydrography90m_mergetile_script/"
   side: left
 
+- title: Workflow
+  url: "/hydrography90m/hydrography90m_workflow/"
+  side: left
+
 
 # - title: Blog
 #   url: "/blog/"
