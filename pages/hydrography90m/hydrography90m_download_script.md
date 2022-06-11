@@ -11,7 +11,7 @@ Here is a bash scripiting procedure to download tiled raster and vector files of
 ##  Tile list 
 Donwload the tile list files.
 
-    wget https://gitlab.com/selvaje74/hydrography.org/-/raw/main/pages/images/hydrography90m/tiles20d/tile_list.txt
+    wget https://gitlab.com/selvaje74/hydrography.org/-/raw/main/images/hydrography90m/tiles20d/tile_list.txt
 
 Use the tile_list.txt file to download the full list of raster and vector files. Change the *$(cat   ../tile_list.txt)* to a tile label (e.g. h30v12) in case you want download only one tile.
 
