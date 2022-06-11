@@ -12,7 +12,7 @@ Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/pre
 
 For each computed layer is reported:
 * a figure sample
-* the layer file name with an asterisk which stands for the tile ID. The layer file name is an hyperlink that bring to the sub-directory [download page](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4)
+* the layer file name with an asterisk which stands for the tile ID. The layer file name is a hyperlink that leads to the sub-directory [download page](https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4)
 * the visualization [webgis link](https://geo.igb-berlin.de/maps/351/view)
 
 ---
