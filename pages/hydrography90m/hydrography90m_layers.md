@@ -17,12 +17,6 @@ For each computed layer is reported:
 
 ---
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe src="https://geo.igb-berlin.de/maps/351/embed" min-width : 900px ; style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Hydrography90m" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-
----
-
 <style>
 	table, th, td {border: 0px solid black; background-color: white;}
 
