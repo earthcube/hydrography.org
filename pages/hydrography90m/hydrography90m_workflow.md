@@ -34,11 +34,11 @@ header:
 <p>The first step towards modeling hydrological features is delineating a comprehensive hydrography network. DEMs at
 different spatial resolutions allow for the identification of stream channels, using a variety of flow-routing algorithms. Such algorithms are based on the observation that water follows the steepest and shortest route along a relief, and accumulates in valleys, lowlands, flat areas and depressions. Several algorithms have been proposed for stream network routing. These algorithms proceed in several stages: determining flow directions, resolving depressions and flat areas, and finally, calculating flow accumulation. </p>
 
-<p><img src="attachment:grass_hydro1.png" alt="grass_hydro1.png" /></p>
+<p><img src="/images/workflow/grass_hydro1.png" alt="grass_hydro1.png" /></p>
 
-<p><img src="attachment:grass_hydro2.png" alt="grass_hydro2.png" /></p>
+<p><img src="/images/workflow/grass_hydro2.png" alt="grass_hydro2.png" /></p>
 
-<p><img src="attachment:grass_hydro3.png" alt="grass_hydro3.png" /></p>
+<p><img src="/images/workflow/grass_hydro3.png" alt="grass_hydro3.png" /></p>
 
 <p>Below we describe how we will extract a new high-resolution hydrography (stream-network and basins) from the 1KM DEM. In this exercise we simulate a case that we can not run the full South America continent in one tile because we reach RAM limitation. Therefore we compute the analysis in 3 tiles and then we combine the results.</p>
 

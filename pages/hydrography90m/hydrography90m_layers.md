@@ -370,14 +370,14 @@ outlet_dist_dw_basin_link =
 		</div>`;
 		$("#dynamic_order_topo_link").html(order_topo_link);
 
-		order_vect_point_link = 
+		order_vect_link = 
 		`<div>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg</a><br><br>
-			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg">
-				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_h${h}v${v}.gpkg</a><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_point_h${h}v${v}.gpkg">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_point_h${h}v${v}.gpkg</a><br><br>
+			<a href="https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_segment_h${h}v${v}.gpkg">
+				https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_segment_h${h}v${v}.gpkg</a><br>
 		</div>`;
-		$("#dynamic_order_vect_point_link").html(order_vect_point_link);
+		$("#dynamic_order_vect_link").html(order_vect_link);
 
 		spi_link = 
 		`<div>
@@ -1316,7 +1316,7 @@ These files are stored in the [r.stream.order](https://public.igb-berlin.de/inde
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2"><div id="dynamic_order_vect_point_link"></div></td>
+		<td colspan="2"><div id="dynamic_order_vect_link"></div></td>
 	</tr>
 </table>
 
