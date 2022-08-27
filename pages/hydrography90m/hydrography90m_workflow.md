@@ -29,7 +29,7 @@ header:
 
 
 
-<h1 id="usinggrassforstreamnetworkextractionandbasinsdelineation">Using GRASS for stream-network extraction and basins delineation</h1>
+<h2 id="usinggrassforstreamnetworkextractionandbasinsdelineation">Using GRASS for stream-network extraction and basins delineation</h2>
 
 <p>The first step towards modeling hydrological features is delineating a comprehensive hydrography network. DEMs at
 different spatial resolutions allow for the identification of stream channels, using a variety of flow-routing algorithms. Such algorithms are based on the observation that water follows the steepest and shortest route along a relief, and accumulates in valleys, lowlands, flat areas and depressions. Several algorithms have been proposed for stream network routing. These algorithms proceed in several stages: determining flow directions, resolving depressions and flat areas, and finally, calculating flow accumulation. </p>
