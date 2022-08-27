@@ -16,7 +16,7 @@ Here is a bash scripiting procedure to merge tiled raster and vector files of th
 
 ---
 
-##  Merge tiled raster files 
+##  Merge tiled vector files 
 
     ogrmerge.py -single -progress -skipfailures -overwrite_ds -f GPKG -o basin.gpkg  basin_h16v02.gpkg basin_h16v03.gpkg
     rm -f basin_dissolved.gpkg  
