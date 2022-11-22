@@ -23,8 +23,8 @@ Here is a bash scripiting procedure to merge tiled raster and vector files of th
     ogr2ogr  -nlt POLYGON -dialect sqlite -sql "SELECT ST_Union(ST_MakeValid(geom)),"ID" FROM merged GROUP BY "ID" " basin_dissolved.gpkg basin.gpkg
 
 
-  
-  
+    ogr2ogr -nlt POLYGON -dialect sqlite -sql "SELECT ST_Union(ST_MakeValid(geom)),"ID" FROM merged GROUP BY "ID" " sub_catchment_dissolved.gpkg sub_catchment.gpkg
+
 ---
 
 ####  We will gradually add more functions for merging, masking etc. the layers in bash, Python and R.
