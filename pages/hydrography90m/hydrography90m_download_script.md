@@ -5,7 +5,7 @@ title: "Hydrography90m layers download script"
 permalink: "/hydrography90m/hydrography90m_download_script"
 ---
 
-Here is a bash scripiting procedure to download tiled raster and vector files of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details.
+Here is a bash scripiting procedure to download tiled raster and vector files of the Hydrography90m dataset. Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/articles/14/4525/2022/essd-14-4525-2022.html) for further details.
 
 ---
 ##  Tile list 
