@@ -8,7 +8,7 @@ header:
 ---
 
 Here is an overview of all the current layers of the Hydrography90m dataset.
-Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/preprints/essd-2022-9) for further details.  
+Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/articles/14/4525/2022/essd-14-4525-2022.html) for further details.  
 
 For each computed layer is reported:
 * a figure sample
