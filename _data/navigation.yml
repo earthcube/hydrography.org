@@ -30,7 +30,6 @@
 #     url: "/design/gallery/"
 #   - title: "Portfolio"
 #     url: "/design/portfolio/"
-
 # - title: "Header Styles"
 #   url: "/headers/"
 #   side: left
@@ -50,22 +49,24 @@
 #   - title: "No Header but Image"
 #     url: "/design/no-header-but-image/"
 
-- title: Hydrography90m
-  url: "/hydrography90m/hydrography90m_layers/"
+- title: "Geodata"
   side: left
+  dropdown:
+  - title: "Hydrography90: Layers" 
+    url: "/hydrography90m/hydrography90m_layers"
+  - title: "Hydrography90: Workflow"
+    url: "/hydrography90m/hydrography90m_workflow"
 
-- title: Batch download
-  url: "/hydrography90m/hydrography90m_download_script/"
+- title: "Tools" 
+  url: ""
   side: left
-
-- title: Helper scripts
-  url: "/hydrography90m/hydrography90m_mergetile_script/"
-  side: left
-
-- title: Workflow
-  url: "/hydrography90m/hydrography90m_workflow/"
-  side: left
-
+  dropdown:  
+  - title: "Hydrography90: Batch download"
+    url: "/hydrography90m/hydrography90m_download_script"
+  - title: "Hydrography90: Merge tiles"
+    url: "/hydrography90m/hydrography90m_mergetile_script"
+  - title: "Hydrography90: hydrographr"
+    url: "https://github.com/glowabio/hydrographr"
 
 # - title: Blog
 #   url: "/blog/"

@@ -1,3 +1,8 @@
+# sudo apt install ruby-bundler
+# sudo apt  -y install bundler 
+# bundle install
+# bundle update 
+
 bundle exec jekyll serve
 browser open http://localhost:4000/
 
