@@ -31,8 +31,8 @@ slogan: 'A 90m Dataset'
 # url: 'https://selvaje74.gitlab.io'
 # baseurl: '/hydrography.org'
 
-url: 'https://hydrography.org'
-# baseurl: '/hydrography.org'
+#url: 'https://hydrography.org'
+url: 'https://earthcube.github.io/hydrography.org'
 
 
 
