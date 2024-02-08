@@ -7,6 +7,172 @@ header:
    image_fullwidth: "hydrography90m/dem_streamOrder1.jpg"
 ---
 
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "url": "{{ site.url }}{{ page.url }}",
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+    "isAccessibleForFree": true,
+    "keywords": {{ page.tags | join: ',' | jsonify }},
+    "datePublished": {{ page.date | jsonify }},
+    "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+    "creator": {
+        "@list": [
+          {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-8341-2830",
+            "name": "Giuseppe Amatulli",
+            "url": "https://orcid.org/0000-0002-8341-2830"
+          }
+        ]
+    },
+    "citation": "Amatulli, G., Garcia Marquez, J., Sethi, T., Kiesel, J., Grigoropoulou, A., Üblacker, M. M., Shen, L. Q., and Domisch, S.: Hydrography90m: a new high-resolution global hydrographic dataset, Earth Syst. Sci. Data, 14, 4525–4550, https://doi.org/10.5194/essd-14-4525-2022, 2022.",
+    "version": "1",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "temporalCoverage": "2001-08-06/2002-09-09",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-68.4817 -75.8183 -65.08 -68.5033"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "http://www.wikidata.org/entity/Q4018860",
+            "name": "well-known text (WKT) representation of geometry",
+            "value": "POLYGON ((-75.8183 -68.4817, -68.5033 -68.4817, -68.5033 -65.08, -75.8183 -65.08, -75.8183 -68.4817))"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "http://www.wikidata.org/entity/Q161779",
+            "name": "Spatial Reference System",
+            "value": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+          }
+        ]
+      },
+    "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20860",
+      "name": "cruiseid",
+      "description": "cruise identification",
+      "unitText": "text"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20861",
+      "name": "year",
+      "description": "year of experiment",
+      "unitText": "calendar year"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20862",
+      "name": "sample_id",
+      "description": "sample identification: WBC=whole body clearance expt.; WBF=whole body fluorescence on collection"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20863",
+      "name": "time_sample",
+      "description": "Number of minutes between collection and sampling for pigment content; decline of pigment content with time was used to calculate time to clear the gut of pigment.",
+      "unitText": "minutes"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20864",
+      "name": "pigment_content",
+      "description": "pigment content",
+      "unitText": "micrograms total chl/grams wet weight"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20865",
+      "name": "stage_id",
+      "description": "stage development index of larvae in sample (furcilia = F1-6 = 1-6,  juvenile = J=7)"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20866",
+      "name": "wet_weight",
+      "description": "average wet weight/larvae in sample",
+      "unitText": "mg"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20874",
+      "name": "lat",
+      "description": "latitude, in decimal degrees, North is positive, negative denotes South",
+      "unitText": "decimal degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20875",
+      "name": "lon",
+      "description": "longitude, in decimal degrees, East is positive, negative denotes West",
+      "unitText": "decimal degrees"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20876",
+      "name": "day_local",
+      "description": "day of month, local time"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20877",
+      "name": "month_local",
+      "description": "month, local time"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20878",
+      "name": "time_local",
+      "description": "time of day, local time, using 2400 clock format"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "http://lod.example-data-repository.org/id/dataset-parameter/20879",
+      "name": "yrday_local",
+      "description": "local day and decimal time, as 326.5 for the 326th day of the year, or November 22 at 1200 hours (noon)"
+    }
+    ],
+    "funding":{
+      "@id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=9909933",
+      "@type": "MonetaryGrant",
+      "identifier": "9909933",
+      "name": "GLOBEC: Winter Ecology of Larval Krill: Quantifying their Interaction with the Pack Ice Habitat",
+      "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=9909933",
+      "funder": {
+          "@id": "http://dx.doi.org/10.13039/100000001",
+          "@type": "Organization",
+          "name": "National Science Foundation",
+          "identifier": [
+            "http://dx.doi.org/10.13039/100000001",
+            "https://ror.org/021nxhr62"
+          ]
+      }
+    },
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "name" : "depression", 
+            "description" : "lksjdflk",
+            "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h${h}v${v}.tif",
+                        "encodingFormat": "image/tiff"
+                    },
+                    {
+                        "@type": "DataDownload",
+                        "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h${h}v${v}.tif",
+                        "encodingFormat": "image/tiff"
+                    },
+                ]
+}
+</script>
+
 Here is an overview of all the current layers of the Hydrography90m dataset.
 Please see the paper by [Amatulli et al. (2022)](https://essd.copernicus.org/articles/14/4525/2022/essd-14-4525-2022.html) for further details.  
 
@@ -86,10 +252,19 @@ code {
 <script src="../../pages/hydrography90m/jquery-3.6.0.js" type="text/javascript"></script>
 
 <script>	
+    window.onhashchange = function () {
+        let hash = window.location.hash;
+        let h = hash.substring(2,4);
+        if (h.charAt(0) == '0') h = h.charAt(1); 
+        let v = hash.substring(5,7);
+        if (v.charAt(0) == '0') v = v.charAt(1);
+        set_paths(h,v);
+    };
+
 	function set_paths(h,v) {
 		h = String("00" + h).slice(-2);
 		v = String("00" + v).slice(-2);
-		
+		window.location = '#h' + h + "v" + v;
 		tile_code = 
 		`<div>
 			<p><br><b>
