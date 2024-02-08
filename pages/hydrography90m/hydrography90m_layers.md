@@ -249,7 +249,7 @@ code {
 
 </style>
 
-<script src="../../pages/hydrography90m/jquery-3.6.0.js" type="text/javascript"></script>
+<script src="../pages/hydrography90m/jquery-3.6.0.js" type="text/javascript"></script>
 
 <script>	
     window.onhashchange = function () {
