@@ -33,7 +33,7 @@ slogan: 'A 90m Dataset'
 
 #url: 'https://hydrography.org'
 url: 'https://earthcube.github.io/hydrography.org'
-baseurl: 'https://earthcube.github.io/hydrography.org'
+baseurl: 'https://earthcube.github.io/hydrography.org/'
 
 
 # This is for the editing function in _/includes/improve_content
