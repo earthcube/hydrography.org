@@ -32,8 +32,9 @@ slogan: 'A 90m Dataset'
 # baseurl: '/hydrography.org'
 
 #url: 'https://hydrography.org'
-url: 'https://earthcube.github.io/hydrography.org/'
-baseurl: 'https://earthcube.github.io/hydrography.org/'
+url: 'https://earthcube.github.io/hydrography.org'
+baseurl: '/hydrography.org'
+urlimg: 'https://earthcube.github.io/hydrography.org/images/'
 
 
 # This is for the editing function in _/includes/improve_content
@@ -46,7 +47,7 @@ improve_content: https://gitlab.com/selvaje74/hydrography/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://selvaje74.gitlab.io/hydrography.org/images/'
+#urlimg: 'https://selvaje74.gitlab.io/hydrography.org/images/'
 
 
 # Logo size is 600x80 pixels
