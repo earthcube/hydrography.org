@@ -606,7 +606,7 @@ Click below on the tiled map to get the download link or use the script [here](/
 In case of downloading multiple tiles and you want merge them use the script [here](/hydrography90m/hydrography90m_mergetile_script) 
 
 <div class="mapTileDownloadContainer">
-	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../../images/hydrography90m/basins_noTiles.png" /></div>
+	<div class="mapTileDownloadBaseLayer"><img width="750" height="300" src="../images/hydrography90m/basins_noTiles.png" /></div>
 	<!-- Row 0 -->
 	<div class="tile" style="left:36px;top:32px" title="h00v00" onclick="set_paths(00,00)"></div>
 	<div class="tile" style="left:70px;top:32px;width:35px" title="h02v00" onclick="set_paths(02,00)"></div>
