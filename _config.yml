@@ -32,7 +32,7 @@ slogan: 'A 90m Dataset'
 # baseurl: '/hydrography.org'
 
 #url: 'https://hydrography.org'
-url: 'https://earthcube.github.io/hydrography.org'
+url: 'https://earthcube.github.io'
 baseurl: '/hydrography.org'
 urlimg: 'https://earthcube.github.io/hydrography.org/images/'
 
