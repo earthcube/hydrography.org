@@ -157,7 +157,7 @@ header:
       }
     },
     "distribution": [
-{
+        
   "@type": "DataDownload",
   "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d&files=channel_dist_up_cel_h32v26.tif",
   "encodingFormat": "image/tiff"
