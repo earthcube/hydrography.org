@@ -1,347 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        <url>
+        <urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h00v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h02v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h06v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h08v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h26v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v00.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h00v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h02v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h06v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h08v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h26v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v02.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h00v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h06v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h08v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h26v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v04E.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v04.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h00v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h02v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h06v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h08v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h26v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v06.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h02v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h08v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h26v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v08.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h00v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h02v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h06v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h08v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v10.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h00v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h12v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h14v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h16v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h18v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v12.json.html</loc>
-  </url> 
-<url>
-    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+</urlset>    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v12.json.html</loc>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v12.json.html</loc>
-  </url> 
-<url>
+  </urlset> 
+<urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v12.json.html</loc>
-  </url> 
-</urlset> <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v12.json.html</loc>
-  </url> 
+  </urlset> 
+<urlset>
+    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v12.json.html</loc>
+  </urlset> 
 </urlset>

@@ -378,9 +378,9 @@ for (let tile in tiles) {
         // In case of a error throw err.
         if (err) throw err;
     })
-    const filesHtml = sitemapFiles.map(f => `<url>
+    const filesHtml = sitemapFiles.map(f => `<urlset>
     <loc>${baseUrl}${f}.html</loc>
-  </url> `)
+  </urlset> `)
 
     const sitemapHtml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
