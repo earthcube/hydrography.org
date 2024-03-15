@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "url": "{site.url}{page.url}",
+  "url": "https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h20v04.json",
   "name": "page.title",
   "description": "{{ page.excerpt | strip_newlines | strip | jsonify }}",
   "isAccessibleForFree": true,

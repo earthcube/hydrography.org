@@ -179,7 +179,7 @@ for (let tile in tiles) {
     const header = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "url": `{site.url}{page.url}`,
+        "url": `https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_${tiles[tile]}.json`,
         "name": `page.title`,
         "description": `{{ page.excerpt | strip_newlines | strip | jsonify }}`,
         "isAccessibleForFree": true,
@@ -364,14 +364,14 @@ for (let tile in tiles) {
         // In case of a error throw err.
         if (err) throw err;
     })
-    const files = sitemapFiles.map(f => `<sitemap>
+    const files = sitemapFiles.map(f => `<url>
     <loc>${baseUrl}${f}</loc>
-  </sitemap> `)
+  </url> `)
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         ${files.join("\n")}
-</sitemapindex>`
+</urlset>`
 
     fs.writeFile(`../../jsonld/sitemap_json.xml`, sitemap, (err) => {
 
