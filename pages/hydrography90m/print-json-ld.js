@@ -378,7 +378,19 @@ for (let tile in tiles) {
         // In case of a error throw err.
         if (err) throw err;
     })
+    const filesHtml = sitemapFiles.map(f => `<url>
+    <loc>${baseUrl}${f}.html</loc>
+  </url> `)
 
+    const sitemapHtml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        ${filesHtml.join("\n")}
+</urlset>`
+    fs.writeFile(`../../jsonld/sitemap_html.xml`, sitemapHtml, (err) => {
+
+        // In case of a error throw err.
+        if (err) throw err;
+    })
 }
 
 
