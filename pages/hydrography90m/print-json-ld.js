@@ -351,7 +351,7 @@ for (let tile in tiles) {
         // }
     }
     let jsonObj = header
-    jsonObj["distributions"] = dists
+    jsonObj["distribution"] = dists
     // const distribution = JSON.stringify(dists,undefined, 2)
     // const output = `${header} , "distributions": ${distribution}`
     //console.log(output)

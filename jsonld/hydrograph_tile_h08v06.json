@@ -146,7 +146,7 @@
       ]
     }
   },
-  "distributions": [
+  "distribution": [
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h08v06.tif",

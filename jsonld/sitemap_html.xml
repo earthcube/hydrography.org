@@ -330,7 +330,8 @@
 <urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h22v12.json.html</loc>
   </urlset> 
-</urlset>    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v12.json.html</loc>
+<urlset>
+    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h24v12.json.html</loc>
   </urlset> 
 <urlset>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h28v12.json.html</loc>
