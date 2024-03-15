@@ -180,12 +180,12 @@ for (let tile in tiles) {
         "@context": "https://schema.org",
         "@type": "Dataset",
         "url": `https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_${tiles[tile]}.json`,
-        "name": `page.title`,
-        "description": `{{ page.excerpt | strip_newlines | strip | jsonify }}`,
+        "name": `Datasets for hydrography.org tile code ${tiles[tile]}`,
+        "description": `Datasets for hydrography.org tile code ${tiles[tile]}`,
         "isAccessibleForFree": true,
-        "keywords": `{{ page.tags | join: ',' | jsonify }}`,
-        "datePublished": `{{ page.date | jsonify }}`,
-        "dateModified": `{{ page.last_modified_at | default: page.date | jsonify }}`,
+        "keywords": `hydrography`,
+        "datePublished": `2015-03-17`,
+        "dateModified": `2015-03-17`,
         "creator": {
             "@list": [
                 {
