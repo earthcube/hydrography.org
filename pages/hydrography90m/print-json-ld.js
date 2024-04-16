@@ -173,19 +173,119 @@ const tiles = ["h00v00"
     , "h34v12"
 ]
 
-let sitemapFiles = []
+let layers = new Map([
+    ['Input layers', [
+        ['Elevation', 'http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/'],
+        ['Depression', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d']
+    ]
+    ],
+    ['Base layers', [
+        ['Flow accumulation', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d'],
+        ['Flow direction', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdirection_tiles20d']
+    ]],
+    ['Network layers', [
+        ['Drainage basin', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d'],
+        ['Stream segment', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsegment_tiles20d'],
+        ['Sub-catchment', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsub_catchment_tiles20d'],
+        ['Outlet', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d']
+    ]],
+    ['Stream slope layers', [
+        ['Maximum curvature between highest upstream cell, focal cell and downstream cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d'],
+        ['Minimum curvature between lowest upstream cell, focal cell and downstream cell.',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d'],
+        ['Elevation difference between focal cell and downstream cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d'],
+        ['Focal cell gradient',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d']
+    ]],
+    ['Stream distance layers', [
+        ['Shortest upstream distance between focal grid cell and the nearest sub-catchment drainage divide',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d'],
+        ['Longest upstream distance between focal grid cell and the nearest sub-catchment drainage divide',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d'],
+        ['Distance between focal grid cell and its nearest downstream stream grid cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d'],
+        ['Distance between focal grid cell and the outlet grid cell in the network',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d'],
+        ['Distance between focal grid cell and the downstream stream node grid cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d'],
+        ['Euclidean distance between focal grid cell and the stream network',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d'],
+        ['Elevation difference of the shortest path from focal grid cell to the sub-catchment drainage divide',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d'],
+        ['Elevation difference of the longest path from focal grid cell to the sub-catchment drainage divide',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d'],
+        ['Elevation difference between focal grid cell and its nearest downstream stream pixel',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d'],
+        ['Elevation difference between focal grid cell and the outlet grid cell in the network',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d'],
+        ['Elevation difference between focal grid cell and the downstream stream node grid cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d']
+    ]],
+    ['Stream segment properties layers', [
+        ['Segment downstream mean gradient between focal cell and the node/outlet',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d'],
+        ['Segment upstream mean gradient between focal cell and the init/node',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d'],
+        ['Upstream gradient between focal cell and the next cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d'],
+        ['Cell stream course curvature of the focal cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d'],
+        ['Segment downstream elevation difference between focal cell and the node/outlet',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d'],
+        ['Segment upstream elevation difference between focal cell and the init/node',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d'],
+        ['Upstream elevation difference between focal cell and the next cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d'],
+        ['Downstream elevation difference between focal cell and the next cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d'],
+        ['Segment downstream distance between focal cell and the node/outlet',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d'],
+        ['Segment upstream distance between focal cell and the init/node',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d'],
+        ['Upstream distance between focal cell and next cell',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d']
+    ]],
+    ['Stream order layers', [
+        ['Strahler’s stream order',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d'],
+        ['Shreve’s stream magnitude',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d'],
+        ['Horton’s stream order',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d'],
+        ['Hack’s stream order',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d'],
+        ['Topological dimension of streams',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d'],
+        ['All stream segments and nodes attributes',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d']
+    ]],
+    ['Flow index layers', [
+        ['Stream power index',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fspi_tiles20d'],
+        ['Stream transportation index (sti)',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fsti_tiles20d'],
+        ['Compound topographic index',
+            'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fcti_tiles20d'],
+    ]]
+]);
 
-for (let tile in tiles) {
+function lowerAndReplaceSpaces(inputString) {
+    return inputString.toLowerCase().replace(/ /g, '_');
+}
+
+function getHeader(url, name, description) {
     const header = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "url": `https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_${tiles[tile]}.json`,
-        "name": `Datasets for hydrography.org tile code ${tiles[tile]}`,
-        "description": `Datasets for hydrography.org tile code ${tiles[tile]}`,
+        "url": url,
+        "name": name,
+        "description": description,
         "isAccessibleForFree": true,
         "keywords": `hydrography`,
-        "datePublished": `2015-03-17`,
-        "dateModified": `2015-03-17`,
+        "datePublished": `2022-10-17`,
+        "dateModified": `2022-10-17`,
         "creator": {
             "@list": [
                 {
@@ -325,12 +425,22 @@ for (let tile in tiles) {
             }
         }
     }
+    return header;
+}
+
+let sitemapFiles = []
+
+for (let tile in tiles) {
+    const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_${tiles[tile]}.json`,
+        `Datasets for hydrography.org tile code ${tiles[tile]}`,
+        `Datasets for hydrography.org tile code ${tiles[tile]}`)
 
     let dists = []
     for (const baseUrl of tileUrls) {
         const specificUrl = baseUrl.replace(/\${tile}/g, tiles[tile]);
         let dist = {
             '@type': "DataDownload",
+
             "contentUrl": specificUrl,
         }
         if (specificUrl.endsWith(".gpkg")) {
@@ -393,4 +503,65 @@ for (let tile in tiles) {
     })
 }
 
+layers.forEach((value, key) => {
+    const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`,
+        `Datasets for hydrography.org: ${key}`,
+        `Datasets for hydrography.org: ${key}`)
+
+    let dists = []
+    value.forEach(([layerName, layerLink]) => {
+        console.log(`Layer: ${layerName}`);
+        console.log(`Link: ${layerLink}`);
+        const specificUrl = baseUrl.replace(/\${layerLink}/g, layerLink);
+        let dist = {
+            '@type': "DataDownload",
+            "contentUrl": specificUrl,
+        }
+        if (specificUrl.endsWith(".gpkg")) {
+            dist["encodingFormat"] = "application/geopackage+vnd.sqlite3";
+        } else {
+            dist["encodingFormat"] = "image/tiff";
+        }
+        dists.push(dist)
+    });
+
+    let jsonObj = header
+    jsonObj["distribution"] = dists
+
+    let output = JSON.stringify(jsonObj, undefined, 2)
+    console.log(output)
+    const filename = `jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`
+    sitemapFiles.push(filename)
+    fs.writeFile(`../../${filename}`, output, (err) => {
+        // In case of a error throw err.
+        if (err) throw err;
+    })
+    const files = sitemapFiles.map(f => `<url>
+    <loc>${baseUrl}${f}</loc>
+  </url> `)
+
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        ${files.join("\n")}
+</urlset>`
+
+    fs.writeFile(`../../jsonld/sitemap_json.xml`, sitemap, (err) => {
+
+        // In case of a error throw err.
+        if (err) throw err;
+    })
+    const filesHtml = sitemapFiles.map(f => `<urlset>
+    <loc>${baseUrl}${f}.html</loc>
+  </urlset> `)
+
+    const sitemapHtml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        ${filesHtml.join("\n")}
+</urlset>`
+    fs.writeFile(`../../jsonld/sitemap_html.xml`, sitemapHtml, (err) => {
+
+        // In case of a error throw err.
+        if (err) throw err;
+    })
+});
 
