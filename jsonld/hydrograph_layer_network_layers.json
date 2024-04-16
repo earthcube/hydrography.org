@@ -149,22 +149,22 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsegment_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsub_catchment_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d",
       "encodingFormat": "image/tiff"
     }
   ]

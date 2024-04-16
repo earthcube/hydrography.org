@@ -440,7 +440,6 @@ for (let tile in tiles) {
         const specificUrl = baseUrl.replace(/\${tile}/g, tiles[tile]);
         let dist = {
             '@type': "DataDownload",
-
             "contentUrl": specificUrl,
         }
         if (specificUrl.endsWith(".gpkg")) {
@@ -510,9 +509,7 @@ layers.forEach((value, key) => {
 
     let dists = []
     value.forEach(([layerName, layerLink]) => {
-        console.log(`Layer: ${layerName}`);
-        console.log(`Link: ${layerLink}`);
-        const specificUrl = baseUrl.replace(/\${layerLink}/g, layerLink);
+        const specificUrl = layerLink;
         let dist = {
             '@type': "DataDownload",
             "contentUrl": specificUrl,
@@ -529,7 +526,6 @@ layers.forEach((value, key) => {
     jsonObj["distribution"] = dists
 
     let output = JSON.stringify(jsonObj, undefined, 2)
-    console.log(output)
     const filename = `jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`
     sitemapFiles.push(filename)
     fs.writeFile(`../../${filename}`, output, (err) => {

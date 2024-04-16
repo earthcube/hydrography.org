@@ -149,57 +149,57 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d",
       "encodingFormat": "image/tiff"
     }
   ]

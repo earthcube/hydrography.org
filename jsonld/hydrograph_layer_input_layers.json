@@ -149,12 +149,12 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d",
       "encodingFormat": "image/tiff"
     }
   ]

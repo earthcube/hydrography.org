@@ -149,32 +149,32 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://earthcube.github.io/hydrography.org/",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d",
       "encodingFormat": "image/tiff"
     }
   ]
