@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const baseUrl = "https://earthcube.github.io/hydrography.org/"
 
-let tileUrls = new Map([
+let tileUrls = [
     ['Depression', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_${tile}.tif'],
     ['Flow accumulation', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_${tile}.tif'],
     ['Flow direction', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_${tile}.tif'],
@@ -84,7 +84,7 @@ let tileUrls = new Map([
         'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_${tile}.tif'],
     ['Compound topographic index',
         'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_${tile}.tif']
-]);
+]
 
 const tiles = ["h00v00", "h02v00", "h04v00", "h06v00", "h08v00", "h10v00", "h12v00", "h14v00", "h16v00", "h18v00",
     "h20v00", "h22v00", "h24v00", "h26v00", "h28v00", "h30v00", "h32v00", "h34v00", "h00v02", "h02v02", "h04v02", "h06v02",
@@ -361,7 +361,9 @@ for (let tile in tiles) {
         `Datasets for hydrography.org tile code ${tiles[tile]}`)
 
     let dists = []
-    tileUrls.forEach((layerLink, layerName) => {
+    tileUrls.forEach((layer) => {
+        let layerName = layer[0];
+        let layerLink = layer[1];
         const specificUrl = layerLink.replace(/\${tile}/g, tiles[tile]);
         let dist = {
             '@type': "DataDownload",
@@ -379,7 +381,7 @@ for (let tile in tiles) {
     let jsonObj = header
     jsonObj["distribution"] = dists
     let output = JSON.stringify(jsonObj, undefined, 2)
-    console.log(output)
+    //console.log(output)
     const filename = `jsonld/hydrograph_tile_${tiles[tile]}.json`
     sitemapFiles.push(filename)
     fs.writeFile(`../../${filename}`, output, (err) => {

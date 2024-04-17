@@ -167,6 +167,12 @@
     },
     {
       "@type": "DataDownload",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h20v04.tif",
+      "name": "Drainage basin",
+      "encodingFormat": "[image/tiff]"
+    },
+    {
+      "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h20v04.gpkg",
       "name": "Drainage basin",
       "encodingFormat": "[application/geopackage+vnd.sqlite3]"
@@ -181,6 +187,12 @@
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_h20v04.tif",
       "name": "Sub-catchment",
+      "encodingFormat": "[image/tiff]"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h20v04.tif",
+      "name": "Outlet",
       "encodingFormat": "[image/tiff]"
     },
     {
@@ -374,6 +386,12 @@
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_topo_tiles20d&files=order_topo_h20v04.tif",
       "name": "Topological dimension of streams",
       "encodingFormat": "[image/tiff]"
+    },
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_point_h20v04.gpkg",
+      "name": "All stream segments and nodes attributes",
+      "encodingFormat": "[application/geopackage+vnd.sqlite3]"
     },
     {
       "@type": "DataDownload",
