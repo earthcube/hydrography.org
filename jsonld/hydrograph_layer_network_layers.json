@@ -6,8 +6,8 @@
   "description": "Datasets for hydrography.org: Network layers",
   "isAccessibleForFree": true,
   "keywords": "hydrography",
-  "datePublished": "2015-03-17",
-  "dateModified": "2015-03-17",
+  "datePublished": "2022-10-17",
+  "dateModified": "2022-10-17",
   "creator": {
     "@list": [
       {
@@ -150,21 +150,25 @@
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fbasin_tiles20d",
+      "name": "Drainage basin",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsegment_tiles20d",
+      "name": "Stream segment",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fsub_catchment_tiles20d",
+      "name": "Sub-catchment",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Foutlet_tiles20d",
+      "name": "Outlet",
       "encodingFormat": "image/tiff"
     }
   ]

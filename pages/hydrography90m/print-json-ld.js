@@ -284,8 +284,8 @@ function getHeader(url, name, description) {
         "description": description,
         "isAccessibleForFree": true,
         "keywords": `hydrography`,
-        "datePublished": `2015-03-17`,
-        "dateModified": `2015-03-17`,
+        "datePublished": `2022-10-17`,
+        "dateModified": `2022-10-17`,
         "creator": {
             "@list": [
                 {
@@ -513,6 +513,7 @@ layers.forEach((value, key) => {
         let dist = {
             '@type': "DataDownload",
             "contentUrl": specificUrl,
+            "name": layerName
         }
         if (specificUrl.endsWith(".gpkg")) {
             dist["encodingFormat"] = "application/geopackage+vnd.sqlite3";

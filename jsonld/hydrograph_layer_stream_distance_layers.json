@@ -6,8 +6,8 @@
   "description": "Datasets for hydrography.org: Stream distance layers",
   "isAccessibleForFree": true,
   "keywords": "hydrography",
-  "datePublished": "2015-03-17",
-  "dateModified": "2015-03-17",
+  "datePublished": "2022-10-17",
+  "dateModified": "2022-10-17",
   "creator": {
     "@list": [
       {
@@ -150,56 +150,67 @@
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d",
+      "name": "Shortest upstream distance between focal grid cell and the nearest sub-catchment drainage divide",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d",
+      "name": "Longest upstream distance between focal grid cell and the nearest sub-catchment drainage divide",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d",
+      "name": "Distance between focal grid cell and its nearest downstream stream grid cell",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d",
+      "name": "Distance between focal grid cell and the outlet grid cell in the network",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d",
+      "name": "Distance between focal grid cell and the downstream stream node grid cell",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d",
+      "name": "Euclidean distance between focal grid cell and the stream network",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d",
+      "name": "Elevation difference of the shortest path from focal grid cell to the sub-catchment drainage divide",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d",
+      "name": "Elevation difference of the longest path from focal grid cell to the sub-catchment drainage divide",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d",
+      "name": "Elevation difference between focal grid cell and its nearest downstream stream pixel",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d",
+      "name": "Elevation difference between focal grid cell and the outlet grid cell in the network",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d",
+      "name": "Elevation difference between focal grid cell and the downstream stream node grid cell",
       "encodingFormat": "image/tiff"
     }
   ]

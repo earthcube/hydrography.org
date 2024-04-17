@@ -6,8 +6,8 @@
   "description": "Datasets for hydrography.org: Flow index layers",
   "isAccessibleForFree": true,
   "keywords": "hydrography",
-  "datePublished": "2015-03-17",
-  "dateModified": "2015-03-17",
+  "datePublished": "2022-10-17",
+  "dateModified": "2022-10-17",
   "creator": {
     "@list": [
       {
@@ -150,16 +150,19 @@
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fspi_tiles20d",
+      "name": "Stream power index",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fsti_tiles20d",
+      "name": "Stream transportation index (sti)",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fcti_tiles20d",
+      "name": "Compound topographic index",
       "encodingFormat": "image/tiff"
     }
   ]

@@ -6,8 +6,8 @@
   "description": "Datasets for hydrography.org: Stream segment properties layers",
   "isAccessibleForFree": true,
   "keywords": "hydrography",
-  "datePublished": "2015-03-17",
-  "dateModified": "2015-03-17",
+  "datePublished": "2022-10-17",
+  "dateModified": "2022-10-17",
   "creator": {
     "@list": [
       {
@@ -150,56 +150,67 @@
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d",
+      "name": "Segment downstream mean gradient between focal cell and the node/outlet",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d",
+      "name": "Segment upstream mean gradient between focal cell and the init/node",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d",
+      "name": "Upstream gradient between focal cell and the next cell",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d",
+      "name": "Cell stream course curvature of the focal cell",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d",
+      "name": "Segment downstream elevation difference between focal cell and the node/outlet",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d",
+      "name": "Segment upstream elevation difference between focal cell and the init/node",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d",
+      "name": "Upstream elevation difference between focal cell and the next cell",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d",
+      "name": "Downstream elevation difference between focal cell and the next cell",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d",
+      "name": "Segment downstream distance between focal cell and the node/outlet",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d",
+      "name": "Segment upstream distance between focal cell and the init/node",
       "encodingFormat": "image/tiff"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d",
+      "name": "Upstream distance between focal cell and next cell",
       "encodingFormat": "image/tiff"
     }
   ]
