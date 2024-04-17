@@ -361,7 +361,7 @@ for (let tile in tiles) {
         `Datasets for hydrography.org tile code ${tiles[tile]}`)
 
     let dists = []
-    tileUrls.forEach((layerName, layerLink) => {
+    tileUrls.forEach((layerLink, layerName) => {
         const specificUrl = layerLink.replace(/\${tile}/g, tiles[tile]);
         let dist = {
             '@type': "DataDownload",
