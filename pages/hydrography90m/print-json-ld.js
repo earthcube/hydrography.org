@@ -305,21 +305,7 @@ function getHeader(url, name, description) {
             "geo": {
                 "@type": "GeoShape",
                 "box": "-68.4817 -75.8183 -65.08 -68.5033"
-            },
-            "additionalProperty": [
-                {
-                    "@type": "PropertyValue",
-                    "propertyID": "http://www.wikidata.org/entity/Q4018860",
-                    "name": "well-known text (WKT) representation of geometry",
-                    "value": "POLYGON ((-75.8183 -68.4817, -68.5033 -68.4817, -68.5033 -65.08, -75.8183 -65.08, -75.8183 -68.4817))"
-                },
-                {
-                    "@type": "PropertyValue",
-                    "propertyID": "http://www.wikidata.org/entity/Q161779",
-                    "name": "Spatial Reference System",
-                    "value": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
-                }
-            ]
+            }
         },
         "variableMeasured": [
             {
