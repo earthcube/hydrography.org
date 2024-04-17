@@ -302,9 +302,14 @@ function getHeader(url, name, description) {
         "temporalCoverage": "2001-08-06/2002-09-09",
         "spatialCoverage": {
             "@type": "Place",
+
+            "name": "hydrography90m",
+
             "geo": {
+
                 "@type": "GeoShape",
-                "line":"9.385149,101.2198 9.385611,101.353935"
+                "box": "60.1849 11.0053 60.3917 11.1783"
+
             }
         },
         "variableMeasured": [
