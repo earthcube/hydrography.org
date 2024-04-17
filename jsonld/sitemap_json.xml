@@ -357,8 +357,7 @@
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_stream_slope_layers.json</loc>
   </url> 
-<url>
-    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_stream_distance_layers.json</loc>
+</urlset> <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_stream_distance_layers.json</loc>
   </url> 
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_stream_segment_properties_layers.json</loc>
