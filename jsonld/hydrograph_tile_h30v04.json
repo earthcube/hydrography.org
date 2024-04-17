@@ -1,9 +1,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "url": "https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h10v00.json",
-  "name": "Datasets for hydrography.org tile code h10v00",
-  "description": "Datasets for hydrography.org tile code h10v00",
+  "url": "https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h30v04.json",
+  "name": "Datasets for hydrography.org tile code h30v04",
+  "description": "Datasets for hydrography.org tile code h30v04",
   "isAccessibleForFree": true,
   "keywords": "hydrography",
   "datePublished": "2022-10-17",

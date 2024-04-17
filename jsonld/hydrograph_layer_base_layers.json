@@ -151,13 +151,13 @@
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Faccumulation_tiles20d",
       "name": "Flow accumulation",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdirection_tiles20d",
       "name": "Flow direction",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     }
   ]
 }

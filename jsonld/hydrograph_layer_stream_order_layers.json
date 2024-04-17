@@ -151,37 +151,37 @@
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_strahler_tiles20d",
       "name": "Strahler’s stream order",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_shreve_tiles20d",
       "name": "Shreve’s stream magnitude",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_horton_tiles20d",
       "name": "Horton’s stream order",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_hack_tiles20d",
       "name": "Hack’s stream order",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_topo_tiles20d",
       "name": "Topological dimension of streams",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.stream.order%2Forder_vect_tiles20d",
       "name": "All stream segments and nodes attributes",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     }
   ]
 }

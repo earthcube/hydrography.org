@@ -151,13 +151,13 @@
       "@type": "DataDownload",
       "contentUrl": "http://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/",
       "name": "Elevation",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fr.watershed%2Fdepression_tiles20d",
       "name": "Depression",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     }
   ]
 }

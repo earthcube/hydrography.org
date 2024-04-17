@@ -151,19 +151,19 @@
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fspi_tiles20d",
       "name": "Stream power index",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fsti_tiles20d",
       "name": "Stream transportation index (sti)",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fcti_tiles20d",
       "name": "Compound topographic index",
-      "encodingFormat": "image/tiff"
+      "encodingFormat": "[image/tiff]"
     }
   ]
 }

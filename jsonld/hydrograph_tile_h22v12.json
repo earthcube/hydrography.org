@@ -149,228 +149,255 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Depression",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Flow accumulation",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Flow direction",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdirection_tiles20d&files=direction_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Drainage basin",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_${tile}.gpkg",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fbasin_tiles20d&files=basin_h22v12.gpkg",
-      "encodingFormat": "application/geopackage+vnd.sqlite3"
+      "contentUrl": "Stream segment",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsegment_tiles20d&files=segment_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsegment_tiles20d&files=segment_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Sub-catchment",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fsub_catchment_tiles20d&files=sub_catchment_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Outlet",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_${tile}.gpkg",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Maximum curvature between highest upstream cell, focal cell and downstream cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Foutlet_tiles20d&files=outlet_h22v12.gpkg",
-      "encodingFormat": "application/geopackage+vnd.sqlite3"
+      "contentUrl": "Minimum curvature between lowest upstream cell, focal cell and downstream cell.",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d&files=slope_curv_min_dw_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_max_dw_cel_tiles20d&files=slope_curv_max_dw_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Elevation difference between focal cell and downstream cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_curv_min_dw_cel_tiles20d&files=slope_curv_min_dw_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Focal cell gradient",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d&files=slope_grad_dw_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_elv_dw_cel_tiles20d&files=slope_elv_dw_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Shortest upstream distance between focal grid cell and the nearest sub-catchment drainage divide",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d&files=stream_dist_up_near_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.slope%2Fslope_grad_dw_cel_tiles20d&files=slope_grad_dw_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Longest upstream distance between focal grid cell and the nearest sub-catchment drainage divide",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d&files=stream_dist_up_farth_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_near_tiles20d&files=stream_dist_up_near_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Distance between focal grid cell and its nearest downstream stream grid cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d&files=stream_dist_dw_near_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_up_farth_tiles20d&files=stream_dist_up_farth_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Distance between focal grid cell and the outlet grid cell in the network",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d&files=outlet_dist_dw_basin_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_dw_near_tiles20d&files=stream_dist_dw_near_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Distance between focal grid cell and the downstream stream node grid cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d&files=outlet_dist_dw_scatch_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_basin_tiles20d&files=outlet_dist_dw_basin_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Euclidean distance between focal grid cell and the stream network",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d&files=stream_dist_proximity_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_dist_dw_scatch_tiles20d&files=outlet_dist_dw_scatch_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Elevation difference of the shortest path from focal grid cell to the sub-catchment drainage divide",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d&files=stream_diff_up_near_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_dist_proximity_tiles20d&files=stream_dist_proximity_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Elevation difference of the longest path from focal grid cell to the sub-catchment drainage divide",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_near_tiles20d&files=stream_diff_up_near_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Elevation difference between focal grid cell and its nearest downstream stream pixel",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d&files=stream_diff_dw_near_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_up_farth_tiles20d&files=stream_diff_up_farth_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Elevation difference between focal grid cell and the outlet grid cell in the network",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d&files=outlet_diff_dw_basin_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Fstream_diff_dw_near_tiles20d&files=stream_diff_dw_near_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Elevation difference between focal grid cell and the downstream stream node grid cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d&files=outlet_diff_dw_scatch_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_basin_tiles20d&files=outlet_diff_dw_basin_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Segment downstream mean gradient between focal cell and the node/outlet",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d&files=channel_grad_dw_seg_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.distance%2Foutlet_diff_dw_scatch_tiles20d&files=outlet_diff_dw_scatch_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Segment upstream mean gradient between focal cell and the init/node",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d&files=channel_grad_up_seg_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_dw_seg_tiles20d&files=channel_grad_dw_seg_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Upstream gradient between focal cell and the next cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d&files=channel_grad_up_cel_h00v00.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_seg_tiles20d&files=channel_grad_up_seg_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Cell stream course curvature of the focal cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d&files=channel_curv_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_grad_up_cel_tiles20d&files=channel_grad_up_cel_h00v00.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Segment downstream elevation difference between focal cell and the node/outlet",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d&files=channel_elv_dw_seg_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_curv_cel_tiles20d&files=channel_curv_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Segment upstream elevation difference between focal cell and the init/node",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d&files=channel_elv_up_seg_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_seg_tiles20d&files=channel_elv_dw_seg_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Upstream elevation difference between focal cell and the next cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d&files=channel_elv_up_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_seg_tiles20d&files=channel_elv_up_seg_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Downstream elevation difference between focal cell and the next cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d&files=channel_elv_dw_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_up_cel_tiles20d&files=channel_elv_up_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Segment downstream distance between focal cell and the node/outlet",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d&files=channel_dist_dw_seg_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_elv_dw_cel_tiles20d&files=channel_elv_dw_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Segment upstream distance between focal cell and the init/node",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d&files=channel_dist_up_seg_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_dw_seg_tiles20d&files=channel_dist_dw_seg_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Upstream distance between focal cell and next cell",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d&files=channel_dist_up_cel_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_seg_tiles20d&files=channel_dist_up_seg_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Strahler’s stream order",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_strahler_tiles20d&files=order_strahler_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.channel%2Fchannel_dist_up_cel_tiles20d&files=channel_dist_up_cel_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Shreve’s stream magnitude",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_shreve_tiles20d&files=order_shreve_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_strahler_tiles20d&files=order_strahler_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Horton’s stream order",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_shreve_tiles20d&files=order_shreve_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Hack’s stream order",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_horton_tiles20d&files=order_horton_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Topological dimension of streams",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_topo_tiles20d&files=order_topo_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_hack_tiles20d&files=order_hack_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "All stream segments and nodes attributes",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_segment_${tile}.gpkg",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_topo_tiles20d&files=order_topo_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Stream power index",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fspi_tiles20d&files=spi_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_point_h22v12.gpkg",
-      "encodingFormat": "application/geopackage+vnd.sqlite3"
+      "contentUrl": "Stream transportation index (sti)",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.stream.order%2Forder_vect_tiles20d&files=order_vect_segment_h22v12.gpkg",
-      "encodingFormat": "application/geopackage+vnd.sqlite3"
-    },
-    {
-      "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fspi_tiles20d&files=spi_h22v12.tif",
-      "encodingFormat": "image/tiff"
-    },
-    {
-      "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fsti_tiles20d&files=sti_h22v12.tif",
-      "encodingFormat": "image/tiff"
-    },
-    {
-      "@type": "DataDownload",
-      "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_h22v12.tif",
-      "encodingFormat": "image/tiff"
+      "contentUrl": "Compound topographic index",
+      "name": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fflow.index%2Fcti_tiles20d&files=cti_${tile}.tif",
+      "encodingFormat": "[image/tiff]"
     }
   ]
 }
