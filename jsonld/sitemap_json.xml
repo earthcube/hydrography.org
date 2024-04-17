@@ -6,8 +6,7 @@
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h02v00.json</loc>
   </url> 
-<url>
-    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v00.json</loc>
+</urlset> <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h04v00.json</loc>
   </url> 
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h06v00.json</loc>

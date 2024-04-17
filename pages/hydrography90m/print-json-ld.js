@@ -304,7 +304,7 @@ function getHeader(url, name, description) {
             "@type": "Place",
             "geo": {
                 "@type": "GeoShape",
-                "box": "-68.4817,-75.8183 -65.08,-68.5033"
+                "box": "19.27 -158.14 21.37 -155.05"
             },
             "additionalProperty": [
                 {
