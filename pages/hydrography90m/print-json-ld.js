@@ -439,7 +439,7 @@ layers.forEach((value, key) => {
     const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`,
         `Datasets for hydrography.org: ${key}`,
         `Datasets for hydrography.org: ${key}`,
-        "-180 80 180 -60")
+        "80 -180 -60 180")
 
     let dists = []
     value.forEach(([layerName, layerLink]) => {
