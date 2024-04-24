@@ -200,7 +200,7 @@ function lowerAndReplaceSpaces(inputString) {
     return inputString.toLowerCase().replace(/ /g, '_');
 }
 
-function getHeader(url, name, description) {
+function getHeader(url, name, description, geoShape) {
     const header = {
         "@context": "https://schema.org",
         "@type": "Dataset",
@@ -229,7 +229,7 @@ function getHeader(url, name, description) {
             "@type": "Place",
             "geo": {
                 "@type": "GeoShape",
-                "box": "-68.4817 -75.8183 -65.08 -68.5033"
+                "box": geoShape
             },
             "additionalProperty": [
                 {
@@ -353,12 +353,31 @@ function getHeader(url, name, description) {
     return header;
 }
 
+function tileToGeoBox(tile) {
+    const hMatch = tile.match(/h(\d{2})/);
+    const vMatch = tile.match(/v(\d{2})/);
+    if (!hMatch || !vMatch) return null; // Return null if the format doesn't match
+
+    const h = parseInt(hMatch[1], 10);
+    const v = parseInt(vMatch[1], 10);
+
+    // Calculate longitude and latitude based on 'h' and 'v'
+    const lon1 = -180 + h * 10;
+    const lat1 = 80 - v * 10;
+    const lon2 = lon1 + 20;
+    const lat2 = lat1 - 20;
+
+    // Return the geoshape box
+    return `${lon1} ${lat1} ${lon2} ${lat2}`;
+}
+
 let sitemapFiles = []
 
 for (let tile in tiles) {
     const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_${tiles[tile]}.json`,
         `Datasets for hydrography.org tile code ${tiles[tile]}`,
-        `Datasets for hydrography.org tile code ${tiles[tile]}`)
+        `Datasets for hydrography.org tile code ${tiles[tile]}`,
+        tileToGeoBox(tiles[tile]))
 
     let dists = []
     tileUrls.forEach((layer) => {
@@ -419,7 +438,8 @@ for (let tile in tiles) {
 layers.forEach((value, key) => {
     const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`,
         `Datasets for hydrography.org: ${key}`,
-        `Datasets for hydrography.org: ${key}`)
+        `Datasets for hydrography.org: ${key}`,
+        "-180 80 180 -60")
 
     let dists = []
     value.forEach(([layerName, layerLink]) => {
