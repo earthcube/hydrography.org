@@ -26,7 +26,7 @@
     "@type": "Place",
     "geo": {
       "@type": "GeoShape",
-      "box": "-180 80 -160 60"
+      "box": "80 -180 60 -160"
     },
     "additionalProperty": [
       {

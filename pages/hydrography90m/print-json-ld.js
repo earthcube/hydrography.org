@@ -368,7 +368,7 @@ function tileToGeoBox(tile) {
     const lat2 = lat1 - 20;
 
     // Return the geoshape box
-    return `${lon1} ${lat1} ${lon2} ${lat2}`;
+    return `${lat1} ${lon1} ${lat2} ${lon2}`;
 }
 
 let sitemapFiles = []

@@ -342,7 +342,8 @@
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v12.json</loc>
   </url> 
-</urlset> <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v12.json</loc>
+<url>
+    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h34v12.json</loc>
   </url> 
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_input_layers.json</loc>
@@ -365,7 +366,6 @@
 <url>
     <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_stream_order_layers.json</loc>
   </url> 
-<url>
-    <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_flow_index_layers.json</loc>
+</urlset> <loc>https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_flow_index_layers.json</loc>
   </url> 
 </urlset>
