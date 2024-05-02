@@ -2,6 +2,13 @@ const fs = require('fs')
 
 const baseUrl = "https://earthcube.github.io/hydrography.org/"
 
+const DatasetType = {
+    TILE: "tile",
+    LAYER: "layer"
+};
+
+let sitemapFiles = []
+
 let tileUrls = [
     ['Depression', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_${tile}.tif'],
     ['Flow accumulation', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Faccumulation_tiles20d&files=accumulation_${tile}.tif'],
@@ -353,7 +360,8 @@ function getHeader(url, name, description, geoShape) {
     return header;
 }
 
-function tileToGeoBox(tile) {
+// transform tiles in hydrography.org to GeoShape box
+function tileToGeoshapeBox(tile) {
     const hMatch = tile.match(/h(\d{2})/);
     const vMatch = tile.match(/v(\d{2})/);
     if (!hMatch || !vMatch) return null; // Return null if the format doesn't match
@@ -371,13 +379,55 @@ function tileToGeoBox(tile) {
     return `${lat1} ${lon1} ${lat2} ${lon2}`;
 }
 
-let sitemapFiles = []
+// write dataset and sitemap
+function writeDataset(filename, output, sitemapName) {
+    sitemapFiles.push(filename)
 
+    fs.writeFile(`../../${filename}`, output, (err) => {
+        if (err) throw err;
+    })
+
+    const files = sitemapFiles.map(f =>
+        `<url>
+             <loc>${baseUrl}${f}</loc>
+         </url>`
+    )
+
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+            ${files.join("\n")}
+        </urlset>`
+
+    fs.writeFile(sitemapName, sitemap, (err) => {
+        if (err) throw err;
+    })
+}
+
+// compose output dataset
+function outputDataset(header, dists, datasetType, datasetName) {
+    let jsonObj = header
+    jsonObj["distribution"] = dists
+    let output = JSON.stringify(jsonObj, undefined, 2)
+
+    // write json dataset and sitemap
+    writeDataset(`jsonld/${datasetName}.json`,
+        output, `../../jsonld/sitemap_json.xml`)
+
+    // write html dataset and sitemap
+    writeDataset(`jsonld/${datasetName}.json.html`,
+        output, `../../jsonld/sitemap_html.xml`)
+}
+
+// process tile datasets
 for (let tile in tiles) {
-    const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_${tiles[tile]}.json`,
+    const datasetType = DatasetType.TILE
+    const datasetName = `hydrograph_${datasetType}_${tiles[tile]}`
+    const header = getHeader(
+        `${baseUrl}/jsonld/${datasetName}.json`,
         `Datasets for hydrography.org tile code ${tiles[tile]}`,
         `Datasets for hydrography.org tile code ${tiles[tile]}`,
-        tileToGeoBox(tiles[tile]))
+        tileToGeoshapeBox(tiles[tile]) // transform tiles in hydrography.org to GeoShape box
+    )
 
     let dists = []
     tileUrls.forEach((layer) => {
@@ -397,59 +447,28 @@ for (let tile in tiles) {
         dists.push(dist)
     });
 
-    let jsonObj = header
-    jsonObj["distribution"] = dists
-    let output = JSON.stringify(jsonObj, undefined, 2)
-    //console.log(output)
-    const filename = `jsonld/hydrograph_tile_${tiles[tile]}.json`
-    sitemapFiles.push(filename)
-    fs.writeFile(`../../${filename}`, output, (err) => {
-        // In case of a error throw err.
-        if (err) throw err;
-    })
-    const files = sitemapFiles.map(f => `<url>
-    <loc>${baseUrl}${f}</loc>
-  </url> `)
-
-    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        ${files.join("\n")}
-</urlset>`
-
-    fs.writeFile(`../../jsonld/sitemap_json.xml`, sitemap, (err) => {
-        // In case of a error throw err.
-        if (err) throw err;
-    })
-    const filesHtml = sitemapFiles.map(f => `<urlset>
-    <loc>${baseUrl}${f}.html</loc>
-  </urlset> `)
-
-    const sitemapHtml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        ${filesHtml.join("\n")}
-</urlset>`
-    fs.writeFile(`../../jsonld/sitemap_html.xml`, sitemapHtml, (err) => {
-
-        // In case of a error throw err.
-        if (err) throw err;
-    })
+    outputDataset(header, dists, datasetType, datasetName);
 }
 
-layers.forEach((value, key) => {
-    const header = getHeader(`https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`,
-        `Datasets for hydrography.org: ${key}`,
-        `Datasets for hydrography.org: ${key}`,
-        "60 -100 -40 80")
+// process layer datasets
+layers.forEach((subLayers, layer) => {
+    const datasetType = DatasetType.LAYER
+    const datasetName = `hydrograph_${datasetType}_${lowerAndReplaceSpaces(layer)}`
+    const header = getHeader(
+        `${baseUrl}/jsonld/${datasetName}.json`,
+        `Datasets for hydrography.org: ${layer}`,
+        `Datasets for hydrography.org: ${layer}`,
+        "60 -100 -40 80" // layer datasets have fixed geo coordinates
+    )
 
     let dists = []
-    value.forEach(([layerName, layerLink]) => {
-        const specificUrl = layerLink;
+    subLayers.forEach(([layerName, layerLink]) => {
         let dist = {
             '@type': "DataDownload",
-            "contentUrl": specificUrl,
+            "contentUrl": layerLink,
             "name": layerName
         }
-        if (specificUrl.endsWith(".gpkg")) {
+        if (layerLink.endsWith(".gpkg")) {
             dist["encodingFormat"] = "[application/geopackage+vnd.sqlite3]";
         } else {
             dist["encodingFormat"] = "[image/tiff]";
@@ -457,42 +476,5 @@ layers.forEach((value, key) => {
         dists.push(dist)
     });
 
-    let jsonObj = header
-    jsonObj["distribution"] = dists
-
-    let output = JSON.stringify(jsonObj, undefined, 2)
-    const filename = `jsonld/hydrograph_layer_${lowerAndReplaceSpaces(key)}.json`
-    sitemapFiles.push(filename)
-    fs.writeFile(`../../${filename}`, output, (err) => {
-        // In case of a error throw err.
-        if (err) throw err;
-    })
-    const files = sitemapFiles.map(f => `<url>
-    <loc>${baseUrl}${f}</loc>
-  </url> `)
-
-    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        ${files.join("\n")}
-</urlset>`
-
-    fs.writeFile(`../../jsonld/sitemap_json.xml`, sitemap, (err) => {
-
-        // In case of a error throw err.
-        if (err) throw err;
-    })
-    const filesHtml = sitemapFiles.map(f => `<urlset>
-    <loc>${baseUrl}${f}.html</loc>
-  </urlset> `)
-
-    const sitemapHtml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        ${filesHtml.join("\n")}
-</urlset>`
-    fs.writeFile(`../../jsonld/sitemap_html.xml`, sitemapHtml, (err) => {
-
-        // In case of a error throw err.
-        if (err) throw err;
-    })
+    outputDataset(header, dists, datasetType, datasetName);
 });
-
