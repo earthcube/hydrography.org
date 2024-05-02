@@ -1,3 +1,8 @@
+/***
+ This script is for generating jsonld files and sitemaps.
+ All the output files are under the folder 'jsonld'.
+ ***/
+
 const fs = require('fs')
 
 const baseUrl = "https://earthcube.github.io/hydrography.org"
@@ -208,7 +213,7 @@ function lowerAndReplaceSpaces(inputString) {
     return inputString.toLowerCase().replace(/ /g, '_');
 }
 
-function getHeader(url, name, description, geoShape) {
+function getHeader(url, name, description, geoShape, keywords) {
     const header = {
         "@context": "https://schema.org",
         "@type": "Dataset",
@@ -216,7 +221,7 @@ function getHeader(url, name, description, geoShape) {
         "name": name,
         "description": description,
         "isAccessibleForFree": true,
-        "keywords": `hydrography`,
+        "keywords": keywords,
         "datePublished": `2022-10-17`,
         "dateModified": `2022-10-17`,
         "creator": {
@@ -382,19 +387,18 @@ function tileToGeoshapeBox(tile) {
 
 // write dataset and sitemap
 function writeDataset(filename, output, sitemapName, sitemapFiles) {
+    // write dataset
     sitemapFiles.push(filename)
-
     fs.writeFile(`../../${filename}`, output, (err) => {
         if (err) throw err;
     })
 
+    // write sitemap
     const files = sitemapFiles.map(f =>`  <url><loc>${baseUrl}${f}</loc></url>`)
-
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${files.join("\n")}
 </urlset>`
-
     fs.writeFile(sitemapName, sitemap, (err) => {
         if (err) throw err;
     })
@@ -419,11 +423,12 @@ function outputDataset(header, dists, datasetType, datasetName) {
 for (let tile in tiles) {
     const datasetType = DatasetType.TILE
     const datasetName = `hydrograph_${datasetType}_${tiles[tile]}`
+    const geoshapeBox = tileToGeoshapeBox(tiles[tile]) // transform tiles in hydrography.org to GeoShape box
     const header = getHeader(
         `${baseUrl}/jsonld/${datasetName}.json`,
         `Datasets for hydrography.org tile code ${tiles[tile]}`,
-        `Datasets for hydrography.org tile code ${tiles[tile]}`,
-        tileToGeoshapeBox(tiles[tile]) // transform tiles in hydrography.org to GeoShape box
+        `Datasets for hydrography.org tile code ${tiles[tile]}. The tile code ${tiles[tile]} represents a geographic shape using a bounding box with coordinates defining its boundaries as follows: (${geoshapeBox}). This dataset consists of a global rendition of stream channels and drainage basins, the sub-catchment of each stream segment, in-stream and among-stream distance metrics, and various stream slope and stream order metrics.`,
+        geoshapeBox
     )
 
     let dists = []
@@ -434,7 +439,8 @@ for (let tile in tiles) {
         let dist = {
             '@type': "DataDownload",
             "contentUrl": specificUrl,
-            "name": layerName
+            "name": layerName,
+            "keywords": "hydrography"
         }
         if (specificUrl.endsWith(".gpkg")) {
             dist["encodingFormat"] = "[application/geopackage+vnd.sqlite3]";
@@ -454,7 +460,7 @@ layers.forEach((subLayers, layer) => {
     const header = getHeader(
         `${baseUrl}/jsonld/${datasetName}.json`,
         `Datasets for hydrography.org: ${layer}`,
-        `Datasets for hydrography.org: ${layer}`,
+        `Datasets for hydrography.org: ${layer}. Please visit this website for details: https://hydrography.org`,
         "60 -100 -40 80" // layer datasets have fixed geo coordinates
     )
 
@@ -463,7 +469,8 @@ layers.forEach((subLayers, layer) => {
         let dist = {
             '@type': "DataDownload",
             "contentUrl": layerLink,
-            "name": layerName
+            "name": layerName,
+            "keywords": `hydrography`
         }
         if (layerLink.endsWith(".gpkg")) {
             dist["encodingFormat"] = "[application/geopackage+vnd.sqlite3]";

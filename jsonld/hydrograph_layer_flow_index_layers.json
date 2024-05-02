@@ -3,9 +3,8 @@
   "@type": "Dataset",
   "url": "https://earthcube.github.io/hydrography.org/jsonld/hydrograph_layer_flow_index_layers.json",
   "name": "Datasets for hydrography.org: Flow index layers",
-  "description": "Datasets for hydrography.org: Flow index layers",
+  "description": "Datasets for hydrography.org: Flow index layers. Please visit this website for details: https://hydrography.org",
   "isAccessibleForFree": true,
-  "keywords": "hydrography",
   "datePublished": "2022-10-17",
   "dateModified": "2022-10-17",
   "creator": {
@@ -151,18 +150,21 @@
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fspi_tiles20d",
       "name": "Stream power index",
+      "keywords": "hydrography",
       "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fsti_tiles20d",
       "name": "Stream transportation index (sti)",
+      "keywords": "hydrography",
       "encodingFormat": "[image/tiff]"
     },
     {
       "@type": "DataDownload",
       "contentUrl": "https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4?path=%2Fflow.index%2Fcti_tiles20d",
       "name": "Compound topographic index",
+      "keywords": "hydrography",
       "encodingFormat": "[image/tiff]"
     }
   ]
