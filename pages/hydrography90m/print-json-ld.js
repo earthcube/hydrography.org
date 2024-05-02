@@ -1,13 +1,14 @@
 const fs = require('fs')
 
-const baseUrl = "https://earthcube.github.io/hydrography.org/"
+const baseUrl = "https://earthcube.github.io/hydrography.org"
 
 const DatasetType = {
     TILE: "tile",
     LAYER: "layer"
 };
 
-let sitemapFiles = []
+let sitemapJsonFiles = []
+let sitemapHtmlFiles = []
 
 let tileUrls = [
     ['Depression', 'https://public.igb-berlin.de/index.php/s/agciopgzXjWswF4/download?path=%2Fr.watershed%2Fdepression_tiles20d&files=depression_${tile}.tif'],
@@ -380,22 +381,17 @@ function tileToGeoshapeBox(tile) {
 }
 
 // write dataset and sitemap
-function writeDataset(filename, output, sitemapName) {
+function writeDataset(filename, output, sitemapName, sitemapFiles) {
     sitemapFiles.push(filename)
 
     fs.writeFile(`../../${filename}`, output, (err) => {
         if (err) throw err;
     })
 
-    const files = sitemapFiles.map(f =>
-        `<url>
-             <loc>${baseUrl}${f}</loc>
-         </url>`
-    )
+    const files = sitemapFiles.map(f => `<url><loc>${baseUrl}${f}</loc></url>`)
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            ${files.join("\n")}
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${files.join("\n")}
         </urlset>`
 
     fs.writeFile(sitemapName, sitemap, (err) => {
@@ -410,12 +406,12 @@ function outputDataset(header, dists, datasetType, datasetName) {
     let output = JSON.stringify(jsonObj, undefined, 2)
 
     // write json dataset and sitemap
-    writeDataset(`jsonld/${datasetName}.json`,
-        output, `../../jsonld/sitemap_json.xml`)
+    writeDataset(`/jsonld/${datasetName}.json`,
+        output, `../../jsonld/sitemap_json.xml`, sitemapJsonFiles)
 
     // write html dataset and sitemap
-    writeDataset(`jsonld/${datasetName}.json.html`,
-        output, `../../jsonld/sitemap_html.xml`)
+    writeDataset(`/jsonld/${datasetName}.json.html`,
+        output, `../../jsonld/sitemap_html.xml`, sitemapHtmlFiles)
 }
 
 // process tile datasets
