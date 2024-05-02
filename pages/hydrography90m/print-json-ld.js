@@ -388,11 +388,12 @@ function writeDataset(filename, output, sitemapName, sitemapFiles) {
         if (err) throw err;
     })
 
-    const files = sitemapFiles.map(f => `<url><loc>${baseUrl}${f}</loc></url>`)
+    const files = sitemapFiles.map(f =>`  <url><loc>${baseUrl}${f}</loc></url>`)
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${files.join("\n")}
-        </urlset>`
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${files.join("\n")}
+</urlset>`
 
     fs.writeFile(sitemapName, sitemap, (err) => {
         if (err) throw err;
