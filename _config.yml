@@ -31,9 +31,10 @@ slogan: 'A 90m Dataset'
 # url: 'https://selvaje74.gitlab.io'
 # baseurl: '/hydrography.org'
 
-url: 'https://hydrography.org'
-# baseurl: '/hydrography.org'
-
+#url: 'https://hydrography.org'
+url: 'https://earthcube.github.io'
+baseurl: '/hydrography.org'
+urlimg: 'https://earthcube.github.io/hydrography.org/images/'
 
 
 # This is for the editing function in _/includes/improve_content
@@ -46,7 +47,7 @@ improve_content: https://gitlab.com/selvaje74/hydrography/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://selvaje74.gitlab.io/hydrography.org/images/'
+#urlimg: 'https://selvaje74.gitlab.io/hydrography.org/images/'
 
 
 # Logo size is 600x80 pixels
@@ -129,7 +130,14 @@ defaults:
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       author: selvaje74    # Default author for posts
-
+  -
+    scope:
+      path: '' 				# an empty string here means all files in the project
+      type: 'jsonld'
+    values:
+      show_meta: false 	# Hide metadata for all pages
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      comments: false
 
 
 #       _   __            _             __  _
@@ -212,7 +220,7 @@ msapplication_tilecolor              : '#fabb00'
 #
 # used in _includes/comments
 
-# disqus_shortname: 
+# disqus_shortname:
 
 
 #      _____
@@ -272,7 +280,7 @@ sass:
 
 asciidoctor-enabled: false
 asciidoctor:
-  description: 
+  description:
   attributes:
     source-highlighter: coderay
     coderay-css: style
