@@ -429,7 +429,7 @@ for (let tile in tiles) {
         `Datasets for hydrography.org tile code ${tiles[tile]}`,
         `Datasets for hydrography.org tile code ${tiles[tile]}. The tile code ${tiles[tile]} represents a geographic shape using a bounding box with coordinates defining its boundaries as follows: (${geoshapeBox}). This dataset consists of a global rendition of stream channels and drainage basins, the sub-catchment of each stream segment, in-stream and among-stream distance metrics, and various stream slope and stream order metrics.`,
         geoshapeBox,
-        "hydrography"
+        ["hydrography", "tile"]
     )
 
     let dists = []
@@ -462,7 +462,7 @@ layers.forEach((subLayers, layer) => {
         `Datasets for hydrography.org: ${layer}`,
         `Datasets for hydrography.org: ${layer}. Please visit this website for details: https://hydrography.org`,
         "60 -100 -40 80", // layer datasets have fixed geo coordinates
-        "hydrography"
+        ["hydrography", `${layer}`]
     )
 
     let dists = []

@@ -5,7 +5,10 @@
   "name": "Datasets for hydrography.org: Flow index layers",
   "description": "Datasets for hydrography.org: Flow index layers. Please visit this website for details: https://hydrography.org",
   "isAccessibleForFree": true,
-  "keywords": "hydrography",
+  "keywords": [
+    "hydrography",
+    "Flow index layers"
+  ],
   "datePublished": "2022-10-17",
   "dateModified": "2022-10-17",
   "creator": {

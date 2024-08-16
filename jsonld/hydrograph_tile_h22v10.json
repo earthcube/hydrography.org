@@ -5,7 +5,10 @@
   "name": "Datasets for hydrography.org tile code h22v10",
   "description": "Datasets for hydrography.org tile code h22v10. The tile code h22v10 represents a geographic shape using a bounding box with coordinates defining its boundaries as follows: (-20 40 -40 60). This dataset consists of a global rendition of stream channels and drainage basins, the sub-catchment of each stream segment, in-stream and among-stream distance metrics, and various stream slope and stream order metrics.",
   "isAccessibleForFree": true,
-  "keywords": "hydrography",
+  "keywords": [
+    "hydrography",
+    "tile"
+  ],
   "datePublished": "2022-10-17",
   "dateModified": "2022-10-17",
   "creator": {

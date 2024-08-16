@@ -5,7 +5,10 @@
   "name": "Datasets for hydrography.org: Stream distance layers",
   "description": "Datasets for hydrography.org: Stream distance layers. Please visit this website for details: https://hydrography.org",
   "isAccessibleForFree": true,
-  "keywords": "hydrography",
+  "keywords": [
+    "hydrography",
+    "Stream distance layers"
+  ],
   "datePublished": "2022-10-17",
   "dateModified": "2022-10-17",
   "creator": {
