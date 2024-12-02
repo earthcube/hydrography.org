@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "url": "https://earthcube.github.io/hydrography.org/jsonld/hydrograph_tile_h32v12.json",
-  "name": "Datasets for hydrography.org tile code h32v12",
+  "name": "hydrography.org dataset for bounding box (-40 140 -60 160) {tile h32v12}",
   "description": "Datasets for hydrography.org tile code h32v12. The tile code h32v12 represents a geographic shape using a bounding box with coordinates defining its boundaries as follows: (-40 140 -60 160). This dataset consists of a global rendition of stream channels and drainage basins, the sub-catchment of each stream segment, in-stream and among-stream distance metrics, and various stream slope and stream order metrics.",
   "isAccessibleForFree": true,
   "keywords": [

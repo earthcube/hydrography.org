@@ -426,7 +426,7 @@ for (let tile in tiles) {
     const geoshapeBox = tileToGeoshapeBox(tiles[tile]) // transform tiles in hydrography.org to GeoShape box
     const header = getHeader(
         `${baseUrl}/jsonld/${datasetName}.json`,
-        `Datasets for hydrography.org tile code ${tiles[tile]}`,
+        `hydrography.org dataset for bounding box (${geoshapeBox}) {tile ${tiles[tile]}}`,
         `Datasets for hydrography.org tile code ${tiles[tile]}. The tile code ${tiles[tile]} represents a geographic shape using a bounding box with coordinates defining its boundaries as follows: (${geoshapeBox}). This dataset consists of a global rendition of stream channels and drainage basins, the sub-catchment of each stream segment, in-stream and among-stream distance metrics, and various stream slope and stream order metrics.`,
         geoshapeBox,
         ["hydrography", "tile"]
